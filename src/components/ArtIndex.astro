@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import PortfolioCard from './PortfolioCard.astro';
+interface Props { title?: string; }
+const { title = 'Art' } = Astro.props;
+const collections = (await getCollection('collections', ({ data }) => data.publication === 'published')).sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+<SiteLayout title={title} theme="art">
+  <div class="portfolio-index">
+    <header class="portfolio-heading">
+      <p class="eyebrow">Paintings and collections</p>
+      <h1>{title}</h1>
+      {title === 'Art' && <a class="text-link" href="/art/collections/">View collections <span aria-hidden="true">↗</span></a>}
+    </header>
+    <div class="portfolio-list">
+      {collections.map(({ data }, index) => <PortfolioCard title={data.title} href={`/art/collections/${data.url_slug}/`} cover={data.cover} eager={index === 0} />)}
+    </div>
+  </div>
+</SiteLayout>

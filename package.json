@@ -1,0 +1,52 @@
+{
+  "name": "lauren-co-nz",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4 <23"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "check": "npm run check:content && astro check && tsc --project tsconfig.tools.json --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "build": "npm run check:content && npm run build:enquiries && astro build && node scripts/verify-build.mjs",
+    "preview": "astro preview --host 127.0.0.1",
+    "preview:pages": "wrangler pages dev dist --ip 127.0.0.1 --port 8788",
+    "prepare:admin": "node scripts/prepare-admin.mjs",
+    "postinstall": "npm run prepare:admin",
+    "test:images": "astro build --config tests/fixtures/astro.config.mjs && node scripts/verify-image-build.mjs",
+    "test:pages": "node scripts/smoke-pages.mjs",
+    "test:publication": "node scripts/test-publication-build.mjs",
+    "check:content": "node --import tsx scripts/check-content.ts",
+    "storybook:prepare": "npm run check:content && astro build --config .storybook/astro.config.mjs --outDir .storybook/generated/site",
+    "storybook": "npm run storybook:prepare && storybook dev --host 127.0.0.1 --port 6006 --exact-port --no-open",
+    "build:storybook": "npm run storybook:prepare && storybook build --output-dir storybook-static && node scripts/verify-storybook.mjs",
+    "test:storybook": "npm run storybook:prepare && vitest run",
+    "check:storybook": "tsc --project tsconfig.storybook.json",
+    "build:enquiries": "node --import tsx scripts/build-enquiry-catalogue.ts",
+    "measure:performance": "node scripts/measure-performance.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.12"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@cloudflare/workers-types": "5.20261115.1",
+    "@storybook/addon-a11y": "10.6.7",
+    "@storybook/addon-docs": "10.6.7",
+    "@storybook/addon-vitest": "10.6.7",
+    "@storybook/html-vite": "10.6.7",
+    "@sveltia/cms": "0.266.0",
+    "@types/node": "22.20.5",
+    "@vitest/browser-playwright": "4.1.12",
+    "playwright": "1.65.1",
+    "storybook": "10.6.7",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.8",
+    "vitest": "4.1.12",
+    "wrangler": "4.162.0",
+    "yaml": "2.9.1"
+  }
+}

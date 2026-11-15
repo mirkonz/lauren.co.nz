@@ -1,0 +1,604 @@
+{
+  "source_url": "https://laurenlikestopaint.wixsite.com/mysite/cv",
+  "text": [
+    "CV | Mysite",
+    "top of page",
+    "This website was built on Wix. Create yours today.",
+    "Get Started",
+    "ABOUT",
+    "FILM",
+    "FILMOGRAPHY",
+    "ON-SET",
+    "SCENIC, PROPS & SETS",
+    "ART",
+    "INVERTED PAINTINGS",
+    "ILLUSTRATION",
+    "JEWELLERY",
+    "PAINTING",
+    "CV",
+    "CONTACT",
+    "Use tab to navigate through the menu items.",
+    "Lauren May Stewart - Visual Artist  - New Zealand",
+    "bottom of page"
+  ],
+  "links": [
+    "https://www.wix.com/lpviral/enviral?utm_campaign=vir_wixad_live&adsVersion=banner_2024&orig_msid=aa99f552-cce6-4d9b-96f0-a304175f7068&orig_msid=1c71d76d-ed20-46b3-bf67-c28fae6639a3&adsVersion=banner_2024",
+    "https://laurenlikestopaint.wixsite.com/mysite",
+    "https://laurenlikestopaint.wixsite.com/mysite/filmography",
+    "https://laurenlikestopaint.wixsite.com/mysite/on-set",
+    "https://laurenlikestopaint.wixsite.com/mysite/scenic-props-sets",
+    "https://laurenlikestopaint.wixsite.com/mysite/invert",
+    "https://laurenlikestopaint.wixsite.com/mysite/illustration",
+    "https://laurenlikestopaint.wixsite.com/mysite/jewellery-1",
+    "https://laurenlikestopaint.wixsite.com/mysite/painting",
+    "https://laurenlikestopaint.wixsite.com/mysite/cv"
+  ],
+  "images": [
+    {
+      "fetchpriority": "high",
+      "sizes": "600px",
+      "srcset": "https://static.wixstatic.com/media/6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png/v1/fill/w_600,h_771,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV_website_Page_1.png 1x, https://static.wixstatic.com/media/6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png/v1/fill/w_1200,h_1542,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV_website_Page_1.png 2x",
+      "id": "img_comp-ma99zzaw",
+      "src": "https://static.wixstatic.com/media/6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png/v1/fill/w_600,h_771,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV_website_Page_1.png",
+      "alt": "CV_website_Page_1.png",
+      "style": "object-fit:cover",
+      "class": "gRkIq0 sFiSiq",
+      "width": "600",
+      "height": "771"
+    },
+    {
+      "fetchpriority": "high",
+      "sizes": "600px",
+      "srcset": "https://static.wixstatic.com/media/6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png/v1/fill/w_600,h_797,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV2.png 1x, https://static.wixstatic.com/media/6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png/v1/fill/w_1192,h_1583,al_c,q_90,enc_avif,quality_auto/CV2.png 2x",
+      "id": "img_comp-ma99zzay",
+      "src": "https://static.wixstatic.com/media/6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png/v1/fill/w_600,h_797,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV2.png",
+      "alt": "CV2.png",
+      "style": "object-fit:cover",
+      "class": "gRkIq0 sFiSiq",
+      "width": "600",
+      "height": "797"
+    },
+    {
+      "src": "https://static.wixstatic.com/media/6f8b7b_45f59d46f3f6484e8dac80d31813e648~mv2.jpg/v1/fill/w_147,h_70,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/6f8b7b_45f59d46f3f6484e8dac80d31813e648~mv2.jpg",
+      "alt": "f59a9e35-c2b8-4ff8-a460-898725ce09d2.JPG",
+      "style": "width:100%;height:100%;object-fit:cover;object-position:50% 50%",
+      "width": "980",
+      "height": "500"
+    }
+  ],
+  "render_props": {
+    "masterPage": {
+      "classNames": {
+        "meshLayout": "mesh-layout",
+        "overflowXClip": ""
+      }
+    },
+    "BACKGROUND_GROUP": {
+      "transition": "none",
+      "transitionDuration": 0
+    },
+    "WIX_ADS": {
+      "useOverlay": false,
+      "direction": "ltr",
+      "href": "https://www.wix.com/lpviral/enviral?utm_campaign=vir_wixad_live&adsVersion=banner_2024&orig_msid=aa99f552-cce6-4d9b-96f0-a304175f7068&orig_msid=1c71d76d-ed20-46b3-bf67-c28fae6639a3&adsVersion=banner_2024",
+      "classNames": [
+        "ltr"
+      ],
+      "translations": {
+        "bannerText": "{Wix} This website was built on Wix. Create yours today.",
+        "buttonText": "Get Started"
+      }
+    },
+    "SCROLL_TO_TOP": {
+      "name": "top of page"
+    },
+    "SCROLL_TO_BOTTOM": {
+      "name": "bottom of page"
+    },
+    "SKIP_TO_CONTENT_BTN": {
+      "translations": {
+        "buttonLabel": "Skip to Main Content"
+      }
+    },
+    "SITE_HEADER": {
+      "skin": "BevelScreen",
+      "meshProps": {
+        "wedges": [],
+        "rotatedComponents": [],
+        "fixedComponents": []
+      },
+      "animations": [],
+      "fillLayers": {
+        "containerId": "SITE_HEADER",
+        "hasBgFullscreenScrollEffect": false,
+        "shouldRenderUnderlay": true,
+        "shouldPadMedia": false,
+        "hasCanvasAnimation": false
+      },
+      "marginTop": "0px",
+      "compId": "SITE_HEADER",
+      "isMobileView": false,
+      "isFixed": true
+    },
+    "comp-m9ugoqdh": {
+      "skin": "SolidColorMenuButtonSkin",
+      "items": [
+        {
+          "label": "ABOUT",
+          "link": {
+            "href": "https://laurenlikestopaint.wixsite.com/mysite",
+            "target": "_self",
+            "type": "PageLink",
+            "id": "dataItem-m9td3jua1"
+          },
+          "id": "dataItem-m9td3jua"
+        },
+        {
+          "label": "FILM",
+          "link": {},
+          "items": [
+            {
+              "label": "FILMOGRAPHY",
+              "link": {
+                "href": "https://laurenlikestopaint.wixsite.com/mysite/filmography",
+                "target": "_self",
+                "type": "PageLink",
+                "id": "dataItem-m9t2cytl1"
+              },
+              "id": "dataItem-m9t2cytl"
+            },
+            {
+              "label": "ON-SET",
+              "link": {
+                "href": "https://laurenlikestopaint.wixsite.com/mysite/on-set",
+                "target": "_self",
+                "type": "PageLink",
+                "id": "dataItem-m9xb5mzl"
+              },
+              "id": "dataItem-m9xb5mzk"
+            },
+            {
+              "label": "SCENIC, PROPS & SETS",
+              "link": {
+                "href": "https://laurenlikestopaint.wixsite.com/mysite/scenic-props-sets",
+                "target": "_self",
+                "type": "PageLink",
+                "id": "dataItem-m9x9xygl1"
+              },
+              "id": "dataItem-m9x9xygl"
+            }
+          ],
+          "id": "dataItem-ma37g5pt"
+        },
+        {
+          "label": "ART",
+          "link": {},
+          "items": [
+            {
+              "label": "INVERTED PAINTINGS",
+              "link": {
+                "href": "https://laurenlikestopaint.wixsite.com/mysite/invert",
+                "target": "_self",
+                "type": "PageLink",
+                "id": "dataItem-k7xxjlwx1"
+              },
+              "id": "dataItem-k7xxjlwx"
+            },
+            {
+              "label": "ILLUSTRATION",
+              "link": {
+                "href": "https://laurenlikestopaint.wixsite.com/mysite/illustration",
+                "target": "_self",
+                "type": "PageLink",
+                "id": "dataItem-m9wjd06t"
+              },
+              "id": "dataItem-m9wjd06s"
+            },
+            {
+              "label": "JEWELLERY",
+              "link": {
+                "href": "https://laurenlikestopaint.wixsite.com/mysite/jewellery-1",
+                "target": "_self",
+                "type": "PageLink",
+                "id": "dataItem-m9ynyqg43"
+              },
+              "id": "dataItem-m9ynyqg42"
+            },
+            {
+              "label": "PAINTING",
+              "link": {
+                "href": "https://laurenlikestopaint.wixsite.com/mysite/painting",
+                "target": "_self",
+                "type": "PageLink",
+                "id": "dataItem-m9xfoz933"
+              },
+              "id": "dataItem-m9xfoz932"
+            }
+          ],
+          "id": "dataItem-k7wxg1oh"
+        },
+        {
+          "label": "CV",
+          "link": {
+            "href": "https://laurenlikestopaint.wixsite.com/mysite/cv",
+            "target": "_self",
+            "type": "PageLink",
+            "id": "dataItem-k7xxpytv1"
+          },
+          "id": "dataItem-k7xxpytv"
+        }
+      ],
+      "alignButtons": "center",
+      "moreButtonLabel": "CONTACT",
+      "moreItemHeight": 15,
+      "rtl": false,
+      "sameWidthButtons": true,
+      "stretchButtonsToMenuWidth": true,
+      "marginAllChildren": true,
+      "skinExports": {
+        "menuBorderY": 0,
+        "menuBtnBorder": 0,
+        "ribbonEls": 0,
+        "labelPad": 0,
+        "ribbonExtra": 0
+      },
+      "isTouchDevice": false,
+      "renderSEOSubItems": true,
+      "isQaMode": false,
+      "fullNameCompType": "wysiwyg.viewer.components.menus.DropDownMenu",
+      "translations": {
+        "subMenuIndication": "Use tab to navigate through the menu items.",
+        "ariaLabel": "Site",
+        "dropdownButtonAriaLabel": "More <%= itemName %> pages"
+      }
+    },
+    "SITE_PAGES": {
+      "transition": "none",
+      "transitionDuration": 0
+    },
+    "SITE_FOOTER": {
+      "skin": "DefaultWithFillLayers",
+      "meshProps": {
+        "wedges": [],
+        "rotatedComponents": [],
+        "fixedComponents": []
+      },
+      "fillLayers": {
+        "containerId": "SITE_FOOTER",
+        "hasBgFullscreenScrollEffect": false,
+        "shouldRenderUnderlay": true,
+        "shouldPadMedia": false,
+        "hasCanvasAnimation": false
+      }
+    },
+    "comp-m9xp6p48": {
+      "html": "<p class=\"font_8 wixui-rich-text__text\" style=\"font-size:15px; line-height:1.6em; text-align:center;\"><span style=\"font-family:josefin-sans-light,sans-serif;\" class=\"wixui-rich-text__text\"><span style=\"font-size:15px;\" class=\"wixui-rich-text__text\"><span style=\"color:#FFFFFF;\" class=\"wixui-rich-text__text\"><span style=\"font-weight:bold;\" class=\"wixui-rich-text__text\"><span style=\"letter-spacing:0.05em;\" class=\"wixui-rich-text__text\">Lauren May Stewart - Visual Artist &nbsp;- New Zealand</span></span></span></span></span></p>",
+      "skin": "WRichTextThemeSkin",
+      "isQaMode": false,
+      "fullNameCompType": "wysiwyg.viewer.components.WRichText"
+    },
+    "fqzr6": {
+      "className": "theme-vars"
+    },
+    "pageBackground_fqzr6": {
+      "fillLayers": {
+        "containerId": "pageBackground_fqzr6",
+        "hasBgFullscreenScrollEffect": false,
+        "shouldRenderUnderlay": true,
+        "shouldPadMedia": false,
+        "hasCanvasAnimation": false
+      },
+      "isMediaPositionOverride": false,
+      "mediaHeightOverrideType": ""
+    },
+    "Containerfqzr6": {
+      "meshProps": {
+        "wedges": [],
+        "rotatedComponents": [],
+        "fixedComponents": []
+      }
+    },
+    "comp-m9xtvs0k": {
+      "meshProps": {
+        "wedges": [],
+        "rotatedComponents": [
+          "comp-ma9a2xgq"
+        ],
+        "fixedComponents": []
+      },
+      "fillLayers": {
+        "containerId": "comp-m9xtvs0k",
+        "hasBgFullscreenScrollEffect": false,
+        "shouldRenderUnderlay": true,
+        "shouldPadMedia": false,
+        "hasCanvasAnimation": false
+      },
+      "a11y": {
+        "tabindex": "-1"
+      },
+      "dividers": {
+        "hasTopDivider": false,
+        "hasBottomDivider": false
+      },
+      "translations": {
+        "playLabel": "Play",
+        "pauseLabel": "Pause"
+      }
+    },
+    "comp-ma99zzaw": {
+      "hasAnimation": false,
+      "alt": "CV_website_Page_1.png",
+      "width": 1656,
+      "height": 2339,
+      "uri": "6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png",
+      "name": "CV_website_Page_1.png",
+      "containerId": "comp-ma99zzaw",
+      "hasBgScrollEffect": "",
+      "bgEffectName": "",
+      "displayMode": "fill",
+      "link": {},
+      "encoding": "AVIF",
+      "allowWebpAvifTransforms": true,
+      "responsiveImageProps": {
+        "fallbackSrc": "https://static.wixstatic.com/media/6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png/v1/fill/w_600,h_771,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV_website_Page_1.png",
+        "srcset": "https://static.wixstatic.com/media/6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png/v1/fill/w_600,h_771,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV_website_Page_1.png 1x, https://static.wixstatic.com/media/6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png/v1/fill/w_1200,h_1542,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV_website_Page_1.png 2x",
+        "css": {
+          "container": {
+            "position": "relative"
+          },
+          "img": {
+            "width": 600,
+            "height": 771,
+            "objectFit": "cover"
+          }
+        }
+      },
+      "containerWidth": 600,
+      "containerHeight": 771,
+      "isInFirstFold": true,
+      "crop": null,
+      "onClickBehavior": "goToLink",
+      "fullNameCompType": "wysiwyg.viewer.components.WPhoto",
+      "language": "en",
+      "compId": "comp-ma99zzaw",
+      "mainPageId": "b3vxy",
+      "trackClicksAnalytics": false,
+      "popupA11yExperimentEnabled": false,
+      "translations": {
+        "expandAriaLabel": "Expand image",
+        "zoomInButtonAriaLabel": "Zoom in"
+      },
+      "zoomedImageResponsiveOverride": {},
+      "allowFullGIFTransformation": false
+    },
+    "comp-ma99zzay": {
+      "hasAnimation": false,
+      "alt": "CV2.png",
+      "width": 1192,
+      "height": 1596,
+      "uri": "6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png",
+      "name": "CV2.png",
+      "containerId": "comp-ma99zzay",
+      "hasBgScrollEffect": "",
+      "bgEffectName": "",
+      "displayMode": "fill",
+      "link": {},
+      "encoding": "AVIF",
+      "allowWebpAvifTransforms": true,
+      "responsiveImageProps": {
+        "fallbackSrc": "https://static.wixstatic.com/media/6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png/v1/fill/w_600,h_797,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV2.png",
+        "srcset": "https://static.wixstatic.com/media/6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png/v1/fill/w_600,h_797,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/CV2.png 1x, https://static.wixstatic.com/media/6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png/v1/fill/w_1192,h_1583,al_c,q_90,enc_avif,quality_auto/CV2.png 2x",
+        "css": {
+          "container": {
+            "position": "relative"
+          },
+          "img": {
+            "width": 600,
+            "height": 797,
+            "objectFit": "cover"
+          }
+        }
+      },
+      "containerWidth": 600,
+      "containerHeight": 797,
+      "isInFirstFold": true,
+      "crop": null,
+      "onClickBehavior": "goToLink",
+      "fullNameCompType": "wysiwyg.viewer.components.WPhoto",
+      "language": "en",
+      "compId": "comp-ma99zzay",
+      "mainPageId": "b3vxy",
+      "trackClicksAnalytics": false,
+      "popupA11yExperimentEnabled": false,
+      "translations": {
+        "expandAriaLabel": "Expand image",
+        "zoomInButtonAriaLabel": "Zoom in"
+      },
+      "zoomedImageResponsiveOverride": {},
+      "allowFullGIFTransformation": false
+    },
+    "comp-ma9a2l2i": {
+      "withShadow": false,
+      "link": {},
+      "fullNameCompType": "wysiwyg.viewer.components.VectorImage",
+      "language": "en",
+      "mainPageId": "b3vxy",
+      "compId": "comp-ma9a2l2i",
+      "trackClicksAnalytics": false,
+      "experiments": {
+        "specs.thunderbolt.DatePickerPortal": true,
+        "specs.thunderbolt.DisableDocumentScrollWhenLightBoxOpen": true,
+        "specs.thunderbolt.EnableCustomCSSVarsForLoginSocialBar": true,
+        "specs.thunderbolt.FreemiumBannerOdeditor": true,
+        "specs.thunderbolt.LoginBarEnableLoggingInStateInSSR": true,
+        "specs.thunderbolt.TextInputAutoFillFix": true,
+        "specs.thunderbolt.UseLoginSocialBarCustomMenu": true,
+        "specs.thunderbolt.UseNestedLoginSocialBarMenuItems": true,
+        "specs.thunderbolt.UseNewLoginBarDropdownMenuAlignment": true,
+        "specs.thunderbolt.UseNewLoginSocialBarElementStructure": true,
+        "specs.thunderbolt.UseNewLoginSocialBarMemberInitialsAvatar": true,
+        "specs.thunderbolt.WixFreeSiteBannerDesktop": true,
+        "specs.thunderbolt.WixFreeSiteBannerMobile": true,
+        "specs.thunderbolt.a11yContrast": true,
+        "specs.thunderbolt.addIdAsClassName": true,
+        "specs.thunderbolt.allowWebpAvifTransforms": true,
+        "specs.thunderbolt.builderBoxSizingBorderBox": true,
+        "specs.thunderbolt.buttonUdp": true,
+        "specs.thunderbolt.calculateCollapsibleTextLineHeightByFont": true,
+        "specs.thunderbolt.customImageDomain": true,
+        "specs.thunderbolt.dom_store": true,
+        "specs.thunderbolt.dontApplyDacOverridesOnBoBApps": true,
+        "specs.thunderbolt.dynamicPageLinkTarget": true,
+        "specs.thunderbolt.dynamicSlots": true,
+        "specs.thunderbolt.fiveGridLineStudioSkins": true,
+        "specs.thunderbolt.fixDocumentLinkInPremiumPreview": true,
+        "specs.thunderbolt.fixFirefoxLinkBarIntrinsicSizing": true,
+        "specs.thunderbolt.imageEncodingAVIF": true,
+        "specs.thunderbolt.interactionsUseReactionEffectId": true,
+        "specs.thunderbolt.isClassNameToRootEnabled": true,
+        "specs.thunderbolt.isClassNameToRootEnabledNext": true,
+        "specs.thunderbolt.logVsmFeaturesModuleDiff": true,
+        "specs.thunderbolt.responsiveContainerRoleGroup": true,
+        "specs.thunderbolt.sectionA11yProps": true,
+        "specs.thunderbolt.splitSlotSelectors": true,
+        "specs.thunderbolt.svgResolver_2": true,
+        "specs.thunderbolt.takeTranslationsFromManifest": true,
+        "specs.thunderbolt.updateRichTextSemanticClassNamesOnCorvid": true,
+        "specs.thunderbolt.useClassnameInResponsiveAppWidget": true,
+        "specs.thunderbolt.useFragmentHrefForTopBottomAnchor": true,
+        "specs.thunderbolt.useImageAvifFormatInNativeProGallery": true,
+        "specs.thunderbolt.useResponsiveImgClassicFixed": true,
+        "specs.thunderbolt.useSvgLoaderFeature": true,
+        "specs.thunderbolt.useSvgLoaderFeatureOnBuilderComps": true,
+        "specs.thunderbolt.useWowImageInFastGallery": true,
+        "specs.thunderbolt.vsmFeaturesModule": true,
+        "specs.thunderbolt.vsm_interactions_v1": true,
+        "specs.thunderbolt.vsm_interactions_v2": true,
+        "specs.thunderbolt.vsm_shapes": true,
+        "builderComponentsPageScoping": true,
+        "globalCssStudio2": true,
+        "tpaBrandFonts": true
+      },
+      "isClassNameToRootEnabled": true
+    },
+    "comp-ma9a2xgq": {
+      "withShadow": false,
+      "link": {},
+      "fullNameCompType": "wysiwyg.viewer.components.VectorImage",
+      "language": "en",
+      "mainPageId": "b3vxy",
+      "compId": "comp-ma9a2xgq",
+      "trackClicksAnalytics": false,
+      "experiments": {
+        "specs.thunderbolt.DatePickerPortal": true,
+        "specs.thunderbolt.DisableDocumentScrollWhenLightBoxOpen": true,
+        "specs.thunderbolt.EnableCustomCSSVarsForLoginSocialBar": true,
+        "specs.thunderbolt.FreemiumBannerOdeditor": true,
+        "specs.thunderbolt.LoginBarEnableLoggingInStateInSSR": true,
+        "specs.thunderbolt.TextInputAutoFillFix": true,
+        "specs.thunderbolt.UseLoginSocialBarCustomMenu": true,
+        "specs.thunderbolt.UseNestedLoginSocialBarMenuItems": true,
+        "specs.thunderbolt.UseNewLoginBarDropdownMenuAlignment": true,
+        "specs.thunderbolt.UseNewLoginSocialBarElementStructure": true,
+        "specs.thunderbolt.UseNewLoginSocialBarMemberInitialsAvatar": true,
+        "specs.thunderbolt.WixFreeSiteBannerDesktop": true,
+        "specs.thunderbolt.WixFreeSiteBannerMobile": true,
+        "specs.thunderbolt.a11yContrast": true,
+        "specs.thunderbolt.addIdAsClassName": true,
+        "specs.thunderbolt.allowWebpAvifTransforms": true,
+        "specs.thunderbolt.builderBoxSizingBorderBox": true,
+        "specs.thunderbolt.buttonUdp": true,
+        "specs.thunderbolt.calculateCollapsibleTextLineHeightByFont": true,
+        "specs.thunderbolt.customImageDomain": true,
+        "specs.thunderbolt.dom_store": true,
+        "specs.thunderbolt.dontApplyDacOverridesOnBoBApps": true,
+        "specs.thunderbolt.dynamicPageLinkTarget": true,
+        "specs.thunderbolt.dynamicSlots": true,
+        "specs.thunderbolt.fiveGridLineStudioSkins": true,
+        "specs.thunderbolt.fixDocumentLinkInPremiumPreview": true,
+        "specs.thunderbolt.fixFirefoxLinkBarIntrinsicSizing": true,
+        "specs.thunderbolt.imageEncodingAVIF": true,
+        "specs.thunderbolt.interactionsUseReactionEffectId": true,
+        "specs.thunderbolt.isClassNameToRootEnabled": true,
+        "specs.thunderbolt.isClassNameToRootEnabledNext": true,
+        "specs.thunderbolt.logVsmFeaturesModuleDiff": true,
+        "specs.thunderbolt.responsiveContainerRoleGroup": true,
+        "specs.thunderbolt.sectionA11yProps": true,
+        "specs.thunderbolt.splitSlotSelectors": true,
+        "specs.thunderbolt.svgResolver_2": true,
+        "specs.thunderbolt.takeTranslationsFromManifest": true,
+        "specs.thunderbolt.updateRichTextSemanticClassNamesOnCorvid": true,
+        "specs.thunderbolt.useClassnameInResponsiveAppWidget": true,
+        "specs.thunderbolt.useFragmentHrefForTopBottomAnchor": true,
+        "specs.thunderbolt.useImageAvifFormatInNativeProGallery": true,
+        "specs.thunderbolt.useResponsiveImgClassicFixed": true,
+        "specs.thunderbolt.useSvgLoaderFeature": true,
+        "specs.thunderbolt.useSvgLoaderFeatureOnBuilderComps": true,
+        "specs.thunderbolt.useWowImageInFastGallery": true,
+        "specs.thunderbolt.vsmFeaturesModule": true,
+        "specs.thunderbolt.vsm_interactions_v1": true,
+        "specs.thunderbolt.vsm_interactions_v2": true,
+        "specs.thunderbolt.vsm_shapes": true,
+        "builderComponentsPageScoping": true,
+        "globalCssStudio2": true,
+        "tpaBrandFonts": true
+      },
+      "isClassNameToRootEnabled": true
+    },
+    "comp-madobmok": {
+      "dividers": {
+        "hasTopDivider": false,
+        "hasBottomDivider": false
+      },
+      "fillLayers": {
+        "containerId": "comp-madobmok",
+        "hasBgFullscreenScrollEffect": false,
+        "shouldRenderUnderlay": true,
+        "shouldPadMedia": false,
+        "hasCanvasAnimation": false
+      }
+    },
+    "comp-madobmop": {
+      "fillLayers": {
+        "containerId": "comp-madobmop",
+        "hasBgFullscreenScrollEffect": false,
+        "shouldRenderUnderlay": true,
+        "image": {
+          "hasAnimation": false,
+          "alt": "f59a9e35-c2b8-4ff8-a460-898725ce09d2.JPG",
+          "width": 1600,
+          "height": 757,
+          "uri": "6f8b7b_45f59d46f3f6484e8dac80d31813e648~mv2.jpg",
+          "title": "f59a9e35-c2b8-4ff8-a460-898725ce09d2.JPG",
+          "containerId": "comp-madobmop",
+          "hasBgScrollEffect": "",
+          "bgEffectName": "",
+          "alignType": "center",
+          "displayMode": "fill",
+          "link": {},
+          "encoding": "AVIF",
+          "allowWebpAvifTransforms": true,
+          "containerWidth": 980,
+          "containerHeight": 500
+        },
+        "shouldPadMedia": false,
+        "hasCanvasAnimation": false
+      },
+      "meshProps": {
+        "wedges": [],
+        "rotatedComponents": [],
+        "fixedComponents": []
+      },
+      "columnOverrides": {
+        "width": "100%",
+        "contentArea": {
+          "alignment": 0.5,
+          "width": 980
+        }
+      },
+      "translations": {
+        "ariaLabel": "content changes on hover"
+      }
+    }
+  }
+}

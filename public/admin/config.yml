@@ -1,0 +1,462 @@
+# Local-only repository identity until GitHub ownership and authenticator setup are approved.
+# Use Work with Local Repository in Chromium; do not enable remote sign-in with this placeholder.
+backend:
+  name: github
+  repo: local-only/lauren-co-nz
+  branch: main
+publish_mode: editorial_workflow
+media_folder: src/assets/uploads
+public_folder: /src/assets/uploads
+output:
+  omit_empty_optional_fields: true
+collections:
+  - name: film
+    label: Film projects and credits
+    folder: src/content/film
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: key
+    slug: "{{fields.key}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    summary: "{{title}}"
+    fields:
+      - &a2
+        name: key
+        label: Stable reference ID
+        widget: string
+        hint: Use a permanent lowercase ID with hyphens. Once created, keep this ID and
+          its folder unchanged.
+      - &a3
+        name: url_slug
+        label: URL name
+        widget: string
+        hint: Lowercase words joined with hyphens. May differ from the stable reference.
+      - &a4
+        name: title
+        label: Title
+        widget: string
+      - &a5
+        name: publication
+        label: Publication status
+        widget: select
+        options:
+          - draft
+          - review
+          - published
+        default: draft
+      - &a6
+        name: facts_verified
+        label: Facts verified
+        widget: boolean
+        default: false
+      - &a7
+        name: source_url
+        label: Source URL
+        widget: string
+        required: false
+      - &a8
+        name: seo
+        label: Search and sharing
+        widget: object
+        required: false
+        fields:
+          - name: title
+            label: Page title
+            widget: string
+            required: false
+          - name: description
+            label: Description
+            widget: text
+            required: false
+      - &a9
+        name: cover
+        label: Main image
+        widget: object
+        required: false
+        fields: &a1
+          - name: file
+            label: Image
+            widget: image
+          - name: alt
+            label: Image description
+            widget: string
+            required: false
+          - name: decorative
+            label: Decorative image
+            widget: boolean
+            default: false
+          - name: caption
+            label: Caption
+            widget: string
+            required: false
+          - name: credit
+            label: Credit
+            widget: string
+            required: false
+          - name: permission
+            label: Publication permission
+            widget: select
+            options:
+              - unreviewed
+              - approved
+              - restricted
+            default: unreviewed
+      - &a10
+        name: gallery
+        label: Ordered gallery
+        widget: list
+        required: false
+        fields: *a1
+      - name: year_label
+        label: Work dates
+        widget: string
+        required: false
+      - name: release_year
+        label: Verified release year
+        widget: number
+        value_type: int
+        required: false
+        min: 1888
+      - name: roles
+        label: Lauren's roles
+        widget: list
+        min: 1
+        field:
+          name: role
+          label: Role
+          widget: string
+      - name: credits
+        label: Production credits
+        widget: list
+        required: false
+        fields:
+          - name: label
+            label: Credit
+            widget: string
+          - name: name
+            label: Name
+            widget: string
+      - name: categories
+        label: Categories
+        widget: select
+        options:
+          - on-set
+          - scenic
+          - props
+          - fabrication
+          - theatre
+        multiple: true
+        required: false
+      - &a11
+        name: body
+        label: Text
+        widget: markdown
+        required: false
+  - name: practice
+    label: Film practice galleries
+    folder: src/content/film-practice
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: key
+    slug: "{{fields.key}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    summary: "{{title}}"
+    fields:
+      - *a2
+      - *a3
+      - *a4
+      - *a5
+      - *a6
+      - *a7
+      - *a8
+      - *a9
+      - *a10
+      - name: films
+        label: Related film projects
+        widget: relation
+        collection: film
+        search_fields:
+          - title
+          - key
+        value_field: key
+        display_fields:
+          - title
+        multiple: true
+        required: false
+      - *a11
+  - name: artworks
+    label: Individual artworks
+    folder: src/content/artworks
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: key
+    slug: "{{fields.key}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    summary: "{{title}}"
+    fields:
+      - *a2
+      - *a3
+      - *a4
+      - *a5
+      - *a6
+      - *a7
+      - *a8
+      - *a9
+      - *a10
+      - name: year_label
+        label: Year
+        widget: string
+        required: false
+      - name: medium
+        label: Medium
+        widget: string
+        required: false
+      - name: dimensions
+        label: Dimensions
+        widget: string
+        required: false
+      - name: availability
+        label: Availability
+        widget: select
+        options:
+          - unknown
+          - available
+          - price-on-request
+          - sold
+          - not-for-sale
+          - commission
+        default: unknown
+      - name: enquiries_enabled
+        label: Enable enquiries
+        widget: boolean
+        default: false
+      - name: similar_work_enquiries
+        label: Allow similar-work enquiries when sold
+        widget: boolean
+        default: false
+      - name: show_price
+        label: Show price
+        widget: boolean
+        default: false
+      - name: price
+        label: Price
+        widget: object
+        required: false
+        fields:
+          - name: amount
+            label: Amount
+            widget: number
+            value_type: float
+            min: 0.01
+          - name: currency
+            label: Currency
+            widget: string
+            hint: Three uppercase letters, e.g. NZD.
+      - *a11
+  - name: collections
+    label: Art collections
+    folder: src/content/art-collections
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: key
+    slug: "{{fields.key}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    summary: "{{title}}"
+    fields:
+      - *a2
+      - *a3
+      - *a4
+      - *a5
+      - *a6
+      - *a7
+      - *a8
+      - *a9
+      - *a10
+      - name: year_label
+        label: Year or date range
+        widget: string
+        required: false
+      - name: artworks
+        label: Ordered artworks
+        widget: relation
+        collection: artworks
+        search_fields:
+          - title
+          - key
+        value_field: key
+        display_fields:
+          - title
+        multiple: true
+        required: false
+      - *a11
+  - name: pages
+    label: Biography, contact and CV
+    folder: src/content/pages
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: key
+    slug: "{{fields.key}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    summary: "{{title}}"
+    fields:
+      - *a2
+      - *a3
+      - *a4
+      - *a5
+      - *a6
+      - *a7
+      - *a8
+      - name: kind
+        label: Page type
+        widget: select
+        options:
+          - about
+          - contact
+          - cv
+      - name: skills
+        label: Skill groups
+        widget: list
+        required: false
+        fields:
+          - name: title
+            label: Heading
+            widget: string
+          - name: items
+            label: Skills
+            widget: list
+            field:
+              name: skill
+              label: Skill
+              widget: string
+      - name: education
+        label: Education
+        widget: list
+        required: false
+        fields:
+          - name: institution
+            label: Institution
+            widget: string
+          - name: qualification
+            label: Qualification
+            widget: string
+          - name: date_label
+            label: Dates
+            widget: string
+            required: false
+          - name: details
+            label: Details
+            widget: list
+            required: false
+            field:
+              name: detail
+              label: Detail
+              widget: string
+      - name: experience
+        label: Other work experience
+        widget: list
+        required: false
+        fields:
+          - name: organisation
+            label: Organisation
+            widget: string
+          - name: role
+            label: Role
+            widget: string
+          - name: date_label
+            label: Dates
+            widget: string
+            required: false
+      - name: languages
+        label: Languages
+        widget: list
+        required: false
+        fields:
+          - name: name
+            label: Language
+            widget: string
+          - name: proficiency
+            label: Proficiency
+            widget: string
+      - *a11
+  - name: settings
+    label: Site settings
+    files:
+      - name: site
+        label: Identity and featured work
+        file: src/content/settings/site/index.md
+        fields:
+          - name: key
+            widget: hidden
+            default: site
+          - name: professional_name
+            label: Professional name
+            widget: string
+          - name: name_confirmed
+            label: Professional name confirmed
+            widget: boolean
+            default: false
+          - name: contact_email
+            label: Public contact email
+            widget: string
+            required: false
+          - name: social_links
+            label: Social links
+            widget: list
+            required: false
+            fields:
+              - name: label
+                label: Label
+                widget: string
+              - name: url
+                label: URL
+                widget: string
+          - name: default_description
+            label: Default search description
+            widget: text
+          - name: featured_film
+            label: Featured film projects
+            widget: relation
+            collection: film
+            search_fields:
+              - title
+              - key
+            value_field: key
+            display_fields:
+              - title
+            multiple: true
+            required: false
+          - name: featured_artworks
+            label: Featured artworks
+            widget: relation
+            collection: artworks
+            search_fields:
+              - title
+              - key
+            value_field: key
+            display_fields:
+              - title
+            multiple: true
+            required: false
+          - name: commissions_enabled
+            label: Accept commissions
+            widget: boolean
+            default: false
+          - name: sold_enquiries_enabled
+            label: Accept similar-work enquiries
+            widget: boolean
+            default: false

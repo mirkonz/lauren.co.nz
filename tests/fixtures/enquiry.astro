@@ -1,0 +1,17 @@
+---
+import type { EnquiryTarget } from '../../src/lib/enquiries';
+import SiteLayout from '../../src/layouts/SiteLayout.astro';
+import EnquiryForm from '../../src/components/EnquiryForm.astro';
+const kind = Astro.url.pathname.includes('similar') ? 'similar' : Astro.url.pathname.includes('commission') ? 'commission' : 'purchase';
+const enabled = !Astro.url.pathname.includes('disabled');
+const target: EnquiryTarget = { id: 'example-work', title: 'Example artwork (synthetic fixture)', path: '/art/works/example-work/', kind };
+---
+<SiteLayout title="Enquiry test fixture" theme="art" canonical={false}>
+  <section class="portfolio-detail">
+    <h1>Enquiry test fixture</h1>
+    <p>Storybook only. This example is not an artwork listing and sends no email.</p>
+    <EnquiryForm target={target} enabled={enabled}>
+      <input slot="verification" type="hidden" name="turnstile_token" value="synthetic-story-token" />
+    </EnquiryForm>
+  </section>
+</SiteLayout>

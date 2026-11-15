@@ -1,0 +1,41 @@
+---
+import type { EnquiryTarget } from '../lib/enquiries';
+interface Props { target: EnquiryTarget; enabled?: boolean }
+const { target, enabled = false } = Astro.props;
+const prefix = `enquiry-${target.id}`;
+const subject = target.kind === 'similar' ? 'Enquire about similar work' : target.kind === 'commission' ? 'Discuss a commission' : 'Enquire about this artwork';
+---
+<form class="enquiry-form" data-enquiry-form data-enabled={String(enabled)} action="/api/enquiry" method="post" aria-labelledby={`${prefix}-heading`} novalidate>
+  <h2 id={`${prefix}-heading`}>{subject}</h2>
+  <p><a href={target.path}>{target.title}</a> <span>(reference: {target.id})</span></p>
+  <p data-enquiry-unavailable hidden={enabled}>Enquiries are not available for this work.</p>
+  <div data-enquiry-errors role="alert" tabindex="-1" hidden></div>
+  <fieldset disabled>
+    <legend>Your enquiry</legend>
+    <input type="hidden" name="artwork_id" value={target.id} />
+    <div class="enquiry-field">
+      <label for={`${prefix}-name`}>Your name (required)</label>
+      <input id={`${prefix}-name`} name="name" autocomplete="name" maxlength="100" required aria-describedby={`${prefix}-name-error`} />
+      <span id={`${prefix}-name-error`} data-error-for="name"></span>
+    </div>
+    <div class="enquiry-field">
+      <label for={`${prefix}-email`}>Email address (required)</label>
+      <input id={`${prefix}-email`} name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby={`${prefix}-email-error`} />
+      <span id={`${prefix}-email-error`} data-error-for="email"></span>
+    </div>
+    <div class="enquiry-field">
+      <label for={`${prefix}-message`}>Message (required)</label>
+      <textarea id={`${prefix}-message`} name="message" rows="6" maxlength="5000" required aria-describedby={`${prefix}-message-error`}></textarea>
+      <span id={`${prefix}-message-error`} data-error-for="message"></span>
+    </div>
+    <div hidden aria-hidden="true"><label for={`${prefix}-company`}>Leave this blank</label><input id={`${prefix}-company`} name="company" tabindex="-1" autocomplete="off" /></div>
+    <slot name="verification" />
+    <button type="submit">Send enquiry</button>
+  </fieldset>
+  <p data-enquiry-status role="status" aria-live="polite"></p>
+  <noscript><p>JavaScript is needed to send this enquiry. No message has been sent.</p></noscript>
+</form>
+<script>
+  import { enhanceEnquiryForm } from '../lib/enquiry-form';
+  document.querySelectorAll<HTMLFormElement>('[data-enquiry-form]').forEach((form) => enhanceEnquiryForm(form));
+</script>

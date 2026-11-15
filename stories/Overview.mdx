@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Read me" />
+
+# Lauren May Stewart: Film & Art
+
+Stories show the media-free split landing, shared navigation/footer, two
+approved Film projects and two Art collections, section indexes, remaining holding pages
+and custom 404. Broader portfolio content and public launch remain unfinished.
+
+Astro generates the page markup before Storybook starts or builds. Stories render
+that HTML with the site's shared CSS; there is no second implementation of the
+shell. Run `npm run storybook:prepare` after changing Astro templates or content
+while Storybook is open. CSS changes update live. Generated HTML is ignored.
+
+Use the viewport toolbar for 320, 390, 768 and 1440px examples. Large Text stories
+set the root font to 200%; this is a simulation, not native text-only browser zoom.
+The Accessibility panel runs axe checks. The automated stories also check the
+heading, skip-link target, main focusability, navigation destinations, horizontal
+overflow, image loading, source-size display limits and four/six-image gallery counts.
+They do not establish screen-reader, physical touch or final-image quality.
+
+Links retain their real site destinations. Activating a route link can leave the
+story iframe; reopen the story from the sidebar. Automated checks inspect those
+destinations without following them.
+
+This is a local development tool. Do not deploy its output with the portfolio.
+Only the generated page markup and approved optimised images are included.
+No source archive, CMS configuration, credentials or unapproved imagery is served.
+Facts, image rights, account integration and publication retain separate gates.

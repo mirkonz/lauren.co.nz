@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ImageGallery from './ImageGallery.astro';
+interface Props {
+  title: string;
+  theme: 'film' | 'art';
+  backHref: string;
+  backLabel: string;
+  images: CollectionEntry<'film'>['data']['gallery'];
+}
+const { title, theme, backHref, backLabel, images } = Astro.props;
+---
+<SiteLayout title={title} theme={theme}>
+  <article class="portfolio-detail">
+    <header class="portfolio-heading">
+      <a class="text-link" href={backHref}>← {backLabel}</a>
+      <h1>{title}</h1>
+      <slot name="meta" />
+      <div class="portfolio-copy"><slot /></div>
+    </header>
+    <ImageGallery images={images} />
+  </article>
+</SiteLayout>

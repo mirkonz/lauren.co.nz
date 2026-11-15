@@ -1,0 +1,62 @@
+{
+  "source_url": "https://laurenlikestopaint.wixsite.com/mysite/cv",
+  "source_files": ["6f8b7b_fcae58015dee4fe4a0a988cd2c577eae~mv2.png", "6f8b7b_2ed2c15d745d4df79b671a0624553abd~mv2.png"],
+  "status": "transcribed from both source images; factual claims require artist verification",
+  "normalisation": "Line wrapping and typographic punctuation normalised. Phone withheld from new text pending publication confirmation; original remains intact in the archived image. No dates corrected.",
+  "name": "Lauren May",
+  "contact": {
+    "email": "Laurenlikestopaint@gmail.com",
+    "phone": "Retained in source image; public use unconfirmed",
+    "location": "Wellington, New Zealand",
+    "linkedin": "https://www.linkedin.com/in/lauren-stewart-1726746b/",
+    "imdb": "https://www.imdb.com/name/nm9071590/",
+    "website": "https://laurenlikestopaint.wixsite.com/mysite"
+  },
+  "summary": "A creative with a fine arts background and a decade working in the film industry as a Standby Painter, Lead Props Painter, and Art Assistant. Known for my strong work ethic, keen eye for visual detail, and hands-on practical skills, I bring both precision and adaptability to every project. I enjoy planning, problem-solving and the diversity of the Art Department. Friendly and collaborative by nature, I'm a calm & solutions-focused presence - whether in the workshop, on set, or on location. You can view my work and full filmography on my website.",
+  "skills": [
+    {"heading": "Film & On-Set", "items": ["7+ years of experience as a Standby Painter on a range of film & television productions", "Comfortable working on-set as part of the Art Department, I'm attentive & always ready to jump in and contribute with resetting props, set dec & greens dressing, or working with performers", "Skilled at working quickly, accurately, & calmly under pressure & within tight shooting schedules", "Strong problem-solving abilities & flexible, adaptive responses to last-minute changes & on-set requests", "Excellent cross-department communication skills - professional, friendly, & clear", "Familiar with call sheets, re-sets, & continuity"]},
+    {"heading": "Workshop - Painting & Finishing", "items": ["Extensive experience painting props, sets, weapons, armour, miniatures, and costumes to a screen-ready standard", "Wide range of painting techniques: wood graining, marbling, rock, rust, aging effects, metal effects, gilding, decorative, & sign writing", "Experienced with tools such as airbrush, spray gun, stencils, wood grainers, sponge & spritzers.", "Strong knowledge of materials, paints, coatings, & adhesives, with an understanding of their appropriate use across different substrates including flexible stunt props, foam, urethane, silicone, fabric, leather and metal.", "Experienced in colour matching, layering, and texture building for hyper-realistic finishes", "Excellent hand-painting ability with a focus on fine detail", "Familiar with minor prop fabrication", "Organised, tidy, and safety-conscious with thorough understanding of health & safety protocols"]},
+    {"heading": "Organization & Teamwork", "items": ["Experience managing small teams & overseeing workshop operations, including delegation & workflow coordination", "Skilled in material and prop sourcing within budget and timeline", "Strong attention to quality control, ensuring all outputs meet high creative and technical standards", "Confident working independently or collaboratively, with a proactive and solution-focused approach to team dynamics"]},
+    {"heading": "Digital Tools & Administration", "items": ["Adobe Photoshop, Illustrator, InDesign, Procreate - proficient", "MS Office, Google Docs/Sheets - Intermediate", "Monday, Trello - proficient", "Experience with petty cash, purchase orders, & accounting processes", "QTAKE & Continuity"]}
+  ],
+  "film_experience": [
+    {"title": "East of Eden", "date_label": "2024-25", "role": "HOD Props Painter", "location": "Auckland"},
+    {"title": "Avatar: Sequels", "date_label": "2018-2025", "role": "Onset Painter", "location": "Wellington / Auckland"},
+    {"title": "Wolfman", "date_label": "2024", "role": "Onset Painter & Props Buyer", "location": "Wellington/Queenstown"},
+    {"title": "The Rule of Jenny Pen", "date_label": "2023", "role": "Props/Set Dec Buyer", "location": "Taupo"},
+    {"title": "Weta Workshop/Tron", "date_label": "2023", "role": "Painting Technician", "location": "Wellington"},
+    {"title": "After The Party", "date_label": "2023", "role": "Props/Art Dept Assist", "location": "Wellington"},
+    {"title": "Time Bandits", "date_label": "2022", "role": "Onset Painter", "location": "Wellington"},
+    {"title": "Sweet Tooth Season 2", "date_label": "2022", "role": "Onset Painter", "location": "Auckland"},
+    {"title": "M3gan", "date_label": "2021", "role": "Lead Scenic", "location": "Auckland"},
+    {"title": "Pearl", "date_label": "2021", "role": "Onset Painter", "location": "Whanganui"},
+    {"title": "X", "date_label": "2020", "role": "Onset Painter", "location": "Whanganui"},
+    {"title": "Power Of The Dog", "date_label": "2020", "role": "Props/Set Dec Painter", "location": "Otago"},
+    {"title": "Mulan", "date_label": "2019", "role": "Onset Weapons Assistant", "location": "Otago"},
+    {"title": "Weta Workshop/Mulan", "date_label": "2019", "role": "Painting Technician", "location": "Wellington"},
+    {"title": "Savage", "date_label": "2018", "role": "Props Painter", "location": "Wellington"},
+    {"title": "Mortal Engines", "date_label": "2017", "role": "Props Painter", "location": "Wellington"},
+    {"title": "Blade Runner 2049", "date_label": "2016", "role": "Onset Art Assist/painter", "location": "Wellington", "additional_source_line": "VES Award for Outstanding Model", "review": "Award attribution is not specified; do not imply an individual award."},
+    {"title": "Ghost in The Shell", "date_label": "2016", "role": "Props & Scenic Painter", "location": "Wellington"},
+    {"title": "Diwali Festival", "date_label": "2016", "role": "Set Decoration", "location": "Wellington"},
+    {"title": "Circa Theatre", "date_label": "2016", "role": "Set Painter", "location": "Wellington"}
+  ],
+  "education": [
+    {"institution": "Massey University", "date_label": "January 2011 - December 2011", "qualification": "Post Graduate Diploma in Fine Arts", "location": "Wellington", "details": ["Distinction in Honors", "StudyLink Bonded Merit Scholarship"]},
+    {"institution": "WINTEC", "date_label": "January 2008 - December 2010", "qualification": "Bachelor of Media Arts", "location": "Hamilton", "details": ["StudyLink Bonded Merit Scholarship 2009 & 2010", "Portfolio Award for Excellence in Contemporary Art 2010", "Resene Award for Excellence in Painting & Sculpture 2009", "Gordon Harris Award for Excellence in Visual Art 2008"]},
+    {"institution": "Fairfield College", "date_label": "January 2003 - December 2007", "qualification": "NCEA Level 3, 2 & 1", "location": "Hamilton"}
+  ],
+  "languages": [{"name": "English", "proficiency": "Fluent"}, {"name": "German", "proficiency": "Conversational B1+"}],
+  "other_experience": [
+    {"organisation": "Performance Arcade", "date_label": "2016", "role": "Volunteer Production Assistant for the arts festival."},
+    {"organisation": "Village Goldsmith Jewelers", "date_label": "2013-2015", "role": "Social Media Manager; photography; retouching; illustration, jewellery design"},
+    {"organisation": "Boffa Miskell", "date_label": "2014-2015", "role": "Accounts Assistant & Admin landscape architecture firm."},
+    {"organisation": "Clemenger BBDO", "date_label": "2011-2014", "role": "Reception & Office Support for an advertising agency"},
+    {"organisation": "City Gallery Wellington", "date_label": "2011", "role": "Gallery Host & FOH"},
+    {"organisation": "Waikato Society of Arts", "date_label": "2009-2010", "role": "Children's Art Teacher"},
+    {"organisation": "Gourmet Delicious", "date_label": "2006-2009", "role": "Waitress & Food Preparation"}
+  ],
+  "interests_heading": "WHEN I'M NOT WORKING, YOU'LL FIND ME",
+  "interests": ["Swimming laps in the pool", "Climbing up bouldering walls", "Painting in my studio", "Hiking in the mountains", "At the uni table"],
+  "closing": "Please get in touch with any questions or for my list of references"
+}

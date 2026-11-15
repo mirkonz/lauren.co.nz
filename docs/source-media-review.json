@@ -1,0 +1,653 @@
+{
+  "observed_on": "2026-11-15",
+  "method": "Native Chrome accessibility tree and screenshots; public page controls only.",
+  "scope": "Supplement to the original image-only audit and migration manifest. Public page source metadata, media references and locally recovered originals remain unapproved archival evidence.",
+  "videos": [
+    {
+      "key": "blade-runner-miniatures",
+      "source_pages": [
+        "https://laurenlikestopaint.wixsite.com/mysite/on-set"
+      ],
+      "media_url": "https://www.youtube.com/watch?v=HAIl_NTdpig",
+      "player_title": "Wētā Workshop’s Miniatures for Blade Runner 2049",
+      "player_attribution": "ACMI",
+      "review_owner": "film-blade-runner-2049",
+      "archive_status": "link-only"
+    },
+    {
+      "key": "starnow-advert",
+      "source_pages": [
+        "https://laurenlikestopaint.wixsite.com/mysite/scenic-props-sets",
+        "https://laurenlikestopaint.wixsite.com/mysite/3dobjects"
+      ],
+      "media_url": "https://www.youtube.com/watch?v=Q0zfVh7vUng",
+      "player_title": "Your obsession is our obsession I StarNow, auditions & jobs website company video",
+      "player_attribution": "StarNow",
+      "source_contribution_claim": "Props made for Star Now ad directed by Sally Tran",
+      "review_owner": "practice-scenic-props-sets",
+      "secondary_review_owner": "practice-3d-objects",
+      "archive_status": "link-only"
+    },
+    {
+      "key": "inverted-painting-demonstration",
+      "source_pages": [
+        "https://laurenlikestopaint.wixsite.com/mysite/invert"
+      ],
+      "media_url": "https://video.wixstatic.com/video/6f8b7b_998e199f9f5f43209d1ef7500cbf13d4/1080p/mp4/file.mp4",
+      "player_title": "Your Video Title",
+      "source_component": "comp-m9xffo6n",
+      "source_duration_seconds": 7.17,
+      "source_evidence": "docs/audit/invert.json render_props",
+      "source_poster_description": "private",
+      "observation": "Portrait video shows a painting with a screen displaying an inverted view; does not establish approved image pairs or colour transformation.",
+      "review_owner": null,
+      "review_owner_reason": "Page-level Art practice media; do not infer one collection owner from its placement.",
+      "archive_status": "downloaded",
+      "local_path": "source-assets/wix/6f8b7b_998e199f9f5f43209d1ef7500cbf13d4-1080p.mp4"
+    }
+  ],
+  "legacy_3d_gallery": {
+    "source_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects",
+    "component": "comp-m9ughcgk",
+    "review_owner": "practice-3d-objects",
+    "sequence_evidence": "Followed Next in expanded gallery from first item to tenth; tenth expanded item exposed Previous only. Parent-page navigation remained outside overlay.",
+    "items": [
+      {
+        "order": 1,
+        "source_item_id": "acfed7c2-8f3f-42e1-9484-a7b8064722cf",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-acfed7c2-8f3f-42e1-9484-a7b8064722cf",
+        "kind": "video",
+        "media_url": "https://www.youtube.com/watch?v=Q0zfVh7vUng",
+        "archive_match": {
+          "manifest": "docs/audit/assets.json",
+          "url": "https://static.wixstatic.com/media/6f8b7b_f9b95fc80b5e4ee9a4056e5c4dbdfe3a~mv2.jpg",
+          "status": "downloaded",
+          "local_path": "source-assets/wix/6f8b7b_f9b95fc80b5e4ee9a4056e5c4dbdfe3a~mv2.jpg",
+          "sha256": "73d13875729f181e455b6c48d5eeb8c5b3d81119b07d76b65a4b525087def116"
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_f9b95fc80b5e4ee9a4056e5c4dbdfe3a~mv2.jpg"
+      },
+      {
+        "order": 2,
+        "source_item_id": "2bc7af63-81dc-4ff7-9a82-e42c0b65b1c7",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-2bc7af63-81dc-4ff7-9a82-e42c0b65b1c7",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_13677dc53d7740a982905dfb45705fcb~mv2.png",
+        "archive_match": {
+          "manifest": "docs/audit/assets.json",
+          "url": "https://static.wixstatic.com/media/6f8b7b_13677dc53d7740a982905dfb45705fcb~mv2.png",
+          "status": "failed",
+          "local_path": null,
+          "sha256": null
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_13677dc53d7740a982905dfb45705fcb~mv2.png"
+      },
+      {
+        "order": 3,
+        "source_item_id": "492cb639-a03d-4342-9236-f002165e9efb",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-492cb639-a03d-4342-9236-f002165e9efb",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp",
+        "archive_match": {
+          "url": "https://static.wixstatic.com/media/6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp",
+          "status": "downloaded",
+          "local_path": "source-assets/wix/6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp",
+          "sha256": "42df3d3bef854aadceaf846a094e83a532c349994f3af776c13703ce5e892edb",
+          "bytes": 192016
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp"
+      },
+      {
+        "order": 4,
+        "source_item_id": "e5bb6ad5-0dfc-40cd-825e-49ab56c931d9",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-e5bb6ad5-0dfc-40cd-825e-49ab56c931d9",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_462174db08da4ed3aac37aa053091f0a~mv2.jpg",
+        "archive_match": {
+          "manifest": "docs/audit/assets.json",
+          "url": "https://static.wixstatic.com/media/6f8b7b_462174db08da4ed3aac37aa053091f0a~mv2.jpg",
+          "status": "downloaded",
+          "local_path": "source-assets/wix/6f8b7b_462174db08da4ed3aac37aa053091f0a~mv2.jpg",
+          "sha256": "20940486ee4b6f34b71e47a4034d9e8957501f84b510810ed5b22862132449a9"
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_462174db08da4ed3aac37aa053091f0a~mv2.jpg"
+      },
+      {
+        "order": 5,
+        "source_item_id": "e6bf20db-bf1b-46a3-9edf-809b5367f2c9",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-e6bf20db-bf1b-46a3-9edf-809b5367f2c9",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg",
+        "archive_match": {
+          "url": "https://static.wixstatic.com/media/6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg",
+          "status": "failed",
+          "local_path": "source-assets/wix/6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg"
+      },
+      {
+        "order": 6,
+        "source_item_id": "84cf43cc-5613-4dcc-b8a8-b9fc15ba60b4",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-84cf43cc-5613-4dcc-b8a8-b9fc15ba60b4",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_280df33477fd4d64974fd7a0609695e2~mv2.jpg",
+        "archive_match": {
+          "manifest": "docs/audit/assets.json",
+          "url": "https://static.wixstatic.com/media/6f8b7b_280df33477fd4d64974fd7a0609695e2~mv2.jpg",
+          "status": "downloaded",
+          "local_path": "source-assets/wix/6f8b7b_280df33477fd4d64974fd7a0609695e2~mv2.jpg",
+          "sha256": "b9da2cdea448f322371d5fe077437e3a070ace6049bdb6aaa1afdc865f25e427"
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_280df33477fd4d64974fd7a0609695e2~mv2.jpg"
+      },
+      {
+        "order": 7,
+        "source_item_id": "ae98b617-c9fa-4843-b58c-ef2823e5495e",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-ae98b617-c9fa-4843-b58c-ef2823e5495e",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_ed5bca7b5bc944f59d3fae08703d99c1~mv2.jpg",
+        "archive_match": {
+          "manifest": "docs/audit/assets.json",
+          "url": "https://static.wixstatic.com/media/6f8b7b_ed5bca7b5bc944f59d3fae08703d99c1~mv2.jpg",
+          "status": "downloaded",
+          "local_path": "source-assets/wix/6f8b7b_ed5bca7b5bc944f59d3fae08703d99c1~mv2.jpg",
+          "sha256": "910dac894c81b09ac9b9bca62bfa7eba373813f909fb760b8ad4c848dc7b762c"
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_ed5bca7b5bc944f59d3fae08703d99c1~mv2.jpg"
+      },
+      {
+        "order": 8,
+        "source_item_id": "7481da70-9ea7-4b43-8d9b-213cc5d9cf96",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-7481da70-9ea7-4b43-8d9b-213cc5d9cf96",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_fc1f78ac7f274c539e5d10e5d9909972~mv2.jpg",
+        "archive_match": {
+          "manifest": "docs/audit/assets.json",
+          "url": "https://static.wixstatic.com/media/6f8b7b_fc1f78ac7f274c539e5d10e5d9909972~mv2.jpg",
+          "status": "failed",
+          "local_path": null,
+          "sha256": null
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_fc1f78ac7f274c539e5d10e5d9909972~mv2.jpg"
+      },
+      {
+        "order": 9,
+        "source_item_id": "2a5e8626-73dc-4f84-be4d-3c956b233c19",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-2a5e8626-73dc-4f84-be4d-3c956b233c19",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_ab4538bdff7d43b7b2d26680884f2661~mv2.png",
+        "archive_match": {
+          "manifest": "docs/audit/assets.json",
+          "url": "https://static.wixstatic.com/media/6f8b7b_ab4538bdff7d43b7b2d26680884f2661~mv2.png",
+          "status": "failed",
+          "local_path": null,
+          "sha256": null
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_ab4538bdff7d43b7b2d26680884f2661~mv2.png"
+      },
+      {
+        "order": 10,
+        "source_item_id": "a9bfac57-8601-445e-987a-9e237d0188e3",
+        "public_url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects?pgid=m9ughcgk-a9bfac57-8601-445e-987a-9e237d0188e3",
+        "kind": "image",
+        "media_url": "https://static.wixstatic.com/media/6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg",
+        "archive_match": {
+          "url": "https://static.wixstatic.com/media/6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg",
+          "status": "downloaded",
+          "local_path": "source-assets/wix/6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg",
+          "sha256": "a00cc1f58ac7897c56062ef7aac1c0950a130386cddedb78def1d9fb49e7cafb",
+          "bytes": 352319
+        },
+        "disposition": "review; retain source identity and sequence",
+        "source_media_url": "https://static.wixstatic.com/media/6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg"
+      }
+    ],
+    "limitations": "Nine image occurrences reconcile to three existing downloaded assets, two newly downloaded original URLs, three previously failed original URLs and one new HTTP 403 original URL. The video poster matches an existing downloaded asset. Source filenames, sourceName private, dimensions and public access do not establish artwork facts or permission. No failed original was retried and no transformed preview was substituted.",
+    "source_evidence": {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects",
+      "script_id": "wix-warmup-data",
+      "json_pointer": "/appsWarmupData/14271d6f-ba62-d045-549b-ab972ae1f70e/comp-m9ughcgk_galleryData",
+      "total_items_count": 10
+    },
+    "source_gallery_data": {
+      "items": [
+        {
+          "itemId": "acfed7c2-8f3f-42e1-9484-a7b8064722cf",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:55:17.000Z",
+          "orderIndex": -871940753453.4224,
+          "metaData": {
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "type": "video",
+            "customPoster": "",
+            "isExternal": true,
+            "height": 1080,
+            "width": 1920,
+            "name": "Q0zfVh7vUng",
+            "posters": [
+              {
+                "height": 720,
+                "width": 1280,
+                "url": "6f8b7b_f9b95fc80b5e4ee9a4056e5c4dbdfe3a~mv2.jpg"
+              }
+            ],
+            "qualities": [],
+            "duration": 0,
+            "source": "youtube",
+            "videoUrl": "https://youtu.be/Q0zfVh7vUng?si=3Q4v1FSfgbU5uCXO",
+            "videoId": "Q0zfVh7vUng"
+          },
+          "mediaUrl": "6f8b7b_f9b95fc80b5e4ee9a4056e5c4dbdfe3a~mv2.jpg"
+        },
+        {
+          "itemId": "2bc7af63-81dc-4ff7-9a82-e42c0b65b1c7",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:48:17.000Z",
+          "orderIndex": 1563814684.155375,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 1236,
+            "width": 2366,
+            "focalPoint": [
+              0.4778106508875739,
+              0.1622168284789644
+            ],
+            "fileName": "Screenshot 2025-04-23 at 9.08.01 AM.png",
+            "name": "6f8b7b_13677dc53d7740a982905dfb45705fcb~mv2.png"
+          },
+          "mediaUrl": "6f8b7b_13677dc53d7740a982905dfb45705fcb~mv2.png"
+        },
+        {
+          "itemId": "492cb639-a03d-4342-9236-f002165e9efb",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:57:07.000Z",
+          "orderIndex": 1563814684.1554687,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 1444,
+            "width": 1083,
+            "focalPoint": [
+              0.9755309325946444,
+              0.01939058171745152
+            ],
+            "fileName": "6f8b7b_5b75a314610c44b8ba4eb27fdf98f182~mv2.webp",
+            "name": "6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp"
+          },
+          "mediaUrl": "6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp"
+        },
+        {
+          "itemId": "e5bb6ad5-0dfc-40cd-825e-49ab56c931d9",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:48:40.000Z",
+          "orderIndex": 1563814684.1555624,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 990,
+            "width": 1417,
+            "fileName": "Dragnlore2.jpg",
+            "name": "6f8b7b_462174db08da4ed3aac37aa053091f0a~mv2.jpg"
+          },
+          "mediaUrl": "6f8b7b_462174db08da4ed3aac37aa053091f0a~mv2.jpg"
+        },
+        {
+          "itemId": "e6bf20db-bf1b-46a3-9edf-809b5367f2c9",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:48:51.000Z",
+          "orderIndex": 1563814684.1557498,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 2379,
+            "width": 2691,
+            "fileName": "Constellations_bench chair.jpg",
+            "name": "6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg"
+          },
+          "mediaUrl": "6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg"
+        },
+        {
+          "itemId": "84cf43cc-5613-4dcc-b8a8-b9fc15ba60b4",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:49:03.000Z",
+          "orderIndex": 1563814684.1558747,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 900,
+            "width": 900,
+            "fileName": "SetHeight900-Chair-2-WWDA-2016.jpg",
+            "name": "6f8b7b_280df33477fd4d64974fd7a0609695e2~mv2.jpg"
+          },
+          "mediaUrl": "6f8b7b_280df33477fd4d64974fd7a0609695e2~mv2.jpg"
+        },
+        {
+          "itemId": "ae98b617-c9fa-4843-b58c-ef2823e5495e",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:49:16.000Z",
+          "orderIndex": 1563814684.1559372,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 900,
+            "width": 770,
+            "fileName": "SetHeight900-Chair-1-WWDA-2016.jpg",
+            "name": "6f8b7b_ed5bca7b5bc944f59d3fae08703d99c1~mv2.jpg"
+          },
+          "mediaUrl": "6f8b7b_ed5bca7b5bc944f59d3fae08703d99c1~mv2.jpg"
+        },
+        {
+          "itemId": "7481da70-9ea7-4b43-8d9b-213cc5d9cf96",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:54:21.000Z",
+          "orderIndex": 1745445261035,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 1740,
+            "width": 3280,
+            "focalPoint": [
+              0.5,
+              0.5
+            ],
+            "fileName": "Xero beautiful typography_full.jpg",
+            "name": "6f8b7b_fc1f78ac7f274c539e5d10e5d9909972~mv2.jpg"
+          },
+          "mediaUrl": "6f8b7b_fc1f78ac7f274c539e5d10e5d9909972~mv2.jpg"
+        },
+        {
+          "itemId": "2a5e8626-73dc-4f84-be4d-3c956b233c19",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:54:34.000Z",
+          "orderIndex": 1745445274036,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 1202,
+            "width": 1602,
+            "focalPoint": [
+              0.5,
+              0.5
+            ],
+            "fileName": "Screen Shot 2019-04-07 at 11.12.36 AM.png",
+            "name": "6f8b7b_ab4538bdff7d43b7b2d26680884f2661~mv2.png"
+          },
+          "mediaUrl": "6f8b7b_ab4538bdff7d43b7b2d26680884f2661~mv2.png"
+        },
+        {
+          "itemId": "a9bfac57-8601-445e-987a-9e237d0188e3",
+          "isSecure": false,
+          "createdDate": "2025-04-23T21:54:52.000Z",
+          "orderIndex": 1745445291840,
+          "metaData": {
+            "title": "",
+            "link": {
+              "type": "none",
+              "target": "_blank"
+            },
+            "alt": "",
+            "sourceName": "private",
+            "tags": [
+              "_fileOrigin_uploaded"
+            ],
+            "height": 1193,
+            "width": 1602,
+            "focalPoint": [
+              0.5,
+              0.5
+            ],
+            "fileName": "Xero beautiful typography_close up.jpg",
+            "name": "6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg"
+          },
+          "mediaUrl": "6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg"
+        }
+      ],
+      "totalItemsCount": 10
+    }
+  },
+  "approval": {
+    "facts_verified": false,
+    "image_permissions_approved": false,
+    "design_approved": true,
+    "publication_approved": false
+  },
+  "supplemental_downloads": [
+    {
+      "url": "https://static.wixstatic.com/media/6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp",
+      "local_path": "source-assets/wix/6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp",
+      "source_item_id": "492cb639-a03d-4342-9236-f002165e9efb",
+      "kind": "image",
+      "rights": "unreviewed",
+      "publication_approved": false,
+      "content_type": "image/webp",
+      "final_url": "https://static.wixstatic.com/media/6f8b7b_2fa2bc7e1f674ea39873df16676e8632~mv2.webp",
+      "status": "downloaded",
+      "bytes": 192016,
+      "sha256": "42df3d3bef854aadceaf846a094e83a532c349994f3af776c13703ce5e892edb",
+      "byte_identical_initial_assets": [],
+      "downloaded_dimensions": {
+        "pixelWidth": 1083,
+        "pixelHeight": 1444
+      }
+    },
+    {
+      "url": "https://static.wixstatic.com/media/6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg",
+      "local_path": "source-assets/wix/6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg",
+      "source_item_id": "e6bf20db-bf1b-46a3-9edf-809b5367f2c9",
+      "kind": "image",
+      "rights": "unreviewed",
+      "publication_approved": false,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg",
+      "local_path": "source-assets/wix/6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg",
+      "source_item_id": "a9bfac57-8601-445e-987a-9e237d0188e3",
+      "kind": "image",
+      "rights": "unreviewed",
+      "publication_approved": false,
+      "content_type": "image/jpeg",
+      "final_url": "https://static.wixstatic.com/media/6f8b7b_a1bf645b69c940e990aeb6e03bfed990~mv2.jpg",
+      "status": "downloaded",
+      "bytes": 352319,
+      "sha256": "a00cc1f58ac7897c56062ef7aac1c0950a130386cddedb78def1d9fb49e7cafb",
+      "byte_identical_initial_assets": [],
+      "downloaded_dimensions": {
+        "pixelWidth": 1602,
+        "pixelHeight": 1193
+      }
+    },
+    {
+      "url": "https://video.wixstatic.com/video/6f8b7b_998e199f9f5f43209d1ef7500cbf13d4/1080p/mp4/file.mp4",
+      "local_path": "source-assets/wix/6f8b7b_998e199f9f5f43209d1ef7500cbf13d4-1080p.mp4",
+      "kind": "video",
+      "source_component": "comp-m9xffo6n",
+      "rights": "unreviewed",
+      "publication_approved": false,
+      "content_type": "video/mp4",
+      "final_url": "https://video.wixstatic.com/video/6f8b7b_998e199f9f5f43209d1ef7500cbf13d4/1080p/mp4/file.mp4",
+      "status": "downloaded",
+      "bytes": 5673261,
+      "sha256": "02c0c994ed77669d2bb6fad991770eff7bf2cb67eea0f7e0098277a138356899",
+      "byte_identical_initial_assets": []
+    }
+  ],
+  "validation": {
+    "original_image_urls_in_combined_inventory": 401,
+    "downloaded_original_images": 384,
+    "inaccessible_original_images": 17,
+    "downloaded_source_videos": 1,
+    "supplemental_download_hashes_verified": true,
+    "initial_manifest_unchanged": true,
+    "note": "Totals count source URLs; no destructive deduplication. YouTube videos remain link-only, not source video masters."
+  },
+  "recovery_followup": {
+    "checked_on": "2026-11-15",
+    "scope": "Saved evidence only, plus one first request for an exact filename-derived original candidate. No browser, recrawl, known-failure retries or transformed previews.",
+    "candidate_attempts": [
+      {
+        "url": "https://static.wixstatic.com/media/6f8b7b_5b75a314610c44b8ba4eb27fdf98f182~mv2.webp",
+        "basis": "Exact Wix-shaped filename in saved 3D item 492cb639-a03d-4342-9236-f002165e9efb metadata; distinct from its already archived mediaUrl. Filename alone does not prove identity.",
+        "kind": "image",
+        "rights": "unreviewed",
+        "publication_approved": false,
+        "status": "failed",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "additional_originals_recovered": 0,
+    "confirmed_inventory_counts_unchanged": true,
+    "owner_file_request": "docs/source-recovery-needed.md",
+    "boundary": "No further untested original media URLs found in saved evidence. Remaining recovery requires owner files or an authorised export. The filename-derived candidate is not an established gallery asset and is excluded from confirmed URL totals."
+  },
+  "deferred_image_review": {
+    "authorised_on": "2026-11-15",
+    "instruction": "Mirko authorised continuing without the missing originals; owner files will follow. Highlight affected draft post titles.",
+    "title_prefix": "[IMAGES MISSING] ",
+    "removal_condition": "Remove the prefix only when every missing original mapped to that post is recovered and verified; preserve other editorial changes. Recovery does not grant factual, rights, design or publication approval.",
+    "records": [
+      {
+        "destination": "src/content/art-collections/digital-painting-illustration/index.md",
+        "original_title": "Digital Painting & Illustration",
+        "title": "[IMAGES MISSING] Digital Painting & Illustration",
+        "missing_original_urls": [
+          "https://static.wixstatic.com/media/6f8b7b_a6622303436643d1ab9a21ffec524465~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_f1b13be6424f438ab24181b7c467c7e9~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_f2b4b6bd9ad94e7ca32e4ec24bb0202a~mv2.jpg"
+        ]
+      },
+      {
+        "destination": "src/content/art-collections/fly-buys/index.md",
+        "original_title": "Fly Buys",
+        "title": "[IMAGES MISSING] Fly Buys",
+        "missing_original_urls": [
+          "https://static.wixstatic.com/media/6f8b7b_c4db3b35ffdf45e1b2d6248c35f664d7~mv2.png"
+        ]
+      },
+      {
+        "destination": "src/content/art-collections/lettering-logo/index.md",
+        "original_title": "Lettering & Logo",
+        "title": "[IMAGES MISSING] Lettering & Logo",
+        "missing_original_urls": [
+          "https://static.wixstatic.com/media/6f8b7b_0eb90440c60b4d248b7dfcbf1aaa16b7~mv2.png",
+          "https://static.wixstatic.com/media/6f8b7b_10d3cd4a2f8c41528df83b52b3fe67c6~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_83d707bb547b45459e2ae1762bd3225b~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_98b3a36f0e484a9791cbb1124d570f26~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_ab4538bdff7d43b7b2d26680884f2661~mv2.png",
+          "https://static.wixstatic.com/media/6f8b7b_bd85312365134a73ad73009a16e5dc66~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_c4db3b35ffdf45e1b2d6248c35f664d7~mv2.png",
+          "https://static.wixstatic.com/media/6f8b7b_fa51ac80e08e4fdcb04cf962490ebd29~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_fc1f78ac7f274c539e5d10e5d9909972~mv2.jpg"
+        ]
+      },
+      {
+        "destination": "src/content/art-collections/quarries-mines/index.md",
+        "original_title": "Quarries & Mines",
+        "title": "[IMAGES MISSING] Quarries & Mines",
+        "missing_original_urls": [
+          "https://static.wixstatic.com/media/6f8b7b_afab8ed28a3e4439bd2b71fa3b3a9db7~mv2.jpg"
+        ]
+      },
+      {
+        "destination": "src/content/film-practice/practice-3d-objects/index.md",
+        "original_title": "3D OBJECTS",
+        "title": "[IMAGES MISSING] 3D OBJECTS",
+        "missing_original_urls": [
+          "https://static.wixstatic.com/media/6f8b7b_13677dc53d7740a982905dfb45705fcb~mv2.png",
+          "https://static.wixstatic.com/media/6f8b7b_ab4538bdff7d43b7b2d26680884f2661~mv2.png",
+          "https://static.wixstatic.com/media/6f8b7b_e665fbc1b1c14d07a5a85141f2f5842a~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_fc1f78ac7f274c539e5d10e5d9909972~mv2.jpg"
+        ]
+      },
+      {
+        "destination": "src/content/film-practice/practice-prop-making/index.md",
+        "original_title": "Prop making",
+        "title": "[IMAGES MISSING] Prop making",
+        "missing_original_urls": [
+          "https://static.wixstatic.com/media/6f8b7b_d46f5d89e5084575a3cdcafd6ffc9fcf~mv2.jpg",
+          "https://static.wixstatic.com/media/6f8b7b_f458a0e5172843219544e94eaf4f76d0~mv2.jpg"
+        ]
+      }
+    ],
+    "design_scope": "Mirko approved the proposed local Film/Art design and confirmed Lauren May Stewart. This does not approve source-image selection, facts, image rights, accounts or publication."
+  }
+}

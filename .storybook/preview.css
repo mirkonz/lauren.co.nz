@@ -1,0 +1,2 @@
+/* Let the real body's flex layout see the generated page's landmarks. */
+#storybook-root, [data-portfolio-story] { display: contents; }

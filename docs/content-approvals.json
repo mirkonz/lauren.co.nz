@@ -1,0 +1,212 @@
+{
+  "confirmed_by": "Mirko",
+  "confirmed_on": "2026-11-15",
+  "authority": "Mirko confirmed each linked review packet in conversation; each record identifies its review.",
+  "scope": "Build-ready local portfolio subset; public deployment and launch remain unapproved. No additional credits or restrictions were supplied; none are invented.",
+  "omissions": [
+    "Film work year and release year",
+    "Art exhibition and medium line",
+    "Landing imagery",
+    "Unselected gallery images and video",
+    "Individual artwork facts and enquiries",
+    "Mulan workshop and extra-count claims"
+  ],
+  "records": [
+    {
+      "key": "film-blade-runner-2049",
+      "destination": "src/content/film/film-blade-runner-2049/index.md",
+      "source_record_sha256": "1424e444d072b293a7e5046d744aa92bb00870d10cb2ed4d5349e7e717e3d79c",
+      "approved_record_sha256": "3cdddd2370d25e518034fb3552c7a80da9386803c7f842f1e3fdc4f3466691c5",
+      "images": [
+        {
+          "review_id": "F02",
+          "source_pointer": "galleries.json#/27/items/1",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_7564b467be604f5f8652282de9825d19~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_7564b467be604f5f8652282de9825d19~mv2.jpg",
+          "destination": "src/content/film/film-blade-runner-2049/f02.jpg",
+          "sha256": "167c45c66fed56a17742a71dad445f5b50ca6602428244f8ee4e618955210e47"
+        },
+        {
+          "review_id": "F03",
+          "source_pointer": "galleries.json#/27/items/2",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_ffe870edb5964234bfdba9dfcecff613~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_ffe870edb5964234bfdba9dfcecff613~mv2.jpg",
+          "destination": "src/content/film/film-blade-runner-2049/f03.jpg",
+          "sha256": "c6d010a5c26f61d2ac8b2cca4d2190df0e576c76a489e1f099c962ec499d6015"
+        },
+        {
+          "review_id": "F05",
+          "source_pointer": "galleries.json#/27/items/4",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_31615c641693484381b71c7f6bc429a8~mv2.webp",
+          "original": "source-assets/wix/6f8b7b_31615c641693484381b71c7f6bc429a8~mv2.webp",
+          "destination": "src/content/film/film-blade-runner-2049/f05.webp",
+          "sha256": "90c5c37153af8ce4d3df279a09a79c779452c49ad72f1d604610f29278fa3a23"
+        },
+        {
+          "review_id": "F07",
+          "source_pointer": "galleries.json#/27/items/6",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_622c5410092d4e50a7e2486571621e4f~mv2.webp",
+          "original": "source-assets/wix/6f8b7b_622c5410092d4e50a7e2486571621e4f~mv2.webp",
+          "destination": "src/content/film/film-blade-runner-2049/f07.webp",
+          "sha256": "1209fe3f68615de2d3ed43ebff1508fa403ddc05068f39de370cf816c5818be4"
+        }
+      ],
+      "review": "docs/first-content-review.md"
+    },
+    {
+      "key": "artificial-landscapes",
+      "destination": "src/content/art-collections/artificial-landscapes/index.md",
+      "source_record_sha256": "fe482a2bce265852af4629022a2f1e8f6ede88a3eae05862927ccb71ed43296e",
+      "approved_record_sha256": "5639d316b044629ed6b0b9b2f89f1f26b5ff64329cdd2e0b2ffd00ba11bc5996",
+      "images": [
+        {
+          "review_id": "A01",
+          "source_pointer": "galleries.json#/1/items/0",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_b3d8cdf116b64b34a93daab139c02072~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_b3d8cdf116b64b34a93daab139c02072~mv2.jpg",
+          "destination": "src/content/art-collections/artificial-landscapes/a01.jpg",
+          "sha256": "331971166d41fd94bf5df6cf6abf907d585e0309f91a8b4fe434330ec7076740"
+        },
+        {
+          "review_id": "A03",
+          "source_pointer": "galleries.json#/1/items/2",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_455ed0563d9644ba816772c3892f3d33~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_455ed0563d9644ba816772c3892f3d33~mv2.jpg",
+          "destination": "src/content/art-collections/artificial-landscapes/a03.jpg",
+          "sha256": "2fe2e7ee05fd9b5f001f9bf2da2e25dd6761115f2f56cb3d9bfb87333beffd33"
+        },
+        {
+          "review_id": "A04",
+          "source_pointer": "galleries.json#/1/items/3",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_a7e363894ecf4e0d9300f77c9323302b~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_a7e363894ecf4e0d9300f77c9323302b~mv2.jpg",
+          "destination": "src/content/art-collections/artificial-landscapes/a04.jpg",
+          "sha256": "0fecc5a36eba69d52f8b2e87b178ca730456902c9393524b8bd2600fcec728f4"
+        },
+        {
+          "review_id": "A05",
+          "source_pointer": "galleries.json#/1/items/4",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_8b2296392c2743a8ad38ddba575873cf~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_8b2296392c2743a8ad38ddba575873cf~mv2.jpg",
+          "destination": "src/content/art-collections/artificial-landscapes/a05.jpg",
+          "sha256": "70fee86b3ac1773dac981175020a7836cbb170319e06844cb7118b6783f35229"
+        },
+        {
+          "review_id": "A06",
+          "source_pointer": "galleries.json#/1/items/5",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_86094d5bf47e4ee3ad3f5f2e4f5504f8~mv2.jpeg",
+          "original": "source-assets/wix/6f8b7b_86094d5bf47e4ee3ad3f5f2e4f5504f8~mv2.jpeg",
+          "destination": "src/content/art-collections/artificial-landscapes/a06.jpeg",
+          "sha256": "8cefafbbe3aaf94b7aa45edf377e0b3dc1d7fe6ac805f4473a0fac7635a9cf28"
+        },
+        {
+          "review_id": "A07",
+          "source_pointer": "galleries.json#/1/items/6",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_a7b3c12620de4a82adc3b5a2bf7d472b~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_a7b3c12620de4a82adc3b5a2bf7d472b~mv2.jpg",
+          "destination": "src/content/art-collections/artificial-landscapes/a07.jpg",
+          "sha256": "345b1405132d400c2211e0ca11977eea40c608309e84b6f02cbc001a44999e02"
+        }
+      ],
+      "review": "docs/first-content-review.md"
+    },
+    {
+      "key": "film-mulan",
+      "destination": "src/content/film/film-mulan/index.md",
+      "review": "docs/next-content-review.md",
+      "source_record_sha256": "1d2dbf685db5fdd0881eaf0da68f6567b3b216e67222cab57a2287c669bb4631",
+      "approved_record_sha256": "406493741ab77e31b47a99eb78e418218dbe985d4e6e061b7b628eb13fc76033",
+      "images": [
+        {
+          "review_id": "M03",
+          "source_pointer": "galleries.json#/28/items/2",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_e3d1ddcfc9754b16a432728814a06d90~mv2.webp",
+          "original": "source-assets/wix/6f8b7b_e3d1ddcfc9754b16a432728814a06d90~mv2.webp",
+          "destination": "src/content/film/film-mulan/m03.webp",
+          "sha256": "152cddbb378499b20978ea479efddf8096228bb3469256fbb53aad43402f359d"
+        },
+        {
+          "review_id": "M05",
+          "source_pointer": "galleries.json#/28/items/4",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_0955f742b9364ab4859462301a3b5ec5~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_0955f742b9364ab4859462301a3b5ec5~mv2.jpg",
+          "destination": "src/content/film/film-mulan/m05.jpg",
+          "sha256": "05e7e5745207a66e3adb69bcf3fa79c8917dc0f00c4316b7c12d35e2674ced5d"
+        },
+        {
+          "review_id": "M07",
+          "source_pointer": "galleries.json#/28/items/6",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_2d271ebbc9e1465e8c63c13af6165fa1~mv2.webp",
+          "original": "source-assets/wix/6f8b7b_2d271ebbc9e1465e8c63c13af6165fa1~mv2.webp",
+          "destination": "src/content/film/film-mulan/m07.webp",
+          "sha256": "ae8787a59df059835892da39e8c72484015a724a24e0e1afb0b75d8ee15be926"
+        },
+        {
+          "review_id": "M08",
+          "source_pointer": "galleries.json#/28/items/7",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_9a72096c30714bf5b185dcd3a88dcf33~mv2.webp",
+          "original": "source-assets/wix/6f8b7b_9a72096c30714bf5b185dcd3a88dcf33~mv2.webp",
+          "destination": "src/content/film/film-mulan/m08.webp",
+          "sha256": "f580d00f11bfb4d533c6f60d4818f2067a2bb1dce6c5884b11add848ca7602d1"
+        }
+      ]
+    },
+    {
+      "key": "oil-painting-landscapes",
+      "destination": "src/content/art-collections/oil-painting-landscapes/index.md",
+      "review": "docs/next-content-review.md",
+      "source_record_sha256": "827ef5adaebc059d6127acb0bd6c5bca0bd0243af9b755fdab99d77043f2029f",
+      "approved_record_sha256": "c6c2653c1029838ff16974ccb00ce539a1947d3e142a8fd63521fbdc23aefeed",
+      "images": [
+        {
+          "review_id": "L02",
+          "source_pointer": "galleries.json#/2/items/1",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_3d7c53291dac4703814864058e0fff36~mv2.jpg",
+          "original": "source-assets/wix/6f8b7b_3d7c53291dac4703814864058e0fff36~mv2.jpg",
+          "destination": "src/content/art-collections/oil-painting-landscapes/l02.jpg",
+          "sha256": "828c429025f2aac641660374a01ec8bf77f9d2e0ef00f6760e146e4dc34d7d34"
+        },
+        {
+          "review_id": "L01",
+          "source_pointer": "galleries.json#/2/items/0",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_c6f6a089b3db4e1e801abb9bcbe9d01a~mv2.jpeg",
+          "original": "source-assets/wix/6f8b7b_c6f6a089b3db4e1e801abb9bcbe9d01a~mv2.jpeg",
+          "destination": "src/content/art-collections/oil-painting-landscapes/l01.jpeg",
+          "sha256": "483fb603860149c834ef71e45ba7384c8e6d1d6e049e2beaa5832d21912c6ac8"
+        },
+        {
+          "review_id": "L03",
+          "source_pointer": "galleries.json#/2/items/2",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_5a41cb68374048f38a5da207d8f5c86d~mv2.jpeg",
+          "original": "source-assets/wix/6f8b7b_5a41cb68374048f38a5da207d8f5c86d~mv2.jpeg",
+          "destination": "src/content/art-collections/oil-painting-landscapes/l03.jpeg",
+          "sha256": "7e4a45836f983502c5d970c02e1734e7112ffe003f400849d52b9074d8bd26f4"
+        },
+        {
+          "review_id": "L04",
+          "source_pointer": "galleries.json#/2/items/3",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_81f98ee01fb94ce5861a528e0a9db96f~mv2.jpeg",
+          "original": "source-assets/wix/6f8b7b_81f98ee01fb94ce5861a528e0a9db96f~mv2.jpeg",
+          "destination": "src/content/art-collections/oil-painting-landscapes/l04.jpeg",
+          "sha256": "687d579ab4138a93202b78b95afa3e8b68b5e240d19f2e3435705869336618e4"
+        },
+        {
+          "review_id": "L05",
+          "source_pointer": "galleries.json#/2/items/4",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_c99216fcab6e4098b5feae3825619f44~mv2.jpeg",
+          "original": "source-assets/wix/6f8b7b_c99216fcab6e4098b5feae3825619f44~mv2.jpeg",
+          "destination": "src/content/art-collections/oil-painting-landscapes/l05.jpeg",
+          "sha256": "d9cd21ed2b3f352e0f2df5da9c649429c98221a2c94b8a29f5972993483f2ccd"
+        },
+        {
+          "review_id": "L06",
+          "source_pointer": "galleries.json#/2/items/5",
+          "source_url": "https://static.wixstatic.com/media/6f8b7b_3e89b96b08db4dc485978b17b00efb65~mv2.jpeg",
+          "original": "source-assets/wix/6f8b7b_3e89b96b08db4dc485978b17b00efb65~mv2.jpeg",
+          "destination": "src/content/art-collections/oil-painting-landscapes/l06.jpeg",
+          "sha256": "3d848c7505acad9267a57bbf1e5fbb0f348699f596ca7660c56102188d1bff95"
+        }
+      ]
+    }
+  ]
+}

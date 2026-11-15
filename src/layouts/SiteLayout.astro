@@ -1,0 +1,51 @@
+---
+import { getEntry } from 'astro:content';
+import '../styles/site.css';
+interface Props {
+  title: string;
+  description?: string;
+  theme?: 'neutral' | 'film' | 'art';
+  landing?: boolean;
+  canonical?: boolean;
+}
+const { title, description, theme = 'neutral', landing = false, canonical = true } = Astro.props;
+const settings = await getEntry('settings', 'site');
+if (!settings) throw new Error('Site settings are required.');
+const name = settings.data.professional_name;
+const links = [
+  { label: 'Film', href: '/film/' },
+  { label: 'Art', href: '/art/' },
+  { label: 'About', href: '/about/' },
+  { label: 'Contact', href: '/contact/' },
+];
+const current = Astro.url.pathname;
+if (!Astro.site) throw new Error('Configure the canonical site URL.');
+const canonicalUrl = new URL(current, Astro.site);
+---
+<!doctype html>
+<html lang="en-NZ" data-theme={theme}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content={description ?? settings.data.default_description} />
+    {canonical && <link rel="canonical" href={canonicalUrl.href} />}
+    <title>{title} | {name}</title>
+  </head>
+  <body class:list={{ 'is-landing': landing }}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-current={current === '/' ? 'page' : undefined}>{name}</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          {links.map(({ label, href }) => (
+            <li><a href={href} aria-current={current === href ? 'page' : current.startsWith(href) ? 'true' : undefined}>{label}</a></li>
+          ))}
+          {theme === 'film' && <li><a href="/film/cv/" aria-current={current === '/film/cv/' ? 'page' : undefined}>CV</a></li>}
+        </ul>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1"><slot /></main>
+    <footer class="site-footer"><span>{name}</span><span>Film &amp; Art</span></footer>
+  </body>
+</html>

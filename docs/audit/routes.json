@@ -1,0 +1,181 @@
+{
+  "baseUrl": "https://laurenlikestopaint.wixsite.com/mysite",
+  "mainPageId": "b3vxy",
+  "pagesMap": {
+    "ohl0v": {
+      "pageId": "ohl0v",
+      "title": "CONTACT",
+      "pageUriSEO": "contact",
+      "pageJsonFileName": "6f8b7b_45132f2a3d6f02cf0c26e72489e77a9f_248"
+    },
+    "ce5ap": {
+      "pageId": "ce5ap",
+      "title": "PAINTING",
+      "pageUriSEO": "painting",
+      "pageJsonFileName": "6f8b7b_c2364375bebaf521f15480726a353fb7_248"
+    },
+    "slfyp": {
+      "pageId": "slfyp",
+      "title": "ILLUSTRATION",
+      "pageUriSEO": "illustration",
+      "pageJsonFileName": "6f8b7b_3574bcade4187148a7b2147b110f27e2_248"
+    },
+    "j7dox": {
+      "pageId": "j7dox",
+      "title": "Projects",
+      "pageUriSEO": "projects-8-1",
+      "pageJsonFileName": "6f8b7b_7afcc9b0460f3a31c8a7346d83f7357c_248"
+    },
+    "hsbym": {
+      "pageId": "hsbym",
+      "title": "JEWELLERY",
+      "pageUriSEO": "jewellery-1",
+      "pageJsonFileName": "6f8b7b_dbab081138f85ba1cd8d13041bcf5d66_248"
+    },
+    "p9m1u": {
+      "pageId": "p9m1u",
+      "title": "SCENIC, PROPS & SETS",
+      "pageUriSEO": "scenic-props-sets",
+      "pageJsonFileName": "6f8b7b_52bd0a96e8c519cfbe9ed894e7a60f12_248"
+    },
+    "uke1n": {
+      "pageId": "uke1n",
+      "title": "JEWELLERY (Item)",
+      "pageUriSEO": "blank-1",
+      "pageJsonFileName": "6f8b7b_22c9b0c7fdfc02893e7ff872888fc38e_248"
+    },
+    "o8nh8": {
+      "pageId": "o8nh8",
+      "title": "LETTERING & LOGO",
+      "pageUriSEO": "lettering",
+      "pageJsonFileName": "6f8b7b_e7bfff13f581d9b5b2199fb257c99983_248"
+    },
+    "c1dmp": {
+      "pageId": "c1dmp",
+      "title": "HOME",
+      "pageUriSEO": "home",
+      "pageJsonFileName": "6f8b7b_b526bb7f118ae542e5e0b77e59e3ec3c_248"
+    },
+    "s2v72": {
+      "pageId": "s2v72",
+      "title": "ON-SET",
+      "pageUriSEO": "on-set",
+      "pageJsonFileName": "6f8b7b_45c780279072c6f4d211dbc8111915ed_248"
+    },
+    "p217y": {
+      "pageId": "p217y",
+      "title": "FILMOGRAPHY",
+      "pageUriSEO": "filmography",
+      "pageJsonFileName": "6f8b7b_d5e3af0ed080ba79e7d2f2d28fbdd08b_248"
+    },
+    "e0vng": {
+      "pageId": "e0vng",
+      "title": "Fullscreen Page",
+      "pageUriSEO": "fullscreen-page",
+      "pageJsonFileName": "6f8b7b_e83209c786f06648a3cf66ffaa5346d0_248"
+    },
+    "r5evq": {
+      "pageId": "r5evq",
+      "title": "INVERTED PAINTINGS",
+      "pageUriSEO": "invert",
+      "pageJsonFileName": "6f8b7b_c95a385f5d7d2ac2490f7bf63a7e1b84_248"
+    },
+    "b3vxy": {
+      "pageId": "b3vxy",
+      "title": "ABOUT",
+      "pageUriSEO": "about-5",
+      "pageJsonFileName": "6f8b7b_2af267ab656becf3555da60830755a40_248"
+    },
+    "aapg1": {
+      "pageId": "aapg1",
+      "title": "3D OBJECTS",
+      "pageUriSEO": "3dobjects",
+      "pageJsonFileName": "6f8b7b_ff5c98133ab9f08e51a9e45ed84326eb_248"
+    },
+    "fqzr6": {
+      "pageId": "fqzr6",
+      "title": "CV",
+      "pageUriSEO": "cv",
+      "pageJsonFileName": "6f8b7b_18c438657c473a15d9c378702bd8b152_248"
+    }
+  },
+  "disableStaticPagesUrlHierarchy": false,
+  "routes": {
+    "./contact": {
+      "type": "Static",
+      "pageId": "ohl0v"
+    },
+    "./painting": {
+      "type": "Static",
+      "pageId": "ce5ap"
+    },
+    "./illustration": {
+      "type": "Static",
+      "pageId": "slfyp"
+    },
+    "./projects-8-1": {
+      "type": "Static",
+      "pageId": "j7dox"
+    },
+    "./jewellery-1": {
+      "type": "Static",
+      "pageId": "hsbym"
+    },
+    "./scenic-props-sets": {
+      "type": "Static",
+      "pageId": "p9m1u"
+    },
+    "./lettering": {
+      "type": "Static",
+      "pageId": "o8nh8"
+    },
+    "./home": {
+      "type": "Static",
+      "pageId": "c1dmp"
+    },
+    "./on-set": {
+      "type": "Static",
+      "pageId": "s2v72"
+    },
+    "./filmography": {
+      "type": "Static",
+      "pageId": "p217y"
+    },
+    "./fullscreen-page": {
+      "type": "Static",
+      "pageId": "e0vng"
+    },
+    "./invert": {
+      "type": "Static",
+      "pageId": "r5evq"
+    },
+    "./about-5": {
+      "type": "Static",
+      "pageId": "b3vxy"
+    },
+    "./3dobjects": {
+      "type": "Static",
+      "pageId": "aapg1"
+    },
+    "./cv": {
+      "type": "Static",
+      "pageId": "fqzr6"
+    },
+    "./jewellery": {
+      "type": "Dynamic",
+      "pageIds": [
+        "uke1n"
+      ]
+    },
+    "./": {
+      "type": "Static",
+      "pageId": "b3vxy"
+    }
+  },
+  "pageIdToPrefix": {
+    "uke1n": "jewellery"
+  },
+  "isWixSite": false,
+  "isBuilderComponentModel": false,
+  "partialRouteMatchingAllowed": true
+}

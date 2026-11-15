@@ -1,0 +1,7 @@
+---
+import { Image } from 'astro:assets';
+import sample from './source-image.jpg';
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="robots" content="noindex,nofollow" /><title>Local image optimisation test</title></head>
+<body><h1>Image optimisation test</h1><Image src={sample} alt="Pale geometric forms in pink and purple." widths={[320, 640]} sizes="(max-width: 640px) 100vw, 640px" format="webp" /></body></html>

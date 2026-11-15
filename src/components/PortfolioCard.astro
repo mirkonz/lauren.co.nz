@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  title: string;
+  href: string;
+  cover?: CollectionEntry<'film'>['data']['cover'];
+  description?: string;
+  eager?: boolean;
+}
+const { title, href, cover, description, eager = false } = Astro.props;
+---
+<a class="portfolio-card" href={href}>
+  {cover && <div class="portfolio-card-media"><Image src={cover.file} alt={cover.decorative ? '' : cover.alt} widths={[480, 960, 1600].filter((width) => width < cover.file.width)} width={Math.min(1600, cover.file.width)} style={`--image-width: ${Math.min(1600, cover.file.width)}px`} sizes="(max-width: 48rem) 100vw, 60vw" format="webp" loading={eager ? 'eager' : 'lazy'} /></div>}
+  <div class="portfolio-card-copy">
+    <h2>{title}</h2>
+    {description && <p>{description}</p>}
+    <span class="portfolio-card-action">Explore <span aria-hidden="true">↗</span></span>
+  </div>
+</a>

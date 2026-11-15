@@ -1,0 +1,13 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import PortfolioDetail from '../../../components/PortfolioDetail.astro';
+export async function getStaticPaths() {
+  return (await getCollection('collections', ({ data }) => data.publication === 'published')).map((entry) => ({ params: { slug: entry.data.url_slug }, props: { entry } }));
+}
+interface Props { entry: CollectionEntry<'collections'>; }
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<PortfolioDetail title={entry.data.title} theme="art" backHref="/art/collections/" backLabel="Collections" images={entry.data.gallery}>
+  <Content />
+</PortfolioDetail>
