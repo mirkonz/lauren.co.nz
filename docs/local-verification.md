@@ -243,3 +243,10 @@ The first deployment is the recorded known-good rollback target; no rollback was
 
 
 Automatic Git deployment proof: documentation commit `1fd2c65f56375749130349cdc7e4c3d6714bff86` triggered Pages deployment `c8a09c58-54bf-4633-a703-08b14a3c8519` with `github:push`, main, and the same exact SHA. Clone/build/deploy all succeeded. The public Chromium browser check verified the actual bootstrap and scrolling parallax, six native disclosures on Artificial Landscapes, disabled sending, no enquiry-controller request and no runtime error. No manual accessibility inspection or delivery test was performed. These results close the initial hosting/main-push proof; remote CMS/editor and live mail remain separate.
+
+
+## Duplicate Worker build repair
+
+15 November 2026. Mirko requested fixing the repeated Cloudflare build/deploy error and using Zen. The correct Pages integration was already successful at main `8075714`; the independent `lauren-co-nz` Worker still ran `npx wrangler deploy` against Pages configuration. Existing CLI credentials could read Worker runtime metadata but the Builds API returned 403, so no permission expansion was attempted. In authenticated Zen, production `Disable builds` was switched on, saved, and verified on after a full reload. The repository connection, configuration and token were retained. Exact before/after Worker runtime metadata matches, including its tag, deployment ID and modified timestamp.
+
+Pages readback still confirms automatic main deployment enabled, non-main previews disabled and its latest deployment successful. Public curl readback returned 200 for the preview and 405 for GET `/api/enquiry`; Python urllib returned 403 for the root, so that client was not used as HTTP success evidence. No application code, content, DNS, mail, access or Worker runtime was changed. Local application checks were not repeated for this operational/documentation repair. The next main push provides the remaining duplicate-build regression check; old failed check records are historical. Ignored evidence is under `.audit-cache/build-repair/`.

@@ -108,3 +108,8 @@ The shared site bootstrap now owns parallax and conditionally loads enquiry enha
 Mirko explicitly approved creating a Git-connected Pages project in the Main account for `mirkonz/lauren.co.nz`, deploying main with `npm run build`/`dist` to its public `pages.dev` address, and verifying it. DNS, mail and the existing Worker must remain unchanged. This supersedes the earlier no-cloud-resource/no-public-preview boundary for this project only; it does not authorise custom-domain launch, paid services, CMS/editor grants or live enquiry delivery.
 
 The new Pages project is `lauren-portfolio`, with assigned hostname `lauren-portfolio-6at.pages.dev`. Automatic deployment is enabled for main only; other branch previews and PR comments are disabled. It uses the existing repository-scoped Cloudflare GitHub connection and pinned Node 22.23.4. Initial deployment and HTTP results belong in deployment.md/local-verification.md; task status remains in plan.md.
+
+
+## Duplicate Worker build repair
+
+Mirko subsequently requested fixing the remaining Cloudflare build/deploy failure and specified Zen. The narrow repair disables production builds for the obsolete `lauren-co-nz` Worker while retaining its runtime, repository connection, configuration and token. This supersedes the earlier unchanged-build-integration boundary only for that setting. The working Pages integration remains the deployment path; no DNS, mail, access or custom-domain launch change is included.

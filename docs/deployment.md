@@ -1,6 +1,6 @@
 # Deployment preparation
 
-Current scope: local configuration/tests and the explicitly authorised merge/push to the public repository [mirkonz/lauren.co.nz](https://github.com/mirkonz/lauren.co.nz). GitHub origin is configured. The existing Worker `lauren-co-nz` is retained in Main. Mirko separately approved a Git-connected public Pages preview; `lauren-portfolio` now serves `lauren-portfolio-6at.pages.dev`. No CMS/mail grant, DNS or mail configuration is included. This is the setup checklist for P02/P07/P09, not evidence of deployment.
+Current scope: local configuration/tests and the explicitly authorised merge/push to the public repository [mirkonz/lauren.co.nz](https://github.com/mirkonz/lauren.co.nz). GitHub origin is configured. The existing Worker `lauren-co-nz` is retained in Main. Mirko separately approved a Git-connected public Pages preview; `lauren-portfolio` now serves `lauren-portfolio-6at.pages.dev`. No CMS/mail grant, DNS or mail configuration is included. This runbook records verified preview hosting and the remaining P02/P07/P09 setup gates.
 
 ## Repository and CMS access
 
@@ -23,9 +23,9 @@ The requested access is one repository, one authenticator and one Pages project,
 | --- | --- |
 | GitHub owner/repository and visibility | `mirkonz/lauren.co.nz`, public; main merge/push explicitly authorised. The CMS placeholder remains until authenticated editing is prepared and authorised. |
 | Editor identity | Lauren's confirmed GitHub login and intended write/publish authority. Do not infer an account from her name. |
-| Cloudflare target | Main account matches the failed build. Existing Worker: `lauren-co-nz`; Pages project list is empty. Proposed correction: a Git-connected Pages project for this repository. Creation/public preview still needs explicit authority; no DNS or unrelated resource changes. |
+| Cloudflare target | Main account hosts the authorised `lauren-portfolio` Pages preview. The retained `lauren-co-nz` Worker has automatic production builds disabled to stop the duplicate failing deployment; its runtime is unchanged. |
 | Authenticator | Select and inspect an upstream revision, pin it, then record the exact Worker URL and callback. Existing references describe a recommendation, not a deployed or pinned Worker. |
-| Hosts | Exact editor/preview origin and authenticator allowlist. Prove access protection before uploading unreleased content; `noindex` alone is insufficient. No public preview deployment is authorised. |
+| Hosts | The public `lauren-portfolio-6at.pages.dev` preview is authorised for the cleared subset. Editor/protected-draft origins and authenticator allowlist remain unresolved. Prove access protection before uploading unreleased content; `noindex` alone is insufficient. |
 | GitHub App | Recommended existing scope: contents and pull requests read/write, metadata read, only this repository, no workflow editing. Reconfirm against the pinned authenticator before requesting installation. |
 | Branch rules | Required `validate` check, reviewed publishing and denied direct writes; confirm that Sveltia's media operations work within that policy instead of granting a bypass. |
 | Mail | Artist-approved recipient, sender identity and chosen free transport. Source contact details are not mailbox authorisation. Inspect Pages binding compatibility under the approved account before choosing a provider. |
@@ -36,7 +36,7 @@ Remote CI, editor round-trip, denied access and rollback must be read back after
 
 ## Cloudflare Pages
 
-Prepare a Pages Git integration against the approved repository with Node `22.23.4`, build `npm run check && npm test && npm run test:images && npm run test:publication && npm run build`, output `dist/`. The root `functions/` directory is compiled by Pages; no Astro server adapter is required. `wrangler.toml` provides a local project name and compatibility date, with no account credentials or bindings.
+The active Pages Git integration uses Node `22.23.4`, build `npm run build`, output `dist/`. GitHub CI runs the broader validation suite separately. The root `functions/` directory is compiled by Pages; no Astro server adapter is required. `wrangler.toml` provides a local project name and compatibility date, with no account credentials or bindings.
 
 Mirko approved this public `pages.dev` preview for the current build-ready subset. Unreleased images remain excluded from output; private editorial previews would still require access protection because `noindex` is not access control. Current robots/meta/header settings intentionally disallow indexing. Launch must replace them with the reviewed production SEO policy, while `/admin/` and protected previews remain excluded. The local build now emits canonical addresses for existing pages and an eight-route sitemap for the implemented approved portfolio subset. Holding pages and the 404 are omitted from that sitemap; the 404 has no canonical. Robots still blocks all crawling and does not advertise the sitemap. Social imagery and the final indexing policy need their release review.
 
@@ -58,7 +58,7 @@ The first Git-sourced deployment, `7a3d399b-1f16-42e5-b89a-91800d8e82dc`, was tr
 
 Automatic Git deployment was also verified: pushing documentation commit `1fd2c65f56375749130349cdc7e4c3d6714bff86` to main triggered Pages deployment `c8a09c58-54bf-4633-a703-08b14a3c8519` with trigger `github:push`; clone/build/deploy succeeded. A public Chromium check verified that the actual site bootstrap/parallax runs, all six image disclosures on Artificial Landscapes remain disabled, no enquiry-controller chunk loads and no runtime error occurs.
 
-The existing `lauren-co-nz` Worker and its build integration are deliberately unchanged. Its independent failure can still appear on GitHub; it is not the Pages deployment. DNS, mail, CMS/authenticator setup and custom-domain launch retain their separate authority. See local-verification.md for evidence and current limits.
+Following Mirko's request to fix build/deploy, the duplicate `lauren-co-nz` Worker production build was disabled in the authenticated Zen dashboard. The saved `Disable builds` setting remained on after reload. Its repository connection, build configuration and token are retained; Worker runtime metadata is unchanged. Pages main deployments remain enabled. Historical Worker failures remain visible, but new pushes should use Pages without starting that obsolete production build. DNS, mail, CMS/authenticator setup and custom-domain launch retain their separate authority. See local-verification.md for evidence and current limits.
 
 Check successful build/deployment status, exact source revision, production pages, 404 behaviour, headers and image responses. Before the first authorised deployment, record the source commit, successful build/check run, deployment identifier and the previous known-good deployment. Rehearse selecting that previous deployment in the approved Pages project and read back its route/image/header responses. Stop or pause automatic publishing only within the authorised project if a bad source revision would immediately redeploy; then repair source through review before resuming it. A Git revert alone is not proof of a deployed rollback. Changing DNS, canonical host redirects, email-related DNS or launching the site needs its explicit approval. Do not modify the old Wix site as part of this setup.
 
