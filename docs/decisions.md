@@ -101,3 +101,10 @@ Mirko subsequently requested fixed decorative backgrounds and elements on About,
 Mirko requested a separate visual vocabulary for each section, multiple elements and parallax in place of the single fixed mark, and explicitly instructed merging/pushing the result. The revision uses three original SVGs per section: Film charcoal/scenic cuts, Art brush marks, About contours, Contact overlapping loops and CV paper/graphite. The two landing panels use their respective Film/Art set. Motion is gentle, bounded and disabled for reduced-motion preferences; no artwork photo is animated or filtered. This supersedes the earlier single/fixed-mark treatment.
 
 The shared site bootstrap now owns parallax and conditionally loads enquiry enhancement for enabled forms. The separate enquiry bootstrap is superseded. Public enquiries remain disabled; no mailbox/widget/account or DNS change is included. The authorised main push may start an already connected Cloudflare build; no separate deployment command or account change is being performed. Final factual/image, live enquiry and launch qualifications retain their separate gates.
+
+
+## Authorised Pages preview
+
+Mirko explicitly approved creating a Git-connected Pages project in the Main account for `mirkonz/lauren.co.nz`, deploying main with `npm run build`/`dist` to its public `pages.dev` address, and verifying it. DNS, mail and the existing Worker must remain unchanged. This supersedes the earlier no-cloud-resource/no-public-preview boundary for this project only; it does not authorise custom-domain launch, paid services, CMS/editor grants or live enquiry delivery.
+
+The new Pages project is `lauren-portfolio`, with assigned hostname `lauren-portfolio-6at.pages.dev`. Automatic deployment is enabled for main only; other branch previews and PR comments are disabled. It uses the existing repository-scoped Cloudflare GitHub connection and pinned Node 22.23.4. Initial deployment and HTTP results belong in deployment.md/local-verification.md; task status remains in plan.md.

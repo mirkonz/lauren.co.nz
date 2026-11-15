@@ -2,6 +2,8 @@
 
 Lauren's Film and Art portfolio, built with Astro and Sveltia CMS for Cloudflare Pages. The local technical foundation exists; final design, content migration and external integrations are unfinished.
 
+The authorised public preview is [lauren-portfolio-6at.pages.dev](https://lauren-portfolio-6at.pages.dev). It remains noindex; the custom domain and live enquiry delivery are separate gates.
+
 Read [the project plan](docs/plan.md) for current work and [AGENTS.md](AGENTS.md) before editing. The working checkout is `/Users/mirko/Code/github/lauren.co.nz-planning` on `planning/audit`; the original checkout holds `main`.
 
 ## Local setup
