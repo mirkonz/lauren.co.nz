@@ -16,6 +16,12 @@ const portfolioPages = ['index.html', 'film/index.html', 'art/index.html', 'abou
 for (const page of portfolioPages) {
   const html = await readFile(new URL(page, root), 'utf8');
   assert(html.includes('noindex,nofollow'), `${page}: prelaunch indexing boundary missing.`);
+  const scripts = [...html.matchAll(/<script[^>]*>/g)].map((match) => match[0]);
+  assert.equal(scripts.length, 1, `${page}: expected only the site enhancement bootstrap.`);
+  assert(/type="module"/.test(scripts[0]) && /src="\/_astro\/SiteEnhancement\.astro_astro_type_script_index_0_lang\.[\w-]+\.js"/.test(scripts[0]), `${page}: unexpected browser script.`);
+  const groups = page === 'index.html' ? 2 : 1;
+  assert.equal((html.match(/data-section-decor=/g) ?? []).length, groups, `${page}: section decoration missing.`);
+  assert.equal((html.match(/data-parallax-depth=/g) ?? []).length, groups * 3, `${page}: expected three decorative layers per section.`);
   const canonical = html.match(/<link rel="canonical" href="([^"]+)"/g) ?? [];
   if (page === '404.html') assert.equal(canonical.length, 0, '404 must not claim a canonical page.');
   else {
@@ -37,7 +43,13 @@ for (const [page, count] of [['film/projects/blade-runner-2049/index.html', 4], 
   const html = await readFile(new URL(page, root), 'utf8');
   assert.equal((html.match(/<img\s/g) ?? []).length, count, `${page}: approved gallery count changed.`);
   assert(!/CV source claim|VES Award|Waikato Society of Arts|2016/.test(html), `${page}: unapproved source claim leaked.`);
-  assert(!/<button|<form/.test(html), `${page}: unrequested interactive/enquiry controls appeared.`);
+  if (page.startsWith('film/')) assert(!/<button|<form/.test(html), `${page}: Film must not gain enquiry controls.`);
+  else {
+    assert.equal((html.match(/data-enquiry-form/g) ?? []).length, count, `${page}: expected an enquiry per displayed image.`);
+    assert.equal((html.match(/data-enabled="false"/g) ?? []).length, count, `${page}: enquiry sending must stay disabled.`);
+    assert.equal((html.match(/<fieldset disabled/g) ?? []).length, count, `${page}: fields must stay disabled.`);
+    assert(!html.includes('data-enabled="true"'), `${page}: no active enquiry controller may be requested.`);
+  }
   for (const tag of html.matchAll(/<img\s[^>]*>/g)) {
     assert(/width="\d+"/.test(tag[0]) && /height="\d+"/.test(tag[0]), 'Gallery image must reserve intrinsic dimensions.');
     const width = Number(tag[0].match(/width="(\d+)"/)[1]);

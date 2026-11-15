@@ -1,0 +1,9 @@
+<script>
+  import { enhanceParallax } from '../lib/parallax';
+  enhanceParallax(document);
+  const forms = document.querySelectorAll<HTMLFormElement>('[data-enquiry-form][data-enabled="true"]');
+  if (forms.length) {
+    const { enhanceEnquiryForm } = await import('../lib/enquiry-form');
+    forms.forEach((form) => enhanceEnquiryForm(form));
+  }
+</script>

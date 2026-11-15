@@ -5,7 +5,7 @@ import similar from '../.storybook/generated/site/__enquiry-similar/index.html?r
 import commission from '../.storybook/generated/site/__enquiry-commission/index.html?raw';
 import disabled from '../.storybook/generated/site/__enquiry-disabled/index.html?raw';
 import { enhanceEnquiryForm } from '../src/lib/enquiry-form';
-import { checkPage, renderPage } from './render-page';
+import { checkPage, renderPage, disposeRenderedPage } from './render-page';
 
 type Outcome = 'success' | 'failure' | 'malformed' | 'network' | 'timeout' | 'deferred' | 'rejected';
 interface Args { outcome: Outcome; enabled: boolean; kind: 'purchase' | 'similar' | 'commission'; textScale: number }
@@ -14,15 +14,7 @@ const trials = new WeakMap<HTMLFormElement, Trial>();
 let cleanup: (() => void) | undefined;
 
 function render(args: Args) {
-  const source = new DOMParser().parseFromString(!args.enabled ? disabled : args.kind === 'similar' ? similar : args.kind === 'commission' ? commission : html, 'text/html');
-  // innerHTML does not execute Astro's module bootstrap. Only this fixture may
-  // remove its one built module; mount the actual shared controller instead.
-  const scripts = source.querySelectorAll('script');
-  if (scripts.length !== 1 || scripts[0]?.type !== 'module' || !/^\/_astro\/[\w.-]+\.js$/.test(scripts[0]?.getAttribute('src') ?? '')) {
-    throw new Error('Review changed enquiry fixture scripts before rendering stories.');
-  }
-  scripts[0].remove();
-  const root = renderPage(source.documentElement.outerHTML, args.textScale);
+  const root = renderPage(!args.enabled ? disabled : args.kind === 'similar' ? similar : args.kind === 'commission' ? commission : html, args.textScale);
   const form = root.querySelector('form')!;
   const trial: Trial = { bodies: [], resolve: () => {} };
   trials.set(form, trial);
@@ -45,7 +37,7 @@ const meta = {
   parameters: { layout: 'fullscreen' },
   args: { outcome: 'failure', enabled: true, kind: 'purchase', textScale: 100 },
   render,
-  beforeEach: () => () => { cleanup?.(); cleanup = undefined; },
+  beforeEach: () => () => { cleanup?.(); cleanup = undefined; disposeRenderedPage(); },
 } satisfies Meta<Args>;
 export default meta;
 type Story = StoryObj<Args>;

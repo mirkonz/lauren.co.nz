@@ -1,14 +1,14 @@
 ---
 import type { EnquiryTarget } from '../lib/enquiries';
-interface Props { target: EnquiryTarget; enabled?: boolean }
-const { target, enabled = false } = Astro.props;
+interface Props { target: EnquiryTarget; enabled?: boolean; labelledBy?: string }
+const { target, enabled = false, labelledBy } = Astro.props;
 const prefix = `enquiry-${target.id}`;
-const subject = target.kind === 'similar' ? 'Enquire about similar work' : target.kind === 'commission' ? 'Discuss a commission' : 'Enquire about this artwork';
+const subject = target.kind === 'image' ? 'Your enquiry' : target.kind === 'similar' ? 'Enquire about similar work' : target.kind === 'commission' ? 'Discuss a commission' : 'Enquire about this artwork';
 ---
-<form class="enquiry-form" data-enquiry-form data-enabled={String(enabled)} action="/api/enquiry" method="post" aria-labelledby={`${prefix}-heading`} novalidate>
-  <h2 id={`${prefix}-heading`}>{subject}</h2>
-  <p><a href={target.path}>{target.title}</a> <span>(reference: {target.id})</span></p>
-  <p data-enquiry-unavailable hidden={enabled}>Enquiries are not available for this work.</p>
+<form class="enquiry-form" data-enquiry-form data-enabled={String(enabled)} action="/api/enquiry" method="post" aria-labelledby={labelledBy ?? `${prefix}-heading`} novalidate>
+  {!labelledBy && <h2 id={`${prefix}-heading`}>{subject}</h2>}
+  <p class="enquiry-reference">{target.title}</p>
+  <p data-enquiry-unavailable hidden={enabled}>Online enquiries are not open yet.</p>
   <div data-enquiry-errors role="alert" tabindex="-1" hidden></div>
   <fieldset disabled>
     <legend>Your enquiry</legend>
@@ -33,9 +33,5 @@ const subject = target.kind === 'similar' ? 'Enquire about similar work' : targe
     <button type="submit">Send enquiry</button>
   </fieldset>
   <p data-enquiry-status role="status" aria-live="polite"></p>
-  <noscript><p>JavaScript is needed to send this enquiry. No message has been sent.</p></noscript>
+  {enabled && <noscript><p>JavaScript is needed to send this enquiry. No message has been sent.</p></noscript>}
 </form>
-<script>
-  import { enhanceEnquiryForm } from '../lib/enquiry-form';
-  document.querySelectorAll<HTMLFormElement>('[data-enquiry-form]').forEach((form) => enhanceEnquiryForm(form));
-</script>

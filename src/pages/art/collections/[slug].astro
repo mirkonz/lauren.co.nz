@@ -1,13 +1,21 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { loadPortfolio } from '../../../../scripts/load-portfolio';
+import { collectionImageTargets } from '../../../lib/collection-enquiries';
+import type { EnquiryTarget } from '../../../lib/enquiries';
 import PortfolioDetail from '../../../components/PortfolioDetail.astro';
 export async function getStaticPaths() {
-  return (await getCollection('collections', ({ data }) => data.publication === 'published')).map((entry) => ({ params: { slug: entry.data.url_slug }, props: { entry } }));
+  const sources = loadPortfolio().collections;
+  return (await getCollection('collections', ({ data }) => data.publication === 'published')).map((entry) => {
+    const source = sources.find(({ data }) => data.key === entry.data.key);
+    if (!source) throw new Error(`Missing canonical collection source: ${entry.data.key}`);
+    return { params: { slug: entry.data.url_slug }, props: { entry, enquiries: collectionImageTargets(source.data) } };
+  });
 }
-interface Props { entry: CollectionEntry<'collections'>; }
-const { entry } = Astro.props;
+interface Props { entry: CollectionEntry<'collections'>; enquiries: (EnquiryTarget | undefined)[]; }
+const { entry, enquiries } = Astro.props;
 const { Content } = await render(entry);
 ---
-<PortfolioDetail title={entry.data.title} theme="art" backHref="/art/collections/" backLabel="Collections" images={entry.data.gallery}>
+<PortfolioDetail title={entry.data.title} theme="art" backHref="/art/collections/" backLabel="Collections" images={entry.data.gallery} enquiries={enquiries}>
   <Content />
 </PortfolioDetail>

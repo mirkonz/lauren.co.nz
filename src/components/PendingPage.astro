@@ -1,12 +1,14 @@
 ---
+import type { DecorationSection } from '../lib/decoration';
 import SiteLayout from '../layouts/SiteLayout.astro';
 interface Props {
   title: string;
+  section: DecorationSection;
   theme?: 'neutral' | 'film' | 'art';
 }
-const { title, theme = 'neutral' } = Astro.props;
+const { title, section, theme = 'neutral' } = Astro.props;
 ---
-<SiteLayout title={title} theme={theme}>
+<SiteLayout title={title} theme={theme} section={section}>
   <section class="page-intro">
     <p class="eyebrow">Portfolio in preparation</p>
     <h1>{title}</h1>

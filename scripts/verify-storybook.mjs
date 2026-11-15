@@ -9,10 +9,10 @@ for (const path of paths) {
 }
 const index = JSON.parse(await readFile(new URL('index.json', root), 'utf8'));
 const stories = Object.values(index.entries).filter(({ type }) => type === 'story');
-assert.equal(stories.length, 40, 'Expected 24 page examples and 16 enquiry examples.');
+assert.equal(stories.length, 46, 'Expected 27 page examples, 16 isolated enquiry examples and three image-enquiry examples.');
 assert(paths.some((path) => path.startsWith('_astro/') && /\.webp$/.test(path)), 'Optimised story images missing.');
 for (const file of ['index.html', 'iframe.html']) {
   const html = await readFile(new URL(file, root), 'utf8');
   assert(html.includes('noindex,nofollow'), `${file}: local Storybook must remain noindex.`);
 }
-console.log('Storybook output verified: 40 stories, optimised images, noindex and no CMS/source archive.');
+console.log('Storybook output verified: 46 stories, optimised images, noindex and no CMS/source archive.');

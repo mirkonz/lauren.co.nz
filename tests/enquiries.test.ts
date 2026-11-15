@@ -79,3 +79,21 @@ test('request validation bounds actual streamed bytes and rejects malformed JSON
   assert.deepEqual(await validateEnquiryRequest(streamed, policy), { ok: false, status: 413 });
   assert.equal(cancelled, true);
 });
+
+test('collection enquiries identify cleared images without inventing artwork or availability', async () => {
+  const { collectionImageTargets } = await import('../src/lib/collection-enquiries');
+  const collection = schemas.collections.parse({
+    key: 'example-collection', url_slug: 'example-collection', title: 'Synthetic collection', publication: 'published', facts_verified: true,
+    gallery: [{ file: './a01.jpg', alt: 'A synthetic image.', permission: 'approved' }, { file: 'a02.jpg', alt: 'Another image.', permission: 'approved' }],
+  });
+  const targets = collectionImageTargets(collection);
+  assert.equal(targets[0]?.kind, 'image');
+  assert.equal(targets[0]?.id, 'image-example-collection-a01');
+  assert.equal(targets[0]?.title, 'Synthetic collection / A01');
+  assert.equal(targets[0]?.path, '/art/collections/example-collection/#image-example-collection-a01');
+  assert.deepEqual(collectionImageTargets({ ...collection, gallery: [...collection.gallery].reverse() }).reverse(), targets);
+  for (const publication of ['draft', 'review'] as const) assert.deepEqual(collectionImageTargets({ ...collection, publication }), []);
+  assert.deepEqual(collectionImageTargets({ ...collection, facts_verified: false }), []);
+  assert.equal(collectionImageTargets({ ...collection, gallery: [{ ...collection.gallery[0]!, permission: 'restricted' }] })[0], undefined);
+  assert.throws(() => collectionImageTargets({ ...collection, gallery: [collection.gallery[0]!, collection.gallery[0]!] }), /duplicate/);
+});

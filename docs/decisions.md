@@ -27,7 +27,7 @@ Typography recommendation: self-hosted, licensed Manrope for navigation/wordmark
 
 ### Landing specification
 
-Desktop: two equal linked panels filling the available viewport beneath compact shared navigation. Film left, Art right. Each panel has its own visible label and “Enter Film” / “Enter Art” affordance. One anchor per panel, no nested interactive controls. A single semantic heading spans the division: “TWO WORLDS. ONE ARTIST.” Position it on controlled dark/light solid areas; use split-colour decorative copies only if a single accessible heading remains and readability survives zoom. Avoid relying on blend modes against arbitrary imagery.
+Desktop: two equal linked panels filling the available viewport beneath compact shared navigation. Film left, Art right. Following Mirko's design feedback, each panel now has one visible Film/Art label with an arrow; numbering and repeated “Enter” text are removed. One anchor per panel, no nested interactive controls. A single semantic heading spans the division: “TWO WORLDS. ONE ARTIST.” Position it on controlled dark/light solid areas; use split-colour decorative copies only if a single accessible heading remains and readability survives zoom. Avoid relying on blend modes against arbitrary imagery.
 
 Candidate pair, after inspecting originals: the dark armour detail (`6f8b7b_e3d1ddcfc9754b16a432728814a06d90~mv2.webp`) against the pale geometric Artificial Landscapes image (`6f8b7b_b3d8cdf116b64b34a93daab139c02072~mv2.jpg`). Repeated angular structures connect the images while their tones establish the split. The inspected quarry photo includes frame, wall and foreground foliage, so it is less suitable as a tightly cropped hero. Selection remains provisional pending artist review, higher-resolution alternatives and rights clearance. Keep faces and crucial work out of the text zone. CMS stores image choice and focal point; maintain a layout-safe text area.
 
@@ -84,3 +84,20 @@ The identity ledger now contains four build-ready records and twenty image copie
 Mirko supplied `https://github.com/mirkonz/lauren.co.nz` and explicitly instructed merging everything into `main` and pushing it. The repository was verified public and empty before the initial push. This authorises repository publication of the current project files and approved image copies; ignored originals, local audit caches, generated output and secrets stay local. The existing staged/unstaged work is included, with its prior staging preserved under ignored `.audit-cache/main-push-preservation/`.
 
 This authorisation supersedes the earlier no-push instruction for this merge/push. It does not authorise Cloudflare setup, CMS/app grants, mail delivery tests, DNS changes or website launch, and it does not verify deferred source claims. The initial main push was verified, and [GitHub validation](https://github.com/mirkonz/lauren.co.nz/actions/runs/43698540679) passed for `281e4cc`. This establishes repository/CI operation, not authenticated CMS access or website deployment.
+
+
+## Local organic design revision and image enquiries
+
+Mirko requested less repetition, removal of 01/02, and a softer organic treatment, suggesting a brush stroke for Art. The local revision keeps the dark Film/light Art split and single bridging heading. The name appears in the header only; landing navigation uses About/Contact because the panels already provide Film/Art. The footer has a functional back-to-top link. Repeated card/index prompts are removed. Original decorative SVG paths add a warm brush sweep for Art and a charcoal contour for Film; subdued gradients, serif typography and asymmetric Art spacing soften the composition. These are decoration, not substituted portfolio imagery, and do not alter artwork photographs. Final visual acceptance remains Mirko's review.
+
+Mirko answered “Yes, enquiries per displayed image.” Each currently cleared Art image therefore has an expandable form carrying its existing collection/image reference. This does not identify an individual artwork, set availability or authorise a sale. Public forms remain disabled and plainly say online enquiries are not open. No mail/widget account, live message or website deployment is authorised by this UI choice. Remaining source migration stays deferred.
+
+
+Mirko subsequently requested fixed decorative backgrounds and elements on About, Contact and CV. The shared background is now viewport-fixed, with a neutral charcoal contour on About/Contact and the existing dark treatment on CV. Landing marks also remain fixed, clipped to their respective panels. This uses CSS only, keeps decoration behind content and non-interactive, and preserves forced-colour hiding. Holding-page facts and content remain unchanged.
+
+
+## Distinct section decoration and parallax
+
+Mirko requested a separate visual vocabulary for each section, multiple elements and parallax in place of the single fixed mark, and explicitly instructed merging/pushing the result. The revision uses three original SVGs per section: Film charcoal/scenic cuts, Art brush marks, About contours, Contact overlapping loops and CV paper/graphite. The two landing panels use their respective Film/Art set. Motion is gentle, bounded and disabled for reduced-motion preferences; no artwork photo is animated or filtered. This supersedes the earlier single/fixed-mark treatment.
+
+The shared site bootstrap now owns parallax and conditionally loads enquiry enhancement for enabled forms. The separate enquiry bootstrap is superseded. Public enquiries remain disabled; no mailbox/widget/account or DNS change is included. The authorised main push may start an already connected Cloudflare build; no separate deployment command or account change is being performed. Final factual/image, live enquiry and launch qualifications retain their separate gates.

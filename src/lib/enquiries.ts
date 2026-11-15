@@ -5,7 +5,7 @@ export interface EnquiryTarget {
   id: string;
   title: string;
   path: string;
-  kind: 'purchase' | 'similar' | 'commission';
+  kind: 'purchase' | 'similar' | 'commission' | 'image';
 }
 
 export function enquiryCatalogue(

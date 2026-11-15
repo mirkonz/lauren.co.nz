@@ -15,6 +15,6 @@ const { title, href, cover, description, eager = false } = Astro.props;
   <div class="portfolio-card-copy">
     <h2>{title}</h2>
     {description && <p>{description}</p>}
-    <span class="portfolio-card-action">Explore <span aria-hidden="true">↗</span></span>
+    <span class="portfolio-card-action" aria-hidden="true">↗</span>
   </div>
 </a>

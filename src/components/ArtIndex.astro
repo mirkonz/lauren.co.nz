@@ -9,9 +9,7 @@ const collections = (await getCollection('collections', ({ data }) => data.publi
 <SiteLayout title={title} theme="art">
   <div class="portfolio-index">
     <header class="portfolio-heading">
-      <p class="eyebrow">Paintings and collections</p>
       <h1>{title}</h1>
-      {title === 'Art' && <a class="text-link" href="/art/collections/">View collections <span aria-hidden="true">↗</span></a>}
     </header>
     <div class="portfolio-list">
       {collections.map(({ data }, index) => <PortfolioCard title={data.title} href={`/art/collections/${data.url_slug}/`} cover={data.cover} eager={index === 0} />)}

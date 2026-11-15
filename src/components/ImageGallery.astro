@@ -1,16 +1,23 @@
 ---
+import EnquiryForm from './EnquiryForm.astro';
+import type { EnquiryTarget } from '../lib/enquiries';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 interface Props {
+  enquiries?: (EnquiryTarget | undefined)[] | undefined;
   images: CollectionEntry<'film'>['data']['gallery'];
 }
-const { images } = Astro.props;
+const { images, enquiries } = Astro.props;
 ---
 <div class="image-gallery">
   {images.map((image, index) => (
-    <figure>
+    <figure id={enquiries?.[index]?.id}>
       <Image src={image.file} alt={image.decorative ? '' : image.alt} widths={[480, 960, 1600].filter((width) => width < image.file.width)} width={Math.min(1600, image.file.width)} style={`--image-width: ${Math.min(1600, image.file.width)}px`} sizes={index === 0 ? '(max-width: 80rem) 100vw, 80rem' : '(max-width: 48rem) 100vw, 40rem'} format="webp" loading={index === 0 ? 'eager' : 'lazy'} />
       {(image.caption || image.credit) && <figcaption>{image.caption}{image.caption && image.credit && ' '}{image.credit && <span>Credit: {image.credit}</span>}</figcaption>}
+      {enquiries?.[index] && <details class="image-enquiry">
+        <summary id={`toggle-${enquiries[index].id}`} aria-label={`Enquire about ${enquiries[index].title}`}>Enquire</summary>
+        <EnquiryForm target={enquiries[index]} labelledBy={`toggle-${enquiries[index].id}`} />
+      </details>}
     </figure>
   ))}
 </div>

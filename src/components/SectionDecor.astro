@@ -1,0 +1,12 @@
+---
+import type { DecorationSection } from '../lib/decoration';
+import SectionMark from './SectionMark.astro';
+interface Props { section: DecorationSection }
+const { section } = Astro.props;
+const depths = [0.04, 0.085, -0.025];
+---
+<div class:list={['section-decor', `decor-${section}`]} data-section-decor={section} aria-hidden="true">
+  {([0, 1, 2] as const).map((part) => <div class:list={['motif-layer', `motif-${part + 1}`]} data-parallax-depth={depths[part]}>
+    <SectionMark section={section} part={part} />
+  </div>)}
+</div>

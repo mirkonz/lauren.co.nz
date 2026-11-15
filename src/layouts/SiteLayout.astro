@@ -1,14 +1,18 @@
 ---
 import { getEntry } from 'astro:content';
 import '../styles/site.css';
+import SectionDecor from '../components/SectionDecor.astro';
+import SiteEnhancement from '../components/SiteEnhancement.astro';
+import type { DecorationSection } from '../lib/decoration';
 interface Props {
   title: string;
   description?: string;
   theme?: 'neutral' | 'film' | 'art';
   landing?: boolean;
   canonical?: boolean;
+  section?: DecorationSection;
 }
-const { title, description, theme = 'neutral', landing = false, canonical = true } = Astro.props;
+const { title, description, theme = 'neutral', landing = false, canonical = true, section = theme === 'art' ? 'art' : theme === 'film' ? 'film' : 'about' } = Astro.props;
 const settings = await getEntry('settings', 'site');
 if (!settings) throw new Error('Site settings are required.');
 const name = settings.data.professional_name;
@@ -33,12 +37,13 @@ const canonicalUrl = new URL(current, Astro.site);
     <title>{title} | {name}</title>
   </head>
   <body class:list={{ 'is-landing': landing }}>
+    {!landing && <SectionDecor section={section} />}
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
+    <header class="site-header" id="top">
       <a class="wordmark" href="/" aria-current={current === '/' ? 'page' : undefined}>{name}</a>
       <nav aria-label="Main navigation">
         <ul>
-          {links.map(({ label, href }) => (
+          {links.filter(({ label }) => !landing || !['Film', 'Art'].includes(label)).map(({ label, href }) => (
             <li><a href={href} aria-current={current === href ? 'page' : current.startsWith(href) ? 'true' : undefined}>{label}</a></li>
           ))}
           {theme === 'film' && <li><a href="/film/cv/" aria-current={current === '/film/cv/' ? 'page' : undefined}>CV</a></li>}
@@ -46,6 +51,7 @@ const canonicalUrl = new URL(current, Astro.site);
       </nav>
     </header>
     <main id="main" tabindex="-1"><slot /></main>
-    <footer class="site-footer"><span>{name}</span><span>Film &amp; Art</span></footer>
+    <footer class="site-footer"><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+    <SiteEnhancement />
   </body>
 </html>

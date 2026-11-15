@@ -1,2 +1,4 @@
 /* Let the real body's flex layout see the generated page's landmarks. */
 #storybook-root, [data-portfolio-story] { display: contents; }
+/* Storybook's fullscreen reset overrides the real site's body flex layout. */
+body.sb-main-fullscreen.sb-show-main { display: flex; flex-direction: column; }

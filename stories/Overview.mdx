@@ -10,14 +10,17 @@ and custom 404. Broader portfolio content and public launch remain unfinished.
 
 Astro generates the page markup before Storybook starts or builds. Stories render
 that HTML with the site's shared CSS; there is no second implementation of the
-shell. Run `npm run storybook:prepare` after changing Astro templates or content
+shell. Only the reviewed site bootstrap is replaced by the shared controller in the story
+harness; unexpected scripts fail. Run `npm run storybook:prepare` after changing Astro templates or content
 while Storybook is open. CSS changes update live. Generated HTML is ignored.
 
 Use the viewport toolbar for 320, 390, 768 and 1440px examples. Large Text stories
 set the root font to 200%; this is a simulation, not native text-only browser zoom.
 The Accessibility panel runs axe checks. The automated stories also check the
 heading, skip-link target, main focusability, navigation destinations, horizontal
-overflow, image loading, source-size display limits and four/six-image gallery counts.
+overflow, image loading, source-size display limits, gallery counts and bounded
+parallax at the configured depths. Film, Art, About, Contact and CV each have
+three distinct decorative marks. Reduced-motion users receive static decoration.
 They do not establish screen-reader, physical touch or final-image quality.
 
 Links retain their real site destinations. Activating a route link can leave the
