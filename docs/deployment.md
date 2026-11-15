@@ -4,14 +4,16 @@ Current scope: local configuration/tests and the explicitly authorised merge/pus
 
 ## Repository and CMS access
 
-The selected repository is `mirkonz/lauren.co.nz` (public). Before asking for CMS account approval, prepare Lauren's account, exact callback hostname and approved preview hosts. Then request approval for that concrete access scope. Do not use the placeholder `local-only/lauren-co-nz` as a real repository.
+The selected repository is `mirkonz/lauren.co.nz` (public). Mirko approved CMS authentication setup on 16 November 2026 after the published placeholder configuration sent login to Netlify. The admin now explicitly selects this repository and `https://lauren-cms-auth.ygknxzgpg4.workers.dev` as its authenticator, with OAuth as the sign-in method. The login Worker uses the pinned upstream source and separate configuration in [integrations/cms-auth](../integrations/cms-auth/README.md).
 
-1. Create or connect the approved GitHub repository and confirm ownership and visibility. A private repository does not make deployed assets private.
-2. Update `public/admin/config.yml` with the actual repository and upstream Sveltia authenticator `base_url`.
-3. Deploy the pinned upstream authenticator to an approved Worker. Register the associated GitHub App with callback `<authenticator-url>/callback`. Install it on this repository only: contents and pull requests read/write, metadata read, no workflow access. Keep client secrets in Cloudflare secrets, never Git.
-4. Set exact `ALLOWED_DOMAINS`, without an unrestricted wildcard. Prepare a separate host arrangement for local versus protected preview tests.
-5. Give Lauren the intended repository access. Configure branch protection and required checks to match the CMS editorial workflow; confirm asset-library operations do not bypass that workflow.
-6. Verify sign-in, denied origins, callback, session refresh, logout and unauthorised users. Then test add/edit/reorder/remove images and relationships, preview, merge/publish and rollback with a non-sensitive fixture. Source/config tests are not proof of this UI workflow.
+GitHub App **Lauren Portfolio CMS** (`lauren-portfolio-cms`, App ID `5769182`) is registered under `mirkonz`, with callback `https://lauren-cms-auth.ygknxzgpg4.workers.dev/callback`, expiring user tokens, no wildcard callback, webhook or device flow. Installation `182190722` is restricted to this one repository: Contents/Pull requests read/write, Metadata read, no Workflows permission. The Worker allows only the Pages preview hostname and stores credentials as secrets. `GITHUB_CLIENT_ID` is configured; client-secret setup and the authenticated round trip remain pending user handoff.
+
+Before claiming remote CMS completion:
+
+1. Have the user generate the app client secret and save it as Worker secret `GITHUB_CLIENT_SECRET`, without exposing it in chat or Git.
+2. Verify sign-in, denied hosts, callback, session refresh, logout and users without repository write access.
+3. Test add/edit/reorder/remove images and relationships, save/reload, editorial pull request, merge/publish and rollback with a disposable non-sensitive fixture. Configure branch protection without granting a bypass. No unreleased-image public previews are authorised.
+4. Confirm Lauren's GitHub identity before any invitation or permission grant. Current setup uses existing account access; it does not establish Lauren's editor handover.
 
 Sveltia's [local workflow](https://sveltiacms.app/en/docs/workflows/local) uses Chromium's File System Access API, works without remote authentication, and ignores Decap's `local_backend` setting. This linked worktree opened successfully in Chrome, and a disposable draft passed edit/reorder/save/reload and synthetic image upload tests. See [local verification](local-verification.md) for the exact scope. No alternate checkout was needed.
 
@@ -21,12 +23,12 @@ The requested access is one repository, one authenticator and one Pages project,
 
 | Item | Required choice and intended boundary |
 | --- | --- |
-| GitHub owner/repository and visibility | `mirkonz/lauren.co.nz`, public; main merge/push explicitly authorised. The CMS placeholder remains until authenticated editing is prepared and authorised. |
+| GitHub owner/repository and visibility | `mirkonz/lauren.co.nz`, public; main merge/push explicitly authorised. The CMS points to this repository; authentication setup is authorised, while authenticated editing remains unverified. |
 | Editor identity | Lauren's confirmed GitHub login and intended write/publish authority. Do not infer an account from her name. |
 | Cloudflare target | Main account hosts the authorised `lauren-portfolio` Pages preview. The retained `lauren-co-nz` Worker has automatic production builds disabled to stop the duplicate failing deployment; its runtime is unchanged. |
-| Authenticator | Select and inspect an upstream revision, pin it, then record the exact Worker URL and callback. Existing references describe a recommendation, not a deployed or pinned Worker. |
+| Authenticator | `lauren-cms-auth.ygknxzgpg4.workers.dev`, pinned upstream revision in integrations/cms-auth; callback `/callback`. Client-secret setup and login verification remain pending. |
 | Hosts | The public `lauren-portfolio-6at.pages.dev` preview is authorised for the cleared subset. Editor/protected-draft origins and authenticator allowlist remain unresolved. Prove access protection before uploading unreleased content; `noindex` alone is insufficient. |
-| GitHub App | Recommended existing scope: contents and pull requests read/write, metadata read, only this repository, no workflow editing. Reconfirm against the pinned authenticator before requesting installation. |
+| GitHub App | Installed Lauren Portfolio CMS on this repository only: contents and pull requests read/write, metadata read, no workflow editing. See the installation identity above. |
 | Branch rules | Required `validate` check, reviewed publishing and denied direct writes; confirm that Sveltia's media operations work within that policy instead of granting a bypass. |
 | Mail | Artist-approved recipient, sender identity and chosen free transport. Source contact details are not mailbox authorisation. Inspect Pages binding compatibility under the approved account before choosing a provider. |
 | Verification and abuse limits | Exact protected hosts/action, secret storage, token replay handling and rate limits. No widget/secret or account is configured locally. |

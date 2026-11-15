@@ -1,0 +1,12 @@
+name = "lauren-cms-auth"
+main = "worker.js"
+account_id = "61eb3c5d1db9c5f46e731718a63ec73c"
+compatibility_date = "2026-11-15"
+workers_dev = true
+preview_urls = false
+
+[vars]
+ALLOWED_DOMAINS = "lauren-portfolio-6at.pages.dev"
+
+[observability]
+enabled = false

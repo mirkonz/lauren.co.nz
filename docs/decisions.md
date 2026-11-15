@@ -113,3 +113,8 @@ The new Pages project is `lauren-portfolio`, with assigned hostname `lauren-port
 ## Duplicate Worker build repair
 
 Mirko subsequently requested fixing the remaining Cloudflare build/deploy failure and specified Zen. The narrow repair disables production builds for the obsolete `lauren-co-nz` Worker while retaining its runtime, repository connection, configuration and token. This supersedes the earlier unchanged-build-integration boundary only for that setting. The working Pages integration remains the deployment path; no DNS, mail, access or custom-domain launch change is included.
+
+
+## Authorised CMS authentication setup
+
+On 16 November 2026, after the deployed admin incorrectly opened Netlify login, Mirko explicitly approved a dedicated authentication Worker and a GitHub App restricted to `mirkonz/lauren.co.nz`, with content and editorial pull-request access. `lauren-cms-auth` is separate from the retained `lauren-co-nz` Worker. Allow only `lauren-portfolio-6at.pages.dev`; no DNS, mail, new editor invitation, paid service or broader repository access is included. Mirko completed GitHub reauthentication and installed Lauren Portfolio CMS on that single repository. Credential creation/storage requires user handoff; do not put secrets in chat or Git. Authentication and authenticated editing remain unverified until the secret and login round trip are complete.

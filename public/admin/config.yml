@@ -1,8 +1,8 @@
-# Local-only repository identity until GitHub ownership and authenticator setup are approved.
-# Use Work with Local Repository in Chromium; do not enable remote sign-in with this placeholder.
 backend:
   name: github
-  repo: local-only/lauren-co-nz
+  repo: mirkonz/lauren.co.nz
+  base_url: https://lauren-cms-auth.ygknxzgpg4.workers.dev
+  auth_methods: [oauth]
   branch: main
 publish_mode: editorial_workflow
 media_folder: src/assets/uploads

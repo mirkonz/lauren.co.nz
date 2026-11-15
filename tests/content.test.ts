@@ -120,3 +120,15 @@ test('CMS bare image paths and explicit relative paths validate while unsafe ref
     assert.equal(entryImagePath.safeParse(file).success, false, file);
   }
 });
+
+
+test('remote CMS login has an explicit GitHub repository and HTTPS authenticator', () => {
+  const config = parse(readFileSync('public/admin/config.yml', 'utf8'));
+  assert.equal(config.backend.name, 'github');
+  assert.equal(config.backend.repo, 'mirkonz/lauren.co.nz');
+  const authenticator = new URL(config.backend.base_url);
+  assert.equal(authenticator.protocol, 'https:');
+  assert.equal(authenticator.origin, 'https://lauren-cms-auth.ygknxzgpg4.workers.dev');
+  assert.equal(authenticator.pathname, '/');
+  assert.deepEqual(config.backend.auth_methods, ['oauth']);
+});
