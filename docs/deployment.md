@@ -1,19 +1,18 @@
 # Deployment preparation
 
-Current scope: local configuration/tests and the explicitly authorised merge/push to the public repository [mirkonz/lauren.co.nz](https://github.com/mirkonz/lauren.co.nz). GitHub origin is configured. The existing Worker `lauren-co-nz` is retained in Main. Mirko separately approved a Git-connected public Pages preview; `lauren-portfolio` now serves `lauren-portfolio-6at.pages.dev`. No CMS/mail grant, DNS or mail configuration is included. This runbook records verified preview hosting and the remaining P02/P07/P09 setup gates.
+Current scope: local configuration/tests and the explicitly authorised merge/push to the public repository [mirkonz/lauren.co.nz](https://github.com/mirkonz/lauren.co.nz). GitHub origin is configured. The existing Worker `lauren-co-nz` is retained in Main. Mirko separately approved a Git-connected public Pages preview; `lauren-portfolio` now serves `lauren-portfolio-6at.pages.dev`. The separately authorised CMS App setup is recorded below; no new editor invitation, DNS or mail configuration is included. This runbook records verified preview hosting and the remaining P02/P07/P09 setup gates.
 
 ## Repository and CMS access
 
 The selected repository is `mirkonz/lauren.co.nz` (public). Mirko approved CMS authentication setup on 16 November 2026 after the published placeholder configuration sent login to Netlify. The admin now explicitly selects this repository and `https://lauren-cms-auth.ygknxzgpg4.workers.dev` as its authenticator, with OAuth as the sign-in method. The login Worker uses the pinned upstream source and separate configuration in [integrations/cms-auth](../integrations/cms-auth/README.md).
 
-GitHub App **Lauren Portfolio CMS** (`lauren-portfolio-cms`, App ID `5769182`) is registered under `mirkonz`, with callback `https://lauren-cms-auth.ygknxzgpg4.workers.dev/callback`, expiring user tokens, no wildcard callback, webhook or device flow. Installation `182190722` is restricted to this one repository: Contents/Pull requests read/write, Metadata read, no Workflows permission. The Worker allows only the Pages preview hostname and stores credentials as secrets. `GITHUB_CLIENT_ID` is configured; client-secret setup and the authenticated round trip remain pending user handoff.
+GitHub App **Lauren Portfolio CMS** (`lauren-portfolio-cms`, App ID `5769182`) is registered under `mirkonz`, with callback `https://lauren-cms-auth.ygknxzgpg4.workers.dev/callback`, expiring user tokens, no wildcard callback, webhook or device flow. Installation `182190722` is restricted to this one repository: Contents/Pull requests read/write, Metadata read, no Workflows permission. The Worker allows only the Pages preview hostname and stores credentials as secrets. Both `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` are stored as encrypted Worker secrets. After Mirko completed secret creation/storage, live GitHub sign-in succeeded in Zen and loaded the Film collection with 19 repository entries. No content was edited.
 
 Before claiming remote CMS completion:
 
-1. Have the user generate the app client secret and save it as Worker secret `GITHUB_CLIENT_SECRET`, without exposing it in chat or Git.
-2. Verify sign-in, denied hosts, callback, session refresh, logout and users without repository write access.
-3. Test add/edit/reorder/remove images and relationships, save/reload, editorial pull request, merge/publish and rollback with a disposable non-sensitive fixture. Configure branch protection without granting a bypass. No unreleased-image public previews are authorised.
-4. Confirm Lauren's GitHub identity before any invitation or permission grant. Current setup uses existing account access; it does not establish Lauren's editor handover.
+1. Complete session refresh, logout and denied-user checks. Successful sign-in/callback and a denied-host check are already recorded in local-verification.md.
+2. Test add/edit/reorder/remove images and relationships, save/reload, editorial pull request, merge/publish and rollback with a disposable non-sensitive fixture. Branch protection still needs its scoped setup and proof; do not grant a bypass. No unreleased-image public previews are authorised.
+3. Confirm Lauren's GitHub identity before any invitation or permission grant. Current setup uses existing account access; it does not establish Lauren's editor handover.
 
 Sveltia's [local workflow](https://sveltiacms.app/en/docs/workflows/local) uses Chromium's File System Access API, works without remote authentication, and ignores Decap's `local_backend` setting. This linked worktree opened successfully in Chrome, and a disposable draft passed edit/reorder/save/reload and synthetic image upload tests. See [local verification](local-verification.md) for the exact scope. No alternate checkout was needed.
 
@@ -26,7 +25,7 @@ The requested access is one repository, one authenticator and one Pages project,
 | GitHub owner/repository and visibility | `mirkonz/lauren.co.nz`, public; main merge/push explicitly authorised. The CMS points to this repository; authentication setup is authorised, while authenticated editing remains unverified. |
 | Editor identity | Lauren's confirmed GitHub login and intended write/publish authority. Do not infer an account from her name. |
 | Cloudflare target | Main account hosts the authorised `lauren-portfolio` Pages preview. The retained `lauren-co-nz` Worker has automatic production builds disabled to stop the duplicate failing deployment; its runtime is unchanged. |
-| Authenticator | `lauren-cms-auth.ygknxzgpg4.workers.dev`, pinned upstream revision in integrations/cms-auth; callback `/callback`. Client-secret setup and login verification remain pending. |
+| Authenticator | `lauren-cms-auth.ygknxzgpg4.workers.dev`, pinned upstream revision in integrations/cms-auth; callback `/callback`. Credential setup and live sign-in are verified; remote editorial writes remain unverified. |
 | Hosts | The public `lauren-portfolio-6at.pages.dev` preview is authorised for the cleared subset. Editor/protected-draft origins and authenticator allowlist remain unresolved. Prove access protection before uploading unreleased content; `noindex` alone is insufficient. |
 | GitHub App | Installed Lauren Portfolio CMS on this repository only: contents and pull requests read/write, metadata read, no workflow editing. See the installation identity above. |
 | Branch rules | Required `validate` check, reviewed publishing and denied direct writes; confirm that Sveltia's media operations work within that policy instead of granting a bypass. |
