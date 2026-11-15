@@ -1,0 +1,369 @@
+{
+  "checked_at_utc": "2026-11-15T11:34:47.078202+00:00",
+  "method": "Python urllib HTTP only; no browser, login, invented detail routes or known-URL retries.",
+  "publication_approved": false,
+  "pages": [
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/07c27c0d64c6e5bc83bd1554fe00f48ec5920386c53beae64dd299987b33260c",
+          "sha256": "11815faa8aa9ed2ec4d59c6129b1ec4b935851a60a329d2eb4a446f688d01dba"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/389db8dcfd2b84e490b2e277e142116ed878502862ad1c90a32dc02698985260",
+          "sha256": "efa8bc259aec4b3eacf3e3e5e74b79f919a68cb8d150c5b7315a7ecaf38bbf59"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/b394b48fa24904b8069ed05bfd9ccb84391d4c6f8577a7378d1c5ae5f8bdafc0",
+          "sha256": "7b0ccb61c84baa9f77d9bb2686282e3cb53e8eb784f43983c42bfb546613ab68"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/c00b4778ae78d54868d03fe717c81fb423f04610dc30939bd358283bf79576ba",
+          "sha256": "7e14aeda5de2e23b00a2c0910af9c0c40d072a924568a3ff42e289143baef8be"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 593519,
+      "sha256": "b969479250ef41f7db71035c3336d46a43658083dfa9f670661228534bdf2c28",
+      "cache": ".audit-cache/terminal-assets/29ae3ae99cf5e2fc3ceca463adfe99bfea89120c063ef6fcd5874d2d039ac428"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/contact",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/64e729efd4de10a683c141bb3667f959debb451994ea0b8badcc03e39dd9c6ef",
+          "sha256": "11815faa8aa9ed2ec4d59c6129b1ec4b935851a60a329d2eb4a446f688d01dba"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/e25a6041f5fe32bf129547903a93b1ae960afd875ac5a652b62a955e0f4ff3a8",
+          "sha256": "902f635f07f572f75b2b35817f64282ecc75bd4993937cb8c7b7fcd76e64dd45"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/2c505dc552f7cd34eb580d0501daa7e547639433c3f8c7c4ba08240d2e3396a3",
+          "sha256": "7b0ccb61c84baa9f77d9bb2686282e3cb53e8eb784f43983c42bfb546613ab68"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/4090ef9b796001b5947192e4bf2fc8c63294cb039e0ebcf26bde5c8f4ea29c61",
+          "sha256": "169451a21dbb9ed1e765cce24d968af527f328287df052f705cd047c1bf867f7"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 458710,
+      "sha256": "1455783e645e3af9fedf23712e32fcd2a1c5af4f3aaec4f5d7fadb50081bdb8c",
+      "cache": ".audit-cache/terminal-assets/b14da7d38751c215ff05ee0b5431868ac8620d10241b7fe587e460abaede697a"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/painting",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/0aa939074fab14013fe33d0e1bad9734b6d462083abc5e51de25ea240da8fc24",
+          "sha256": "5e5d091ccf0dbc2e158102fe740935822b1211c78e52b46b39584273a8cb574d"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/9a08d1e21ff5f5a8c003771b95ff134d676e975750d95319f44ac5b4e0a4fbb8",
+          "sha256": "5339d4e09fac6b44c7c3aee1002466f0815f9075a13a08e12fd460e1baa6e889"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 470647,
+      "sha256": "5650a60eee80121e3962747a08c6ccfbff39a34c8e5b338259d0c180bd3c8ace",
+      "cache": ".audit-cache/terminal-assets/7cff0cbb1e660c6ff670d606cae9df619ed3fbb13480f861812b111543e91e37"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/illustration",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/857e4e86aa7a91288df1083ba816ecf8135a3940421f57ad5300f6c69d7cd33d",
+          "sha256": "11815faa8aa9ed2ec4d59c6129b1ec4b935851a60a329d2eb4a446f688d01dba"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/ae17cd1f4067a4414aa9429a6dbfc0f6e8f8074cbd5bd9513a24bb40be306be9",
+          "sha256": "8803c4915dfcbcc45ca4ec5c80bfa30f26cfd2b9632eb27730442db773fd925b"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/31e409a8d4430aa0817386ced222d67366e985bff77c5d1a31b1fceed1ea79b9",
+          "sha256": "7b0ccb61c84baa9f77d9bb2686282e3cb53e8eb784f43983c42bfb546613ab68"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/1c164d4e76e5170c698561e8e9996dc0636148bab5637965c7d2da9e0b356bc9",
+          "sha256": "98ad62848de769bd570c63d27879749878cfce02cfa72d25c249a50912b43a0b"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 539592,
+      "sha256": "0245e3521716568c54b1464ebeae73efdd37d2faf0ef6de9aead8e6934cf9893",
+      "cache": ".audit-cache/terminal-assets/2aa9db7d99a60e124a003815dbb7f3d8cf98ea1f0c201bdf7db0075233bd619b"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/projects-8-1",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/da374f466686113be6ce017b0c2496630a83026224b457ecdb97de29d0e3f112",
+          "sha256": "0a11c47a1b8550bef25fe791df354c90483f8d8daea00b96289fc7cb52972876"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/579b9681bc02aa06dc8671dc29a422b02b3af15fafe676f1aa63dc87f946c338",
+          "sha256": "46540a0f015f299d499eec9fca54a69616541527bcf067f4451d2d252324b228"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 442281,
+      "sha256": "cb74de9afe6b2a10508c1b8fd58b00250490e5a02add514fc66c3b4131a64faa",
+      "cache": ".audit-cache/terminal-assets/047a79ce14ad2ecebe13be1fa55310d690d8dc7e2a5d346e2d1dc2bc80ba1aa0"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/jewellery-1",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/efc4f6c00587f988e8acd6d84a4453db6112771e5729248f486cea8c8bf10e46",
+          "sha256": "4d2dca76654657a438717f93688883fa65d6cd86fecf47135795836fef1bf4f2"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/da722fc83442a6200c1ce7b4db29c589c350f288b7d938e9821f02fe28f4df80",
+          "sha256": "ee709c56096454eee8f32523ab123cf8f3a9d1fc89762427d5d36444037adbf3"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 474565,
+      "sha256": "d188e7d505bd9f6f4ec4cc3b976eac6d2700c21e67a5d7423efa312acf3c2a7b",
+      "cache": ".audit-cache/terminal-assets/2e5955816c61943af49d3f6aa40e212c34591fe04c4de0fcd3ad92a2b3793fa5"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/scenic-props-sets",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/a5c4e5a21112e76722da854492ae786b7cc2d328d769632a16827c63640dc698",
+          "sha256": "11815faa8aa9ed2ec4d59c6129b1ec4b935851a60a329d2eb4a446f688d01dba"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/f527d42d18a7827e46c7669195a71740f473454217c116cc521ab83cb28c81d5",
+          "sha256": "143a215ef2acfcf983a195a794000b6a3b6b80e77f0dd134e8b22d5f2f6ae308"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/927b6cb86a096b8cfed952e4b5fa50aa04d2194f70277a37aa959090b1d7a70e",
+          "sha256": "7b0ccb61c84baa9f77d9bb2686282e3cb53e8eb784f43983c42bfb546613ab68"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/29ec026dffd169194cbd0346f0d5a469e348280f533aec6420094826c333f0aa",
+          "sha256": "87ec9afb507beff096712d8c86ef8908d5bda1c7b0ae0000cb37867f165f0e91"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 650996,
+      "sha256": "e52540f8d67867c7e2341aef143e8f0a83ef15874210efe7fad07b0e58469d0b",
+      "cache": ".audit-cache/terminal-assets/7050d3810db860b141bcdece1e22c81cd5b4223d08b3cce735709d49281911b7"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/blank-1",
+      "renderer_responses": [],
+      "status": "fetched",
+      "bytes": 399199,
+      "sha256": "332bd80ec0f7e55a0c276dc8fe3817fe429ece2b531e018c0d3c58eb4fc8e77c",
+      "cache": ".audit-cache/terminal-assets/a280706da1f2047b246dbfabbc7c2036b04aa1b73db2fb091071eb337b99b492"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/lettering",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/b318f766e34b1bf66dfbbcdb4629481df95d83a280864967c95234a61e2840fd",
+          "sha256": "c5bde41a49b3bc767bd04d7216e8bf94635476e1902ad5e37de1f41250c3124f"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/07032731265d74f64b3745e4876cd360c86ed0dbd78fc69297d1c4c2f8251f66",
+          "sha256": "4c308aaaaf6778b585d767fe90d94810e2d9cab2af665447d2a2c84a3d58cee5"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 463648,
+      "sha256": "384738874499c98908dba96489ceff7366dd4d38e5ef0d1ebc18e23e57892cbd",
+      "cache": ".audit-cache/terminal-assets/67e87b2103f7c4a0831f43618a7e1b7d3bb922dcbfc5868ccaf2783d513ae360"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/home",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/2c8b675f86fd0a8ef936d6128cb46f4d0d2cfcf0feac0031dde0400c17cf93be",
+          "sha256": "b081f1f1d516ab4b8c07c27c073e8cab06181036b9cef32a563b621181ed37f1"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/7eaa544fb17cabf5eebaa97c82c91b584c06d7b16e6fd63c5fb02c86327bb5a0",
+          "sha256": "7a8cef38add8a5d21748b36481e2b876aef5870e20d8c00c8732b5ff27c7d5fd"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 429657,
+      "sha256": "df3e559612f28ad2230ba2b2eae8a1c682542ae541d37c8827f6524ad9097a60",
+      "cache": ".audit-cache/terminal-assets/d42e5ccccc7770b09776580865a3cf69f60842c85799550131fc9e08928189ac"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/on-set",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/33657f7e2307948dd090fd04592ae2e3a9993fd87ade38ccbd920a54971d6ae7",
+          "sha256": "fe33e06379f00cc7e3a9e353e157e0a38f37e974544261499040c8034b812b46"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/2fc8e104f721267307fbb23620dd2540e5355fa4ae324555ef6ab84a6c246936",
+          "sha256": "69aad4799219c6edc5b050250a1782ee326caef8b34e1befc78ae0a3dd6e8de6"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 529950,
+      "sha256": "43c613af212ed894f21e11864229f18fd1af1fe1c017f70cc9b9ab614b4aa1f5",
+      "cache": ".audit-cache/terminal-assets/ae675ea1305a02178dab2c7f7890b67ae2a7af348d00284e5083bfcd8eef7f19"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/filmography",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/b06a0d883fa05670963ad8f067eb81a613ad9eea4c54406ee06d666d04f4fc33",
+          "sha256": "11815faa8aa9ed2ec4d59c6129b1ec4b935851a60a329d2eb4a446f688d01dba"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/26680cdb4703313e6c9abcb4bbed7122b06fbf60800b39d08a5bd455656bab93",
+          "sha256": "a1a2075b007c9538f10e966429ba63d369ea301ae42fdb0d9f9303bc9c52dd0e"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/d1490a9991c1caf85748efedab850496c340cd6bc21f5a07913c16b445fda64f",
+          "sha256": "c0ede86b67d6b25f34a0d5f6c8e91bf4e6e8fead8f4de525cd97578b76f3a24d"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 646221,
+      "sha256": "4551f651525282d098d1fb4cb4e761bf6f90beffc9f88e293faa41bfa7f8bd5c",
+      "cache": ".audit-cache/terminal-assets/f5c1f3cdbadea21c10473ea2ebb3d28cd3c376f083ea84111510c436c8d02857"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/fullscreen-page",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/437298d65f69c470ca33c7600162c02c668813a296ca7996e269e73e3ecca59f",
+          "sha256": "929a5ae576be1d4e300e37fdfe5a9b119d152b042eb09796c8cf04634fa10e6c"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/21403538a5b54ff403f060a815f423968057472329e7351ee9c4bd9e1d195e50",
+          "sha256": "50626847e68f51a3347871d842cf992e880f5763206d0daf4b0ad81589cab6b5"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 400181,
+      "sha256": "d766e54c1f637c6634ad8b0294b112cf47e2be52329badfc364de64df801f702",
+      "cache": ".audit-cache/terminal-assets/4e44b0e5bd41260654d61169db6baf24cdf3d0544eaae2d9cae4161dc584b827"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/invert",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/465aa66dd8cd03b1ddfa2bc584f391c266808c926f664f1c3815256f380e645d",
+          "sha256": "0472999368dc158dc4a4f50a2061719108097649bd1a2c407805a23f93ddc275"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/c7ed800cd0a06a1e828165b03d8696e40f6b2b9290009dad6a453de6c38327dc",
+          "sha256": "d532490118b7bf227a8075ba91f36a6f0ed9a49c8131a32ada18ea38f26a1d83"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 539621,
+      "sha256": "1c66d62886efa120af0d79c8609651b9fb6ff1ff2de1eb9dda15d0c71e596071",
+      "cache": ".audit-cache/terminal-assets/8de677b4fa36d27b20c0a495356ca49dfec6acca1b8c61c51c6a8d9576005933"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/about-5",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/02b7ea04ab3b3a96bf0d458ab16f635c74ea8890735b7ea1432516837832ab20",
+          "sha256": "cff5701e8406819487f87d82465be1836b2ee87cb33dccb081237cd1d7522236"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/c38340aba22f8ad501ebef5bdbf48470a2ec354016d0ee214b78c568b6545dc1",
+          "sha256": "7e14aeda5de2e23b00a2c0910af9c0c40d072a924568a3ff42e289143baef8be"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 594526,
+      "sha256": "6ef5b53cac89ed3057a666887331a6efec88c0b818b4ec49d05fdd111bd01ce5",
+      "cache": ".audit-cache/terminal-assets/0ae40035178c37d2f35f5e20421f1a8ef6f462ff5ab92b99a1af42f5c9d2fcfe"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/3dobjects",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/a3e82d3045c5c88c8d80c68f933323bca20efe28f2349a3ad589d4401fcad8c5",
+          "sha256": "903d556f0f05e2984b02a97d1ffe58d5d9a4bd669037c47b2b04089e1e6be12d"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/cb00476e9f3a4185e3904b04dc6c390cb7e6ec3931dd166dd8c377bbf7957cb6",
+          "sha256": "509c77dde37a77c080ca3b4e2ff1d00c20c7fe19fbe5b097e35f3bb49d963b2a"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 616556,
+      "sha256": "819302c63364b84699e854d33f18139a7079ac951add228c38fbc2b95bdd36d4",
+      "cache": ".audit-cache/terminal-assets/401ad3de04af5691c99e43e6a311d659cfe1188026cfad34cd7f0ca367f9a2c7"
+    },
+    {
+      "url": "https://laurenlikestopaint.wixsite.com/mysite/cv",
+      "renderer_responses": [
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/e88feb12b804deeaa22456804cd3416e264b158b7318ea6c0b90c92094bca6e0",
+          "sha256": "e313af1bc620a5f6561dca30415bff6106ca06eec69de5036ec41a8b64e349f8"
+        },
+        {
+          "status": "fetched",
+          "cache": ".audit-cache/terminal-assets/d34d2bfa6413ba495faea388229d32455c3891bb273d3c6f9ead900b6446b204",
+          "sha256": "f700e1c1a2b162989ecc1ec19a96659f9b311627d03ee282c83e8acf88296c38"
+        }
+      ],
+      "status": "fetched",
+      "bytes": 695994,
+      "sha256": "2d8fa05a971eb58c7d173ad9aeae847d9dc7242765722daeee61befff9faceea",
+      "cache": ".audit-cache/terminal-assets/e7fc57667f4df4760f111d2c6888d4724864afcd72daddce58ccddab77c4bfeb"
+    }
+  ],
+  "assets": [],
+  "referenced_unique_media_urls": 403,
+  "known_urls_skipped": 403,
+  "existing_archive_files_verified": 385,
+  "existing_archive_unchanged": true
+}
