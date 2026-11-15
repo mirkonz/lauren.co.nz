@@ -37,7 +37,7 @@ npm run preview:pages
 
 In a second terminal run `npm run test:pages`. It targets only `127.0.0.1:8788` and checks static/admin delivery, 404 handling and the deliberately disabled enquiry endpoint. It does not send email. Stop the local server with Ctrl-C afterwards.
 
-The CI workflow runs install, type/content checks, tests and build; it also checks the isolated image build and rejects unsafe publication fixtures. `test:publication` builds a disposable copy under ignored `.audit-cache/`, then verifies that draft/review media, restricted published images and unverified published facts stop the build before a site is emitted. It removes its temporary copy afterwards. Mirko selected the public repository [mirkonz/lauren.co.nz](https://github.com/mirkonz/lauren.co.nz) and authorised merging the current work into `main` and pushing it. Check GitHub Actions after the push; local checks alone do not establish a remote result. See [deployment preparation](docs/deployment.md) for account gates and remaining checks.
+The CI workflow runs install, type/content checks, tests and build; it also checks the isolated image build and rejects unsafe publication fixtures. `test:publication` builds a disposable copy under ignored `.audit-cache/`, then verifies that draft/review media, restricted published images and unverified published facts stop the build before a site is emitted. It removes its temporary copy afterwards. Mirko selected the public repository [mirkonz/lauren.co.nz](https://github.com/mirkonz/lauren.co.nz) and authorised merging the current work into `main` and pushing it. The initial main push and [GitHub validation](https://github.com/mirkonz/lauren.co.nz/actions/runs/43698540679) are verified; later revisions still need their own check results. See [deployment preparation](docs/deployment.md) for account gates and remaining checks.
 
 ## Storybook
 
@@ -52,7 +52,7 @@ npm run test:storybook
 npm run build:storybook
 ```
 
-The automated Chromium stories run axe checks and assert page headings, skip-link targets/main focusability, navigation destinations, horizontal overflow, actual image loading, gallery counts and source-size display limits. Five landscape originals are 478px wide and are not enlarged. They do not prove native fragment/route activation, screen-reader behaviour, physical touch, native text-only zoom or final-image quality. CI is configured to run them and build Storybook; its remote result must be read back in GitHub Actions. `storybook-static/` is ignored local output, separate from the portfolio's `dist/`; do not deploy it. Storybook disables telemetry, does not serve the CMS/public directory and excludes source archives. No accounts or cloud visual-testing service are needed.
+The automated Chromium stories run axe checks and assert page headings, skip-link targets/main focusability, navigation destinations, horizontal overflow, actual image loading, gallery counts and source-size display limits. Five landscape originals are 478px wide and are not enlarged. They do not prove native fragment/route activation, screen-reader behaviour, physical touch, native text-only zoom or final-image quality. CI is configured to run them and build Storybook; the initial remote run passed. `storybook-static/` is ignored local output, separate from the portfolio's `dist/`; do not deploy it. Storybook disables telemetry, does not serve the CMS/public directory and excludes source archives. No accounts or cloud visual-testing service are needed.
 
 ## Local enquiry functionality
 
