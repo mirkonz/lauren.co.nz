@@ -262,3 +262,64 @@ Zen readback confirms GitHub App registration, exact callback and installation `
 
 
 The admin configuration fix is on main at `48f58f5`; Cloudflare Pages deployment and GitHub `validate` both passed. Live YAML readback confirms the real repository, dedicated authenticator and OAuth-only sign-in. The authentication Worker is deployed separately from Pages; future Pages builds do not overwrite its encrypted secrets.
+
+
+## OpenSpec publication baseline
+
+16 November 2026. Mirko requested continuation after reviewing the OpenSpec setup
+and first proposed change. Execution is limited to documenting and qualifying the
+existing publication boundaries; no website implementation, content migration,
+remote write, live message, account change or launch is included.
+
+The six proposed scenarios trace to existing content schemas/integrity checks,
+publication rejection fixtures, build-output verification and the disabled Pages
+Function. The change design contains the scenario-to-evidence table. The four
+approved records/twenty image copies and their existing review scopes remain
+unchanged. The later narrow Pages-preview grant does not authorise custom-domain
+launch, more content or live enquiries.
+
+Fresh `npm run test:publication` passed (exit 0): the isolated baseline built,
+and draft cover, review gallery, restricted published media and unverified
+published facts were each rejected for the expected reason before emitting a
+site. Its disposable build copy was removed. `npm run build` passed (exit 0):
+53 content records validated, twelve page outputs and 44 image derivatives built,
+source/audit/test/Storybook/internal-catalogue exclusions passed, and all portfolio
+page noindex checks, crawler blocking, header configuration and eight-route sitemap
+assertions passed. The empty individual-artworks loader notice is expected.
+The generated twelve-reference enquiry catalogue stays outside public output.
+
+The preceding setup run already passed all 23 unit/content/migration tests and
+strict type checks on unchanged website source. Those checks were not repeated
+for these documentation-only updates. Storybook, visual/manual accessibility,
+remote CMS/editorial publication, deployed headers and mailbox delivery are not
+newly qualified by this baseline.
+
+
+Loopback qualification also passed (exit 0). Port 8788 had no listener before
+starting this worktree's `preview:pages -- --local` with Wrangler metrics off.
+`npm run test:pages` passed all 19 route/status/header checks and both enquiry
+checks. Additional empty synthetic loopback requests verified GET, HEAD, PUT,
+PATCH, DELETE and OPTIONS each return 405, POST returns 503, all advertise
+`Allow: POST` and `Cache-Control: no-store`, and readable responses contain the
+expected error with no success field. No message payload or real visitor data
+was submitted. The temporary runtime was stopped; unrelated listeners were not
+changed. This proves local Pages routing, not production state or inbox delivery.
+
+
+Strict validation of `baseline-publication-boundaries`, patch whitespace and
+all change-document links passed. OpenSpec apply readback reports 5/5 tracked
+tasks complete. No website source/content, scripts, tests or integration files
+were changed. The runtime's intentional Ctrl-C exit was 130; the verification
+commands themselves exited 0. Archiving/spec sync is a separate workflow step.
+
+
+Mirko then selected "Sync now". The native sync workflow created
+[portfolio-publication](../openspec/specs/portfolio-publication/spec.md), preserving
+the delta's purpose and all four requirements/six scenarios verbatim. Strict main
+spec validation passed. The CLI archived the 5/5 completed change under
+[2026-11-16-baseline-publication-boundaries](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/)
+with validation enabled; `--skip-specs` prevented a second merge because the native
+agent sync had already completed and its content had been compared. Archive
+readback preserves metadata and all completed tasks. Relative evidence links and
+the roadmap were adjusted for the archive location. This changes no website
+behaviour, deployment or account authority.

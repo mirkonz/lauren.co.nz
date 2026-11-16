@@ -4,7 +4,7 @@ Lauren's Film and Art portfolio, built with Astro and Sveltia CMS for Cloudflare
 
 The authorised public preview is [lauren-portfolio-6at.pages.dev](https://lauren-portfolio-6at.pages.dev). It remains noindex; the custom domain and live enquiry delivery are separate gates.
 
-Read [the project plan](docs/plan.md) for current work and [AGENTS.md](AGENTS.md) before editing. The working checkout is `/Users/mirko/Code/github/lauren.co.nz-planning` on `planning/audit`; the original checkout holds `main`.
+Read [the roadmap](docs/plan.md) and [AGENTS.md](AGENTS.md) before editing. Development tasks live in [OpenSpec changes](openspec/changes/); use a task-specific Git worktree and check `git worktree list` rather than assuming a fixed working checkout.
 
 ## Local setup
 
@@ -15,7 +15,34 @@ mise exec node@22.23.4 -- npm ci
 mise exec node@22.23.4 -- npm run dev
 ```
 
-The server binds to loopback. Open the printed URL. For Sveltia, open `/admin/index.html` in a Chromium browser, choose **Work with Local Repository**, and select this worktree. Local Chrome editing, gallery/relation ordering and synthetic image upload have been verified; see [local verification](docs/local-verification.md). Remote sign-in is intentionally not configured. See the [editor guide](docs/editor-guide.md) for content and image safeguards. The pinned CMS bundle is copied from the installed package by `postinstall`; it is not downloaded from a floating CDN during use.
+The server binds to loopback. Open the printed URL. For Sveltia, open `/admin/index.html` in a Chromium browser, choose **Work with Local Repository**, and select this worktree. Local Chrome editing, gallery/relation ordering and synthetic image upload have been verified; see [local verification](docs/local-verification.md). Remote GitHub sign-in and collection loading are recorded as verified; remote editorial publishing and editor handover remain unverified. See the [editor guide](docs/editor-guide.md) for content and image safeguards. The pinned CMS bundle is copied from the installed package by `postinstall`; it is not downloaded from a floating CDN during use.
+
+## OpenSpec planning
+
+OpenSpec 2.0.0 is pinned as a development tool in the lockfile, separate from the
+website runtime. After `npm ci`, use the pinned Node for the official CLI:
+
+```sh
+mise exec node@22.23.4 -- npm run openspec -- --version
+mise exec node@22.23.4 -- npm run openspec -- list --json
+mise exec node@22.23.4 -- npm run openspec -- validate --all --strict --no-interactive
+```
+
+Codex loads the generated skills under [.agents/skills/](.agents/skills/).
+Start with `$openspec-explore` or `$openspec-propose`; follow the native skill
+instructions for the rest of the workflow. Restart the Codex session if newly
+installed skills are not yet listed. [Project configuration](openspec/config.yaml)
+adds this repository's context without replacing the standard `spec-driven` schema.
+To refresh generated skills after an intentional CLI upgrade, run
+`npm run openspec -- update` and review the diff. No global CLI install is required.
+For a fresh checkout, the skills are already tracked; rerun
+`npm run openspec -- init --tools codex --profile core --no-animation` only when
+initialising a repository without them. CLI telemetry can be disabled per command
+with `OPENSPEC_TELEMETRY=0`; no global preferences were changed by setup.
+
+Official references: [setup](https://openspec.dev/docs/setup),
+[project configuration](https://openspec.dev/docs/customize) and
+[Codex integration](https://openspec.dev/docs/supported-tools).
 
 ## Validation
 

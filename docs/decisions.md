@@ -1,13 +1,13 @@
 # Decisions and design proposal
 
-15 November 2026. Mirko said “continue” after receiving the plan, authorising local execution of it. “Recommended” choices with separate gates below are not automatically approved. [Plan](plan.md) tracks work; this file tracks choices and authority.
+15 November 2026. Mirko said “continue” after receiving the plan, authorising local execution of it. “Recommended” choices with separate gates below are not automatically approved. [OpenSpec changes](../openspec/changes/) track development work; [plan.md](plan.md) holds the roadmap and frozen history; this file records choices and authority.
 
 | ID | Decision and recommendation | Alternatives / consequences | Status and gate |
 | --- | --- | --- | --- |
 | D01 | Professional name: Lauren May Stewart, matching source homepage/footer; CV instead uses Lauren May. Typographic wordmark; remove Lauren Likes to Paint branding. | Lauren Stewart is shorter but not the name consistently used by the source. Keep the existing public email unless Lauren supplies another. | Approved by Mirko on 15 November 2026: Lauren May Stewart. |
 | D02 | Two editorial worlds with the fixed split landing page described below. | A single neutral gallery is simpler but weakens the requested concept; an animated expanding split adds little and harms predictable navigation. | Approved by Mirko on 15 November 2026 for local implementation of the split Film/Art design, dark Film and light Art. Image rights and public launch remain pending. |
 | D03 | Astro static output, Content Collections, Sveltia, GitHub, Cloudflare Pages. Pages Function only for enquiries. | Workers Static Assets now has vendor preference and may simplify native email binding; switching would deviate from the requested stack. Retain Pages unless a compatibility spike proves a material blocker. | Approved for local foundation on 15 November; account/deployment gates remain. Any stack change needs a recorded decision. |
-| D04 | GitHub App scoped to this repository with upstream Sveltia authenticator Worker. | PAT is simple for a developer but requires Lauren to manage tokens; broad OAuth app access is unnecessary. No invented browser-only PKCE flow. | Recommended; app installation, account ownership and access need approval. Local CMS trials can precede them. |
+| D04 | GitHub App scoped to this repository with upstream Sveltia authenticator Worker. | PAT is simple for a developer but requires Lauren to manage tokens; broad OAuth app access is unnecessary. No invented browser-only PKCE flow. | Later scoped App/Worker setup and login are authorised and recorded below; further access changes and editorial publishing proof remain gated. |
 | D05 | Entry-relative Git media, optimised during build; untouched archive outside publishable paths. | R2 reduces Git growth but adds storage setup, credentials and recovery concerns. LFS is unsupported by Sveltia's GitHub backend. Measure first. | Routine recommendation; revisit only on size/build evidence. |
 | D06 | Inline artwork enquiry, fixed recipient, Pages Function, Turnstile; evaluate native verified-recipient email first. | A provider such as Resend avoids binding limitations but adds another account. Native arbitrary-recipient sending currently requires paid Workers; no auto-reply is necessary. Mailto alone fails the brief. | Transport proof and authorised mailbox/account setup required. No paid service authorised. |
 | D07 | Preserve illustration/jewellery as Art collections; mixed-production/theatre work as Film practice galleries. | Deleting these would violate preservation; making them top-level worlds would dilute the identity. Unfinished template pages remain archived, not automatically published. | Proposed curation; Lauren reviews presentation, omissions and publication rights. |
@@ -60,7 +60,7 @@ Mirko then authorised preparing the first Film project and Art collection for re
 
 The overall plan is authorised for local implementation. Mirko confirmed Lauren May Stewart and approved the proposed local visual direction on 15 November 2026. These decisions permit local implementation, without approving source facts, image rights, account access or public launch. Account integrations need approval once repository ownership, exact app permissions, hosts and mailbox are prepared. Paid services require a price/limit decision. Every production image needs a clear publication decision. Public previews, launch and DNS changes remain explicit approvals, even after the plan is approved.
 
-No purchases, cloud resources, remote repository, app grants, external messages, DNS changes or public deployment have been made. Node 22.23.4 and pinned project dependencies were installed locally. A disabled enquiry boundary exists only for local routing verification; P07 replaces it after integration authorisation.
+At the initial local-foundation stage, no purchases, cloud resources, remote repository, app grants, external messages, DNS changes or public deployment had been made. Later repository, preview and CMS authority is recorded below. Node 22.23.4 and pinned project dependencies were installed locally. A disabled enquiry boundary exists only for local routing verification; P07 replaces it after integration authorisation.
 
 D11: **Production draft-media guard, implemented.** A real build emitted an unapproved draft image despite hiding its content. Production validation now rejects image-bearing drafts; local dev can inspect them. This is simpler than a custom loader and intentionally prevents deployment of such branches until media clearance or a proven protected-preview architecture. Isolated test imagery builds only into ignored `.verification-dist/`.
 
@@ -107,7 +107,7 @@ The shared site bootstrap now owns parallax and conditionally loads enquiry enha
 
 Mirko explicitly approved creating a Git-connected Pages project in the Main account for `mirkonz/lauren.co.nz`, deploying main with `npm run build`/`dist` to its public `pages.dev` address, and verifying it. DNS, mail and the existing Worker must remain unchanged. This supersedes the earlier no-cloud-resource/no-public-preview boundary for this project only; it does not authorise custom-domain launch, paid services, CMS/editor grants or live enquiry delivery.
 
-The new Pages project is `lauren-portfolio`, with assigned hostname `lauren-portfolio-6at.pages.dev`. Automatic deployment is enabled for main only; other branch previews and PR comments are disabled. It uses the existing repository-scoped Cloudflare GitHub connection and pinned Node 22.23.4. Initial deployment and HTTP results belong in deployment.md/local-verification.md; task status remains in plan.md.
+The new Pages project is `lauren-portfolio`, with assigned hostname `lauren-portfolio-6at.pages.dev`. Automatic deployment is enabled for main only; other branch previews and PR comments are disabled. It uses the existing repository-scoped Cloudflare GitHub connection and pinned Node 22.23.4. Initial deployment and HTTP results belong in deployment.md/local-verification.md; granular development status now belongs in OpenSpec changes.
 
 
 ## Duplicate Worker build repair
@@ -118,3 +118,20 @@ Mirko subsequently requested fixing the remaining Cloudflare build/deploy failur
 ## Authorised CMS authentication setup
 
 On 16 November 2026, after the deployed admin incorrectly opened Netlify login, Mirko explicitly approved a dedicated authentication Worker and a GitHub App restricted to `mirkonz/lauren.co.nz`, with content and editorial pull-request access. `lauren-cms-auth` is separate from the retained `lauren-co-nz` Worker. Allow only `lauren-portfolio-6at.pages.dev`; no DNS, mail, new editor invitation, paid service or broader repository access is included. Mirko completed GitHub reauthentication and installed Lauren Portfolio CMS on that single repository. Mirko completed the credential creation/storage handoff. Live GitHub login and repository collection loading are verified; authenticated editing/publishing and Lauren's editor handover remain unverified. Do not put secrets in chat or Git.
+
+
+## OpenSpec workflow and baseline qualification
+
+16 November 2026. Mirko requested the official OpenSpec/Codex workflow setup and
+then said "continue" after the first baseline proposal was presented. This
+permits executing the local publication-baseline reconciliation and checks.
+OpenSpec owns granular development work; the previous P00-P09 plan is frozen
+history, with milestone direction retained in plan.md. It grants no authority
+for website implementation/content migration in this change, remote writes,
+Paperclip messages, account/mail changes, test email, DNS or public launch.
+
+
+Mirko subsequently selected "Sync now", authorising the verified baseline to be
+synced into the accepted specification and the completed change archived. This
+is repository-local workflow authority only; all external and release gates above
+remain unchanged.

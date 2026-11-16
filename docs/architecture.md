@@ -1,6 +1,6 @@
 # Proposed architecture
 
-Status: local implementation authorised by Mirko on 15 November 2026. Astro/content/CMS foundation and local Pages configuration are implemented; portfolio design, full migration and external integrations remain unfinished. The architecture below governs those next phases. [Plan](plan.md) owns delivery status; [decisions](decisions.md) owns approval gates.
+Status: local implementation authorised by Mirko on 15 November 2026. Astro/content/CMS foundation and local Pages configuration are implemented; portfolio design, full migration and external integrations remain unfinished. The architecture below governs those next phases. [OpenSpec changes](../openspec/changes/) own development tasks; the [plan](plan.md) owns the milestone roadmap; [decisions](decisions.md) owns approval gates.
 
 ## Site and routes
 
@@ -51,7 +51,7 @@ Create a small fixed set of output widths, retain aspect ratios and intrinsic di
 
 Use `public/admin/index.html` plus `config.yml`, with a pinned Sveltia release. Develop at `/admin/index.html`. Configure an editorial workflow so a content change can receive checks and a preview before publication. Verify asset operations against branch protection: do not assume the asset library uses the same workflow as entries.
 
-Recommend the upstream [Sveltia authenticator](https://github.com/sveltia/sveltia-cms-auth) on a small Worker, using a GitHub App installed only on this repository. Grant contents and pull-request access, no workflow editing. Store the secret in Cloudflare, restrict allowed domains to the exact approved hosts, and test denied origins, callback, logout and expired-session refresh. Lauren needs repository write access. Current documentation says browser-only GitHub PKCE is unavailable; local editing can be tested without remote authentication. Account integration remains approval-bound and unverified.
+Recommend the upstream [Sveltia authenticator](https://github.com/sveltia/sveltia-cms-auth) on a small Worker, using a GitHub App installed only on this repository. Grant contents and pull-request access, no workflow editing. Store the secret in Cloudflare, restrict allowed domains to the exact approved hosts, and test denied origins, callback, logout and expired-session refresh. Lauren needs repository write access. Current documentation says browser-only GitHub PKCE is unavailable; local editing can be tested without remote authentication. The scoped authenticator/GitHub App setup and login are recorded in deployment.md; editorial publishing, session/denied-user checks and editor handover remain unverified. Further account changes remain approval-bound.
 
 Keep Cloudflare Pages as requested: Git integration, `npm run build`, output `dist`, pinned supported Node runtime, production branch `main`, preview branches. Protect previews containing unreleased images and set `noindex`. A preview URL is still a public deployment unless access controls are proven. CI runs checks before merging; confirm a failed build retains the last good site. Roll back to a known successful deployment, then repair/revert the source separately so the next build does not reintroduce the problem.
 

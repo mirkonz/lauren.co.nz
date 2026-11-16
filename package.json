@@ -25,7 +25,8 @@
     "test:storybook": "npm run storybook:prepare && vitest run",
     "check:storybook": "tsc --project tsconfig.storybook.json",
     "build:enquiries": "node --import tsx scripts/build-enquiry-catalogue.ts",
-    "measure:performance": "node scripts/measure-performance.mjs"
+    "measure:performance": "node scripts/measure-performance.mjs",
+    "openspec": "openspec"
   },
   "dependencies": {
     "astro": "7.4.12"
@@ -33,6 +34,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.12",
     "@cloudflare/workers-types": "5.20261115.1",
+    "@fission-ai/openspec": "2.0.0",
     "@storybook/addon-a11y": "10.6.7",
     "@storybook/addon-docs": "10.6.7",
     "@storybook/addon-vitest": "10.6.7",

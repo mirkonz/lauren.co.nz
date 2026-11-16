@@ -1,0 +1,51 @@
+schema: spec-driven
+
+context: |
+  Lauren May Stewart's portfolio joins Film and Art under "TWO WORLDS. ONE ARTIST."
+  Use the established Astro static site, strict TypeScript, Content Collections,
+  Sveltia CMS, GitHub and Cloudflare Pages. Prefer Astro components and CSS;
+  JavaScript only for necessary behaviour. No shop or checkout; Art uses enquiries.
+  Node 22.23.4 is pinned. Use the existing npm scripts and design conventions.
+  This is an existing site, not a greenfield rebuild. Read docs/plan.md for the
+  roadmap, docs/architecture.md for contracts, docs/decisions.md for authority,
+  docs/deployment.md for remote setup and docs/local-verification.md for evidence.
+  OpenSpec changes own development scope, acceptance criteria and granular tasks.
+  Legacy P00-P09 packets in docs/plan.md are frozen history, not another backlog.
+  Preserve existing work and ignored source-assets/ originals. Use a task-specific
+  Git worktree. No parallel agents unless explicitly requested.
+  Migration is deferred. Do not resume extraction, curation, content review or
+  missing-source recovery without a new request. Never invent credits, artwork
+  identity, availability or metadata. docs/content-approvals.json owns the four
+  cleared record/image mappings; public source access is not reuse permission.
+  Keep source archives out of builds and retain production draft/media guards.
+  The authorised Pages preview and CMS login exist; editorial publishing remains
+  unverified. Live enquiries remain disabled (503); local fixtures prove no delivery.
+  Preserve noindex. No push, publication, account/access change, paid service, DNS,
+  external message or launch without authority for that exact action. Existing
+  approvals do not automatically authorise a later change. Do not broaden access.
+  Use Storybook and automated checks for UI work. Manual site accessibility and
+  external reference/source-layout browsing remain stopped unless requested.
+  Run relevant existing checks; distinguish local evidence from remote behaviour.
+  Paperclip receives milestone summaries and genuine human decisions only, when
+  reporting is authorised. Reuse its owning project/issue; do not create granular
+  issues or mirror tasks. Never infer Paperclip identifiers or approval grants.
+
+rules:
+  proposal:
+    - State the outcome, exclusions, dependencies and any exact human approval needed.
+    - Reuse existing code, contracts and evidence; identify the legacy packet only as a historical reference.
+  specs:
+    - Separate verified existing behaviour from proposed behaviour; use testable scenarios and preserve publication and privacy boundaries.
+  design:
+    - Explain meaningful trade-offs, affected boundaries, verification and rollback; add infrastructure only for a demonstrated need.
+  tasks:
+    - Keep granular work here only; include relevant checks and distinguish preparation, authorised external action and verified outcome.
+
+operations:
+  apply:
+    guidance:
+      - Check current authority in docs/decisions.md and the task worktree before changing files; stop at unresolved external gates.
+      - Use existing npm validation scripts, report actual exit results, and do not repeat unrelated checks.
+  archive:
+    guidance:
+      - Record verification limits and unresolved approval dependencies; do not equate artifact completeness with implementation or launch approval.

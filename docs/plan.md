@@ -1,10 +1,169 @@
-# Project plan
+# Project roadmap
+
+Updated 16 November 2026. This file owns milestone direction, sequencing and the
+recommended next change. [OpenSpec changes](../openspec/changes/) own development
+scope, acceptance criteria and granular task status. [Decisions](decisions.md)
+owns authority and approval evidence. The P00-P09 material below is a frozen
+pre-OpenSpec snapshot, retained for its dependencies, acceptance criteria and
+history. Its status labels, continuation instructions and checkout paths are
+historical; do not update or execute those packets as a parallel backlog.
+
+## Repository audit
+
+- This is an existing Astro 7.4.12 static site with strict TypeScript, Sveltia
+  0.266.0, GitHub editorial configuration, Cloudflare Pages/Functions, Storybook,
+  content/publication guards and CI. Node 22.23.4 and npm dependencies are pinned.
+  Reuse these implementations. No framework or hosting migration is needed.
+- Setup started from clean `main` at `b36137d`, one commit ahead of its local
+  `origin/main` reference. A separate navigation worktree existed at the same
+  revision. No remote fetch or remote state verification was needed. Setup uses
+  `planning/openspec-workflow` in a separate worktree; other checkouts, ignored
+  source originals and existing work are preserved.
+- No prior OpenSpec configuration or repository skills existed. The former plan
+  mixed task tracking, acceptance criteria, evidence and continuation history.
+  It is now the roadmap/history; new development checkboxes live only in OpenSpec.
+- README named a non-existent planning worktree and described remote sign-in as
+  unconfigured. AGENTS and architecture also lagged the newer login evidence.
+  These conflicts are corrected using existing deployment/decision records,
+  without claiming a new live verification. Historical grants are preserved.
+- Four cleared records and their image mappings are recorded in
+  [content-approvals.json](content-approvals.json). Other migration work remains
+  deferred. About/Contact/CV are holding pages, and no individual artwork facts
+  or availability may be inferred from collection images.
+- The enquiry Function still returns 503 for POST. Validation/UI/catalogue work
+  exists but is not connected to transport, spam verification or inbox delivery.
+  CMS login evidence does not prove editorial write/publish, denied-user/session
+  handling, branch protection or authenticated editor handover.
+- The authorised public Pages preview is distinct from a custom-domain launch.
+  Final visual/content qualification, permitted manual checks, delivery and
+  deployed rollback evidence remain release dependencies. Noindex stays enabled.
+
+## Recommended milestones
+
+| Order | Outcome | Dependencies and historical inputs |
+| --- | --- | --- |
+| 1 | Establish reviewed OpenSpec requirements for existing publication boundaries. | Accepted publication baseline below; architecture, approval ledger and existing guard tests. No website change. |
+| 2 | Prepare and review the exact enquiry integration scope, then implement and prove it only after approval. | Existing P07 code/runbook; chosen free transport, recipient/sender, privacy notice, Turnstile/abuse controls and separate test-message authority. Use approved collection/image references; do not fabricate artwork identity or resume migration. |
+| 3 | Qualify editorial publishing and editor handover. | Existing P02/D04/D10 setup and login evidence. Agree safe fixture, repository protection/access and public preview scope before remote writes or publication. Coordinate with milestone 2 where independent. |
+| 4 | Complete agreed technical and release qualification. | P04/P08 evidence; Storybook automation, performance, SEO, rights-cleared launch scope, enquiry/editor proof and authorised rollback rehearsal. Manual site checks remain stopped pending a new request. |
+| 5 | Resume and curate remaining source content only when requested. | P01/P03/P05/P06 history, owner-supplied missing originals, factual/public-field and image permissions. This is deferred, not a prerequisite for local technical work. |
+| 6 | Launch the explicitly agreed scope and verify operation. | P09 history; release sign-off plus exact domain/DNS/publication authority. Deferred migration need not all ship, but omissions need an agreed launch scope. |
+
+These are outcome recommendations, not a second list of executable tasks. Use one
+OpenSpec change per coherent approved scope; do not pre-create changes for the
+whole roadmap or reopen completed implementation. No launch date is assumed.
+
+## Baseline and next change
+
+[baseline-publication-boundaries](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/proposal.md)
+has completed local reconciliation and qualification after Mirko requested
+continuation on 16 November. Its scenario evidence is linked from the change
+[design](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/design.md) and
+[local verification](local-verification.md#openspec-publication-baseline).
+Mirko selected "Sync now". The four requirements and six scenarios are now in the
+accepted [portfolio-publication specification](../openspec/specs/portfolio-publication/spec.md),
+and the completed change is archived. No website implementation or content was changed.
+
+The next recommendation is a planning-only enquiry-integration change. Reuse the existing request/catalogue/UI implementation and deployment
+runbook to prepare one concrete free transport choice, exact mailbox/sender/hosts,
+privacy scope, spam/replay/rate protection, verification and rollback. Resolve
+those choices before requesting external integration authority. Do not enable
+sending, invent artwork facts or restart migration during planning.
+
+## Paperclip reporting and approvals
+
+OpenSpec is the repository execution record. Paperclip is for project milestones,
+ownership and decisions that need human authority. When reporting is authorised,
+find the existing owning Paperclip project and milestone/coordination issue first;
+verify its owner and reuse it. No project or issue identifier was supplied or
+verified during setup, so no Paperclip record has been created or changed.
+
+At a milestone, report the outcome in everyday language, link the OpenSpec change
+and Git revision/PR, state the checks and their limits, name any blocked dependency
+and give the next action. Report meaningful completion, material scope/risk changes
+and genuine blockers, rather than every checkbox. Read back any posted update.
+Keep implementation checkboxes solely in the change's tasks file; do not create
+one Paperclip issue per task or copy the checklist into a milestone issue.
+
+Use Paperclip's native approval mechanism, when appropriate, for a genuine choice,
+access grant, cost, rights decision, external action or launch acceptance. Prepare
+concrete options, recommendation, exact affected accounts/content/hosts, cost and
+rollback before requesting it. Link the approval from the owning milestone and
+OpenSpec change. After a decision, record its exact authority/evidence in
+[decisions.md](decisions.md), referencing the native approval rather than maintaining
+a second approval status list. Image identity mappings remain in the existing
+content approval ledger. Routine progress and completed evidence need no approval.
+
+## Decisions remaining
+
+The baseline was authorised for local qualification by Mirko's continuation. Accepting
+this workflow or roadmap does not approve transport/mailbox or test messages,
+new access/branch rules, remote editorial writes, resumed migration, image rights,
+paid services, manual site inspection, DNS or launch. Resolve only the exact gates
+needed for the next selected change; do not reopen the four existing content
+approvals or request another content batch while migration is deferred.
+
+## Setup validation and file inventory
+
+The official CLI initialised the standard `spec-driven` schema/core profile and
+Codex integration at stable npm version 2.0.0. The CLI is pinned as a development
+dependency; no application dependency, global CLI installation, custom schema,
+OpenSpec store, cloud workflow or service was added.
+
+Setup verification passed locally on Node 22.23.4:
+
+- Clean `npm ci`: lockfile installs successfully, audit reports zero vulnerabilities.
+- `npm run openspec -- validate --all --strict --no-interactive --json`: the one
+  proposed change passes without findings; no accepted main specs exist yet.
+- CLI context/instruction checks: repository root resolves correctly, project
+  context and proposal rules are injected, apply/archive guidance is exposed,
+  six skills identify generator 2.0.0 and the proposed tasks remain 0/5 complete.
+  Planning artifacts being complete does not mean execution is complete.
+- `npm run openspec -- update --dry-run --json`: no generated skill changes or
+  failures; it offers an optional global config addition, which was not applied.
+- `npm run check`: 53 content records validate; Astro/tools report no diagnostics.
+  The existing empty-artworks collection produces its informational loader notice.
+- `npm test`: all 23 tests pass. Website, Storybook and Pages builds/runtime checks
+  were not rerun for this setup-only change; no fresh remote verification is claimed.
+- Patch whitespace and local documentation links checked. Existing CI now runs the
+  strict OpenSpec validation after install; it has not been run on GitHub for this
+  unpushed branch.
+
+Created:
+
+- [OpenSpec project configuration](../openspec/config.yaml).
+- Six unmodified CLI-generated [Codex skills](../.agents/skills/) and their target
+  marker, plus standard empty spec/archive directory placeholders.
+- The first proposed change: [metadata](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/.openspec.yaml),
+  [proposal](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/proposal.md),
+  [design](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/design.md),
+  [delta spec](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/specs/portfolio-publication/spec.md)
+  and [tasks](../openspec/changes/archive/2026-11-16-baseline-publication-boundaries/tasks.md).
+
+Modified:
+
+- [package.json](../package.json) and [package-lock.json](../package-lock.json):
+  pinned development CLI and npm command.
+- [Existing validation workflow](../.github/workflows/validate.yml): strict spec checks.
+- [AGENTS.md](../AGENTS.md) and [README](../README.md): native workflow entry points
+  and corrected checkout/authentication guidance.
+- This roadmap, [architecture](architecture.md) and [decisions](decisions.md):
+  clarified ownership, retained historical evidence and corrected related conflicts.
+
+No website source/content, source archive, remote service or Paperclip issue was
+changed. Nothing was committed, merged, pushed or deployed during setup.
+
+## Frozen pre-OpenSpec plan
+
+The following snapshot preserves the previous plan verbatim except for heading
+levels. Consult its evidence and constraints as history alongside the newer
+roadmap and decision records; current task status belongs in OpenSpec.
 
 Current stage: **public Pages preview and GitHub admin login verified; section design/parallax and per-image enquiry UI implemented; content migration deferred; editorial publishing proof, live sending and custom-domain launch remain open**. Updated 16 November 2026 (New Zealand). Mirko authorised continuation of the plan on 15 November. Mirko has confirmed Lauren May Stewart and approved the proposed local Film/Art design. Account, paid-service, factual, image-permission and launch gates remain in decisions.md.
 
 Goal: one distinctive portfolio for Lauren's Film and Art practice, with the split landing concept “TWO WORLDS. ONE ARTIST.” Preserve all recoverable Wix content, enable nontechnical editing and artwork enquiries, and keep the site fast, accessible and inexpensive. No shop.
 
-## Start here
+### Start here
 
 - [Architecture and content contracts](architecture.md)
 - [Audit, preservation evidence and gaps](content-migration.md)
@@ -16,7 +175,7 @@ The supplied folder was empty and not a repository. Mirko authorised initialisat
 
 Status vocabulary: pending, in progress, blocked, deferred, completed. “Deferred” means explicitly postponed by Mirko; preserve completed work and resume only when requested. “Completed” means acceptance evidence is recorded. Approval status belongs in decisions.md, not a second task tracker.
 
-## Current priorities
+### Current priorities
 
 Mirko instructed on 15 November 2026: skip the rest of the content migration and do the other work first. On 16 November he resumed asset scraping through the terminal only. That bounded refresh is finished with no new originals; broader conversion, curation and review remain deferred. This postpones further extraction, conversion, content-review packets, curation, individual artwork identification and missing-source recovery. It does not delete the archive/drafts, revoke the four existing approvals, complete migration, or authorise accounts or launch. Do not keep requesting approval of another Film/Art batch. Resume remaining migration only at Mirko's request; the existing recovery restrictions still apply.
 
@@ -27,7 +186,7 @@ Mirko instructed on 15 November 2026: skip the rest of the content migration and
 
 Local preparation and testing must not wait for all remaining content to be migrated. Final release still needs an explicitly agreed launch scope and the relevant rights, functionality, account and launch approvals. Deferring migration is not approval to launch the current subset.
 
-### Resume guidance
+#### Resume guidance
 
 Current task: terminal-only asset recovery, requested 16 November. The bounded pass fetched all 17 source snapshots and 41 linked renderer responses successfully; all 403 detected media references were already recorded, including the previously attempted filename candidate. No new files were recovered. All 385 existing archive files are unchanged and their recorded hashes verified. See [terminal scrape evidence](terminal-asset-audit.json) and [recovery limits](content-migration.md#terminal-only-refresh-16-november-2026). Remaining originals require owner files or authorised export; no browser, known-failure retry or preview substitution was used. Broader migration remains deferred.
 
@@ -47,17 +206,17 @@ Current local evidence includes application checks, 22 content/enquiry tests, 46
 
 The original archive remains 384 images and one MP4, with 17 confirmed missing originals. Mirko authorised proceeding without them. Preserve the six `[IMAGES MISSING]` titles and supplemental mappings; remove a marker only when every mapped original is recovered and verified. The separately requested 16 November terminal-only refresh found no additional originals. Further missing-original recovery requires owner files or exact export authority. No known-403 retries, preview substitution or external reference/source-layout browsing. Preserve this worktree, staged/unstaged work and ignored archives. Check live listeners before runtime changes; local-verification.md records the latest server state.
 
-## Execution packets
+### Execution packets
 
 Each packet supplies scope, inputs, dependencies and completion evidence. Economical coding models should execute routine packets. “High reasoning” denotes justified review/decision work, not a requirement to escalate every edit. Do not spawn parallel agents without explicit instruction; these packets can be executed sequentially across sessions or delegated later. If delegated, use separate worktrees and merge shared contracts before dependent tasks.
 
-### P00: Repository and initial evidence | completed
+#### P00: Repository and initial evidence | completed
 
 Scope: initialise the authorised empty repository, create durable planning documents and public-source inventory. Inputs: user brief and Wix site. Ownership: planning agent. Reasoning: ordinary research with architecture review.
 
 Acceptance: requested planning files exist; sitemap/router/menu pages are accounted for; source text and gallery order are preserved; original image download results are manifested; uncertainty is explicit. Evidence: audit JSON, scripts and content-migration.md. This is an initial audit, not a claim that migration or every audit gap is complete.
 
-### P01: Close source and visual audit gaps | blocked
+#### P01: Close source and visual audit gaps | blocked
 
 Dependencies: P00; owner-supplied missing originals and factual/permission decisions where public source recovery is exhausted. Inputs: content-migration.md gaps G01-G08, audit snapshots/manifests and D01/D02/D07/D09.
 
@@ -69,7 +228,7 @@ Progress: both CV pages transcribed; 29 gallery titles/counts agree with rendere
 
 Acceptance: each gap resolved with evidence or remains explicitly owner-blocked; gallery counters reconcile to ordered instances; original archive integrity verified; proposed hero pair grounded in real images and permission status; retain prior browser observations with their limits explicit. Further visual/mobile/reference checks are out of current scope per Mirko; do not use them as a reason to keep browsing. No production image published. Model: economical extraction, high reasoning only for ambiguous attribution/creative review.
 
-### P02: Technical foundation and integration proof | in progress
+#### P02: Technical foundation and integration proof | in progress
 
 Dependencies: local plan approval received; P00 complete. D03/D04/D05/D10 govern scope. Inputs: architecture.md content/media/auth contracts. Scope: minimal Astro project, strict TS, lockfile/runtime, shared content schemas, static Sveltia admin and representative local fixtures. Establish GitHub CI and Pages configuration as files; prepare exact account steps before requesting integration approval. No public deployment without approval.
 
@@ -79,7 +238,7 @@ Remote hosting subset: the authorised Main-account Pages project `lauren-portfol
 
 Acceptance: fresh install, type/content checks and static build exit successfully; empty optional CMS values handled; one image uploads and optimises correctly; relation and gallery ordering survive save/reload; static build works with local Pages Function routing; entry edit/preview/publish and branch protection verified after account authorisation. Test denied CMS access and prevent draft/restricted evidence entering dist. Record local versus authenticated results separately. Model: economical coding; high-reasoning review of auth/security and any stack deviation.
 
-### P03: Lossless structured migration | deferred
+#### P03: Lossless structured migration | deferred
 
 Dependencies on resumption: explicit request to resume migration; full migration still needs P01 source/permission resolution and remaining P02 verification. Existing draft metadata and approvals are preserved; no further conversion/review is scheduled now. Inputs: audit assets/occurrences/galleries, content-migration.md mapping, architecture.md schemas. Scope: map biography, CV/credits, collections, mixed-production practice galleries and identified works into structured content; maintain source IDs and occurrence-level destinations. Keep unidentified work in collections/review records rather than inventing labels. Preserve all originals, captions, credit lines and sequence. Deduplicate storage only with retained references.
 
@@ -87,7 +246,7 @@ Local subset implemented: 52 unverified text drafts (19 film, 10 practice, 20 co
 
 Acceptance: every source page/occurrence has a destination or explicit documented archive-only/review disposition; no undocumented omissions; counts and hashes reconcile; all referenced media exist; duplicate candidates reviewed; no invented dates, prices, dimensions or roles; sensitive images/private CV data excluded from publication pending clearance. Model: economical extraction/conversion; escalate only factual ambiguity.
 
-### P04: Shared identity and split landing | in progress
+#### P04: Shared identity and split landing | in progress
 
 Dependencies: plan and D01/D02 local design/name approvals received. P02 remote proof and landing-specific image selection/permission remain incomplete; existing collection/project approvals do not clear landing imagery. Technical shell work can proceed against the current approved subset without further migration. Local media-free implementation is authorised. Inputs: decisions.md landing specification. Scope: token CSS, typography, shared navigation/layout/SEO shell, desktop horizontal and mobile vertical landing. No production project/art page implementation in this packet.
 
@@ -95,7 +254,7 @@ Implemented: shared document/navigation/footer, dark Film and light Art tokens, 
 
 Acceptance: both panels visibly link directly with one tap/keyboard action; central statement readable across boundary; navigation works without hover; correct heading/focus order; no image distortion or hidden content at narrow widths/zoom; reduced-motion and safe areas work; visual review at 320/390/768/1440/1920px and landscape. Model: economical UI work with deliberate creative review.
 
-### P05: Film and shared pages | deferred
+#### P05: Film and shared pages | deferred
 
 Remaining content scope is deferred. Existing approved Film pages remain implemented and may receive technical fixes. Resume other productions, biography/contact content and CV population only on request and after factual/public-field review.
 
@@ -105,7 +264,7 @@ Local subset: Film index, Blade Runner 2049 and Mulan details now render confirm
 
 Acceptance: all verified source film credits represented; credit-only films work without invented images; mixed galleries avoid false production attribution; CV download and print/text extraction match HTML and approved public fields; all internal/external links validated; keyboard/gallery behaviour and dark-theme contrast checked. Model: economical coding; factual/rights review before publishing.
 
-### P06: Art gallery and collection pages | deferred
+#### P06: Art gallery and collection pages | deferred
 
 Remaining content scope is deferred. Existing approved Art pages remain implemented and may receive technical fixes. Do not identify/populate additional works, collections or availability just to unblock enquiries; use isolated test fixtures for local functionality.
 
@@ -115,7 +274,7 @@ Local subset: Art and collection indexes plus Artificial Landscapes and Oil Pain
 
 Acceptance: all source art collections have a traceable disposition; unlabelled images do not become fabricated works; all availability states render correctly; CMS controls feature/order and enquiry switches; image aspect ratios/captions/alt reviewed; touch/keyboard/light-theme checks pass; no simulated inversion without verification. Model: economical coding and content review.
 
-### P07: Reliable artwork enquiries | in progress
+#### P07: Reliable artwork enquiries | in progress
 
 Local dependencies: the existing P02 foundation and enquiry/content contracts are available. Further P03/P06 content migration is not a prerequisite for implementing and testing reusable functionality. Inputs: architecture.md enquiry boundary and availability rules.
 
@@ -125,7 +284,7 @@ Integration dependencies: approved account/mailbox scope, D06 transport proof, e
 
 Acceptance: reject forged IDs, disabled/not-for-sale/unknown works, invalid email, oversized input, header injection, wrong origin/Turnstile hostname/action, expired/replayed token and abuse bursts. Provider failures/timeouts show no false success and retain input. Check keyboard/error focus and double submission. After explicit test-message authorisation, verify receipt in the approved mailbox, correct artwork reference and Reply-To; provider acceptance alone is not delivery evidence. Model: economical implementation, high-reasoning security review.
 
-### P08: Release qualification and handover | in progress
+#### P08: Release qualification and handover | in progress
 
 Local preparation dependencies: the current approved subset, Storybook and existing build/CMS evidence are sufficient. Prepare automated link/image/responsive/performance checks, SEO build behaviour and editor/deployment/rollback documentation without waiting for the deferred migration. Preserve noindex and current evidence/publication guards. Check only what changes or remains genuinely unverified.
 
@@ -135,12 +294,12 @@ Final qualification dependencies: an explicitly agreed launch content scope, fun
 
 Final acceptance: all agreed checks pass with exit status; required manual WCAG 2.2 AA qualification remains a separate gate and is not authorised to resume by this reprioritisation; key pages meet documented lab budgets or deviations are accepted; sitemap/canonicals/robots/social images and structured data correct; previews protected/noindex; restricted source evidence absent from dist; Lauren can add/edit/reorder/remove and publish an example without code; source-to-page reconciliation for the agreed launch scope signed off; rollback rehearsed in authorised environment. Record remaining field-performance monitoring. Model: economical test execution; high-reasoning critical release review.
 
-### P09: Approved public launch | blocked
+#### P09: Approved public launch | blocked
 
 Dependencies: P08, explicit public deployment/domain/DNS approval and confirmed account ownership. Scope: execute the prepared hosting/domain steps, HTTPS, canonical host redirects and launch verification. Do not assume control over Wix redirect settings.
 
 Acceptance: production routes/images/CMS/enquiry receipt verified; TLS/canonicals/robots/sitemap correct; approved public contact and content read back; rollback target available; Wix unchanged except separately approved linking/redirect work. Monitor delivery failures and field performance without logging private messages. Model: experienced operational agent, critical review if unexpected DNS/mail effects arise.
 
-## Verification boundary
+### Verification boundary
 
 Verified locally: 46 Storybook page/form stories with axe/image/contract checks, Storybook type/build/output and loopback file-boundary checks, canonical/sitemap/noindex assertions, source recovery/file integrity, gallery count/title mapping, CV transcription, strict type/content checks, 22 regression/contract tests, local CMS round-trip/upload proof, P03 draft/source reconciliation, isolated image optimisation, static builds and Pages HTTP routing. The actual production build rejects an image-bearing draft. These results do not establish remote editorial publishing, full visual quality, whole-inventory factual accuracy/image rights, public launch approval, remote CMS authentication, inbox delivery, Cloudflare account eligibility or DNS control. The landing remains the approved media-free shell. Film/Art contain the two approved subsets; About/Contact/CV and the broader portfolio remain unfinished.
