@@ -22,7 +22,7 @@ Recommend static Astro output, strict TypeScript and plain CSS. Build-time conte
 
 Explicit `projects`, `practice` and `works` segments prevent reserved-name conflicts. Do not create one “artwork” per photograph: installation/process/detail photographs belong in galleries. Keep collections without individual labels browsable until identification is approved.
 
-Persistent navigation: wordmark/home, Film, Art, About, Contact. Film adds a visible CV link. At narrow widths wrap or use two readable rows before considering a menu. Highlight the active world with text and `aria-current`, not colour alone. About/contact use a stable neutral theme; no theme saved in browser storage is necessary. Breadcrumbs and Film/Art links make deep pages understandable without visiting `/`.
+Persistent navigation: wordmark/home, Film, Art, About, Contact and CV. The landing panels provide Film and Art links, while CV remains visible in the header. At narrow widths wrap or use two readable rows before considering a menu. Highlight the active destination with text and `aria-current`, not colour alone. About/contact use a stable neutral theme; no theme saved in browser storage is necessary. Breadcrumbs and Film/Art links make deep pages understandable without visiting `/`.
 
 ## Content model
 

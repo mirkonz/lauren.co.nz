@@ -21,6 +21,7 @@ const links = [
   { label: 'Art', href: '/art/' },
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },
+  { label: 'CV', href: '/film/cv/' },
 ];
 const current = Astro.url.pathname;
 if (!Astro.site) throw new Error('Configure the canonical site URL.');
@@ -44,14 +45,13 @@ const canonicalUrl = new URL(current, Astro.site);
       <nav aria-label="Main navigation">
         <ul>
           {links.filter(({ label }) => !landing || !['Film', 'Art'].includes(label)).map(({ label, href }) => (
-            <li><a href={href} aria-current={current === href ? 'page' : current.startsWith(href) ? 'true' : undefined}>{label}</a></li>
+            <li><a href={href} aria-current={current === href ? 'page' : current.startsWith(href) && current !== '/film/cv/' ? 'true' : undefined}>{label}</a></li>
           ))}
-          {theme === 'film' && <li><a href="/film/cv/" aria-current={current === '/film/cv/' ? 'page' : undefined}>CV</a></li>}
         </ul>
       </nav>
     </header>
     <main id="main" tabindex="-1"><slot /></main>
-    <footer class="site-footer"><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+    <footer><a class="back-to-top" href="#top" data-back-to-top hidden>Back to top <span aria-hidden="true">↑</span></a></footer>
     <SiteEnhancement />
   </body>
 </html>

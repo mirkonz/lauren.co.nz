@@ -1,6 +1,12 @@
 <script>
   import { enhanceParallax } from '../lib/parallax';
   enhanceParallax(document);
+  const backToTop = document.querySelector<HTMLAnchorElement>('[data-back-to-top]');
+  if (backToTop) {
+    const updateBackToTop = () => { backToTop.hidden = window.scrollY <= 0; };
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
+    updateBackToTop();
+  }
   const forms = document.querySelectorAll<HTMLFormElement>('[data-enquiry-form][data-enabled="true"]');
   if (forms.length) {
     const { enhanceEnquiryForm } = await import('../lib/enquiry-form');

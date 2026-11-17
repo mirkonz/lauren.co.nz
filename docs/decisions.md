@@ -88,7 +88,7 @@ This authorisation supersedes the earlier no-push instruction for this merge/pus
 
 ## Local organic design revision and image enquiries
 
-Mirko requested less repetition, removal of 01/02, and a softer organic treatment, suggesting a brush stroke for Art. The local revision keeps the dark Film/light Art split and single bridging heading. The name appears in the header only; landing navigation uses About/Contact because the panels already provide Film/Art. The footer has a functional back-to-top link. Repeated card/index prompts are removed. Original decorative SVG paths add a warm brush sweep for Art and a charcoal contour for Film; subdued gradients, serif typography and asymmetric Art spacing soften the composition. These are decoration, not substituted portfolio imagery, and do not alter artwork photographs. Final visual acceptance remains Mirko's review.
+Mirko requested less repetition, removal of 01/02, and a softer organic treatment, suggesting a brush stroke for Art. The local revision keeps the dark Film/light Art split and single bridging heading. The name appears in the header only; the landing panels provide Film/Art navigation. The footer has a functional back-to-top link. Repeated card/index prompts are removed. Original decorative SVG paths add a warm brush sweep for Art and a charcoal contour for Film; subdued gradients, serif typography and asymmetric Art spacing soften the composition. These are decoration, not substituted portfolio imagery, and do not alter artwork photographs. Final visual acceptance remains Mirko's review.
 
 Mirko answered “Yes, enquiries per displayed image.” Each currently cleared Art image therefore has an expandable form carrying its existing collection/image reference. This does not identify an individual artwork, set availability or authorise a sale. Public forms remain disabled and plainly say online enquiries are not open. No mail/widget account, live message or website deployment is authorised by this UI choice. Remaining source migration stays deferred.
 
@@ -99,6 +99,8 @@ Mirko subsequently requested fixed decorative backgrounds and elements on About,
 ## Distinct section decoration and parallax
 
 Mirko requested a separate visual vocabulary for each section, multiple elements and parallax in place of the single fixed mark, and explicitly instructed merging/pushing the result. The revision uses three original SVGs per section: Film charcoal/scenic cuts, Art brush marks, About contours, Contact overlapping loops and CV paper/graphite. The two landing panels use their respective Film/Art set. Motion is gentle, bounded and disabled for reduced-motion preferences; no artwork photo is animated or filtered. This supersedes the earlier single/fixed-mark treatment.
+
+On 16 November 2026, Mirko clarified that Film and Art should retain browsable subsections and that CV should always be visible. CV is therefore a main-navigation destination on every page. The later OpenSpec proposal defines the requested subsection hierarchy; content and publication approvals remain separate.
 
 The shared site bootstrap now owns parallax and conditionally loads enquiry enhancement for enabled forms. The separate enquiry bootstrap is superseded. Public enquiries remain disabled; no mailbox/widget/account or DNS change is included. The authorised main push may start an already connected Cloudflare build; no separate deployment command or account change is being performed. Final factual/image, live enquiry and launch qualifications retain their separate gates.
 
